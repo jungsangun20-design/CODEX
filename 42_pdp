@@ -1,0 +1,1564 @@
+<!-- ============================================================
+     42degree PDP · "스위치를 켜세요" 섹션
+     ▸ 상세설명 영역(또는 detail.html 원하는 위치)에 붙여넣기
+     ▸ 반응형 단일 코드 (PC 2단 / 모바일 스택)
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-switch {
+		--ink: #161413; --soft: #6b6f6d; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(40px, 7vw, 90px);
+	}
+	
+	.dg-switch,
+	.dg-switch * {
+		box-sizing: border-box;
+	}
+	
+	.dg-switch__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(28px, 5vw, 52px); align-items: start;
+	}
+	
+	.dg-switch__quote {
+		margin: 0; font-weight: 600; line-height: 1.35; letter-spacing: -.02em; font-size: clamp(1.5rem, 3.6vw, 2.5rem); word-break: keep-all;
+	}
+	
+	.dg-switch__attr {
+		margin: 14px 0 0; font-weight: 500; line-height: 1.45; font-size: clamp(1rem, 1.8vw, 1.35rem); word-break: keep-all;
+	}
+	
+	.dg-switch__plus {
+		width: 30px; height: 30px; margin: clamp(28px, 4vw, 46px) 0 14px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--ink); color: #fff; font-size: 18px; font-weight: 400; line-height: 1;
+	}
+	
+	.dg-switch__body {
+		margin: 0; color: var(--soft); font-size: clamp(.8rem, 1.1vw, .9rem); line-height: 1.65; max-width: 42ch; word-break: keep-all;
+	}
+	
+	.dg-switch__media {
+		line-height: 0;
+	}
+	
+	.dg-switch__img {
+		display: block; width: 100%; height: auto; border-radius: clamp(16px, 2.5vw, 24px);
+	}
+	
+	@media (min-width:768px) {
+		.dg-switch__inner {
+			grid-template-columns: 1.05fr 1fr; gap: clamp(40px, 5vw, 72px); align-items: center;
+		}
+	}
+
+</style>
+
+<section class="dg-switch">
+	<div class="dg-switch__inner">
+		<div class="dg-switch__text">
+
+			<h2 class="dg-switch__quote">"가장 선명해야 할 순간,
+				<br>스위치를 켜세요."</h2>
+
+			<p class="dg-switch__attr">— 고속 노화의 주범 스트레스 케어.</p>
+			<div aria-hidden="true" class="dg-switch__plus">+</div>
+
+			<p class="dg-switch__body">카페인 0%, 맑게 깨어나는 첫 번째 브레인 웰니스 리추얼 'C.C. Shot' — 42degree meet the rainbow within.</p>
+		</div>
+		<div class="dg-switch__media">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg" alt="42degree C.C. Shot" class="dg-switch__img">
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "선명한 대안" 2x2 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 2x2 체커보드 / 모바일: 세로 스택 (grid-areas 자동 재배치)
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-alt {
+		--ink: #161413; --soft: #6b6f6d; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
+	}
+	
+	.dg-alt,
+	.dg-alt * {
+		box-sizing: border-box;
+	}
+	
+	.dg-alt__grid {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; gap: clamp(12px, 2vw, 20px); grid-template-areas: "heading" "boxes" "features" "orange";
+	}
+	
+	.dg-alt__boxes {
+		grid-area: boxes;
+	}
+	
+	.dg-alt__features {
+		grid-area: features;
+	}
+	
+	.dg-alt__heading {
+		grid-area: heading;
+	}
+	
+	.dg-alt__orange {
+		grid-area: orange;
+	}
+	/* 이미지 셀 */
+	
+	.dg-alt__boxes,
+	.dg-alt__orange {
+		overflow: hidden; line-height: 0; border-radius: 8px;
+	}
+	
+	.dg-alt__boxes img,
+	.dg-alt__orange img {
+		display: block; width: 100%; height: auto;
+	}
+	/* 헤딩 */
+	
+	.dg-alt__heading {
+		display: flex; align-items: center;
+	}
+	
+	.dg-alt__heading h2 {
+		margin: 0; font-weight: 600; line-height: 1.3; letter-spacing: -.02em; font-size: clamp(1.5rem, 3.4vw, 2.3rem); word-break: keep-all;
+	}
+	/* 피처 리스트 */
+	
+	.dg-alt__features {
+		list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: center; gap: clamp(16px, 2.2vw, 22px);
+	}
+	
+	.dg-alt__feat {
+		display: flex; gap: 10px;
+	}
+	
+	.dg-alt__ico {
+		flex: 0 0 auto; width: 22px; height: 22px; margin-top: 2px; border-radius: 50%; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 13px; line-height: 1;
+	}
+	
+	.dg-alt__t {
+		margin: 0 0 5px; font-weight: 700; font-size: clamp(.95rem, 1.4vw, 1.05rem); word-break: keep-all;
+	}
+	
+	.dg-alt__d {
+		margin: 0; color: var(--soft); font-size: clamp(.8rem, 1.1vw, .9rem); line-height: 1.6; word-break: keep-all;
+	}
+	
+	@media (min-width:768px) {
+		.dg-alt__grid {
+			grid-template-columns: 1fr 1.15fr; align-items: stretch; grid-template-areas: "boxes features" "heading orange";
+		}
+		.dg-alt__boxes img,
+		.dg-alt__orange img {
+			width: 100%; height: 100%; object-fit: cover;
+		}
+	}
+
+</style>
+
+<section class="dg-alt">
+	<div class="dg-alt__grid">
+		<div class="dg-alt__boxes">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp16.jpg" alt="42degree Citrus Blend" loading="lazy">
+		</div>
+
+		<ul class="dg-alt__features">
+			<li class="dg-alt__feat">
+				<span aria-hidden="true" class="dg-alt__ico">+</span>
+				<div>
+
+					<p class="dg-alt__t">디스트레스 &amp; 포커스 케어</p>
+
+					<p class="dg-alt__d">— 스트레스로 지치고 과부하된 뇌 환경을 차분하게 가라앉히고 보호합니다.</p>
+				</div>
+			</li>
+			<li class="dg-alt__feat">
+				<span aria-hidden="true" class="dg-alt__ico">+</span>
+				<div>
+
+					<p class="dg-alt__t">마시는 L-테아닌 알파(A)파 활성화</p>
+
+					<p class="dg-alt__d">— 마음의 긴장은 걷어내고, 졸음 없이 차분하고 예리한 집중력을 유지하도록 돕습니다.</p>
+				</div>
+			</li>
+			<li class="dg-alt__feat">
+				<span aria-hidden="true" class="dg-alt__ico">+</span>
+				<div>
+
+					<p class="dg-alt__t">완벽한 카페인 대체제 (CAFFEINE-FREE)</p>
+
+					<p class="dg-alt__d">— 오후 3시, 커피 대신 선택하는 가장 완벽한 대체 드링크입니다. 두근거림이나 급격한 크래시 없이 맑은 정신과 몰입을 지원합니다.</p>
+				</div>
+			</li>
+		</ul>
+		<div class="dg-alt__heading">
+
+			<h2>C.C. Shot 이
+				<br>제공하는 선명한 대안</h2>
+		</div>
+		<div class="dg-alt__orange">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="신선한 시트러스" loading="lazy">
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "이런 분들에게 추천" 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 좌 제품샷 / 우 텍스트 · 모바일: 세로 스택
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-rec {
+		--ink: #161413; --soft: #9a9d9b; --teal: #16b1a3; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
+	}
+	
+	.dg-rec,
+	.dg-rec * {
+		box-sizing: border-box;
+	}
+	
+	.dg-rec__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(28px, 5vw, 48px); align-items: center;
+	}
+	
+	.dg-rec__media {
+		line-height: 0;
+	}
+	
+	.dg-rec__media img {
+		display: block; width: 100%; height: auto;
+	}
+	
+	.dg-rec__title {
+		margin: 0; font-weight: 700; line-height: 1.32; letter-spacing: -.02em; font-size: clamp(1.6rem, 3.8vw, 2.4rem); word-break: keep-all;
+	}
+	
+	.dg-rec__sub {
+		margin: clamp(16px, 2.4vw, 24px) 0 0; font-weight: 700; line-height: 1.4; font-size: clamp(1.05rem, 1.8vw, 1.3rem); word-break: keep-all;
+	}
+	
+	.dg-rec__lead {
+		margin: 10px 0 0; color: var(--soft); font-size: clamp(.85rem, 1.2vw, .95rem); line-height: 1.6; word-break: keep-all;
+	}
+	
+	.dg-rec__list {
+		list-style: none; margin: clamp(20px, 3vw, 30px) 0 0; padding: 0; display: flex; flex-direction: column; gap: clamp(10px, 1.4vw, 14px);
+	}
+	
+	.dg-rec__list li {
+		display: flex; align-items: flex-start; gap: 10px; color: #33403d; font-size: clamp(.85rem, 1.2vw, .95rem); line-height: 1.45; word-break: keep-all;
+	}
+	
+	.dg-rec__list strong {
+		font-weight: 700; color: var(--ink);
+	}
+	
+	.dg-rec__chk {
+		flex: 0 0 auto; width: 20px; height: 20px; margin-top: 1px; border-radius: 50%; background: var(--teal); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;
+	}
+	
+	@media (min-width:768px) {
+		.dg-rec__inner {
+			grid-template-columns: .92fr 1fr; gap: clamp(36px, 5vw, 64px);
+		}
+	}
+
+</style>
+
+<section class="dg-rec">
+	<div class="dg-rec__inner">
+		<div class="dg-rec__media">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp17.jpg" alt="42degree C.C. Shot & 시트러스" loading="lazy">
+		</div>
+		<div class="dg-rec__text">
+
+			<h2 class="dg-rec__title">씨씨샷, 이런 분들에게
+				<br>추천드려요.</h2>
+
+			<p class="dg-rec__sub">오후 3시, 당신의 이야기인가요?</p>
+
+			<p class="dg-rec__lead">아마추어 같은 멍함 대신,
+				<br>프로페셔널한 선명함이 필요한 순간.</p>
+
+			<ul class="dg-rec__list">
+				<li><span aria-hidden="true" class="dg-rec__chk">✓</span><span>"이미 마신 커피 한 잔, <strong>오후에 또마시기 부담될 때</strong>"</span></li>
+				<li><span aria-hidden="true" class="dg-rec__chk">✓</span><span>"오후 3시만 되면 <strong>머리가 자주 멍해져요</strong>"</span></li>
+				<li><span aria-hidden="true" class="dg-rec__chk">✓</span><span>"중요한 미팅이나 발표전 <strong>평정심을 찾고싶어요</strong>"</span></li>
+				<li><span aria-hidden="true" class="dg-rec__chk">✓</span><span>"이유 없는 <strong>불안감과 감정기복</strong>을 다스리고싶어요"</span></li>
+				<li><span aria-hidden="true" class="dg-rec__chk">✓</span><span>"고강도 업무로 인한 <strong>스트레스</strong>에 시달려요"</span></li>
+				<li><span aria-hidden="true" class="dg-rec__chk">✓</span><span>"<strong>카페인 없는 에너지 드링크</strong>를 마시고 싶어요"</span></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "다양하게 즐기는 방법" 섹션
+     ▸ 상세설명 영역(또는 detail.html 원하는 위치)에 붙여넣기
+     ▸ 반응형 단일 코드 (PC 4단 / 모바일 2단 Grid)
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-enjoy {
+		--ink: #161413; --soft: #6b6f6d; --bg-sec: #ffffff; background-color: var(--bg-sec); font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-enjoy,
+	.dg-enjoy * {
+		box-sizing: border-box;
+	}
+	
+	.dg-enjoy__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+	
+	.dg-enjoy__header {
+		display: flex; flex-direction: column; gap: 24px; margin-bottom: clamp(32px, 6vw, 60px);
+	}
+	
+	.dg-enjoy__title {
+		margin: 0; font-size: clamp(1.8rem, 3.8vw, 2.6rem); font-weight: 700; line-height: 1.25; letter-spacing: -0.04em; word-break: keep-all;
+	}
+	
+	.dg-enjoy__list {
+		margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px;
+	}
+	
+	.dg-enjoy__list li {
+		position: relative; padding-left: 14px; font-size: clamp(0.95rem, 1.4vw, 1.1rem); font-weight: 500; color: var(--soft); letter-spacing: -0.02em;
+	}
+	
+	.dg-enjoy__list li::before {
+		content: ""; position: absolute; left: 0; top: 0.55em; width: 4px; height: 4px; border-radius: 50%; background-color: var(--soft);
+	}
+	
+	.dg-enjoy__grid {
+		display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(12px, 2vw, 24px);
+	}
+	
+	.dg-enjoy__item {
+		border-radius: clamp(16px, 2.5vw, 24px); overflow: hidden; background-color: #fff; aspect-ratio: 3 / 4;
+	}
+	
+	.dg-enjoy__item img {
+		display: block; width: 100%; height: 100%; object-fit: cover;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-enjoy__header {
+			flex-direction: row; align-items: flex-end; gap: 48px;
+		}
+		.dg-enjoy__title {
+			flex: 0 0 auto;
+		}
+		.dg-enjoy__list {
+			padding-bottom: 8px;/* 타이틀 하단과 시각적 정렬 */
+		}
+		.dg-enjoy__grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+</style>
+
+<section class="dg-enjoy">
+	<div class="dg-enjoy__inner">
+		<div class="dg-enjoy__header">
+
+			<h2 class="dg-enjoy__title">42degree 를 다양하게,
+				<br>즐겁게 즐기는 방법</h2>
+
+			<ul class="dg-enjoy__list">
+				<li>원액 그대로</li>
+				<li>탄산수에 섞어서 에이드처럼</li>
+				<li>얼려먹는 간식처럼</li>
+				<li>샐러드 드레싱으로</li>
+			</ul>
+		</div>
+
+		<div class="dg-enjoy__grid">
+			<div class="dg-enjoy__item">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg" alt="원액 그대로" loading="lazy">
+			</div>
+			<div class="dg-enjoy__item">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png" alt="탄산수에 섞어서 에이드처럼" loading="lazy">
+			</div>
+			<div class="dg-enjoy__item">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png" alt="얼려먹는 간식처럼" loading="lazy">
+			</div>
+			<div class="dg-enjoy__item">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png" alt="샐러드 드레싱으로" loading="lazy">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "인트로 스토리" 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ 반응형 단일 코드 (PC 좌우 분할 / 모바일 스택)
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap'); .dg-intro {
+		--ink: #161413; --soft: #6b6f6d; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-intro,
+	.dg-intro * {
+		box-sizing: border-box;
+	}
+	
+	.dg-intro__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(32px, 5vw, 60px); align-items: center;
+	}
+	
+	.dg-intro__text {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-intro__title {
+		margin: 0 0 10px; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.04em;
+	}
+	
+	.dg-intro__sub {
+		margin: 0 0 clamp(20px, 4vw, 32px); font-family: "Playfair Display", Georgia, serif;/* 영문 세리프(이탤릭) 폰트 적용 */
+		font-style: italic; font-size: clamp(1.6rem, 3.5vw, 2.8rem); font-weight: 400; letter-spacing: -0.02em;
+	}
+	
+	.dg-intro__desc {
+		margin: 0; color: var(--soft); font-size: clamp(0.95rem, 1.2vw, 1.05rem); line-height: 1.65; word-break: keep-all;
+	}
+	
+	.dg-intro__media {
+		width: 100%; line-height: 0;
+	}
+	
+	.dg-intro__media img {
+		display: block; width: 100%; height: auto; border-radius: clamp(16px, 2.5vw, 24px); object-fit: cover;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-intro__inner {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+</style>
+
+<section class="dg-intro">
+	<div class="dg-intro__inner">
+		<div class="dg-intro__text">
+
+			<h2 class="dg-intro__title">Daily Stress
+				<br>Care Item</h2>
+
+			<p class="dg-intro__sub">De-stress &amp; Focus Shot</p>
+
+			<p class="dg-intro__desc">
+				번아웃은 낮추고, 포커스는 선명하게.
+				<br> 42degree는 단순한 활력제가 아닙니다.
+				<br> — 스트레스로 인한 긴장은 완화하고,
+				<br> 정신적인 명료함은 깨워주는 스마트 포뮬러입니다.
+			</p>
+		</div>
+
+		<div class="dg-intro__media">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp5.png" alt="42degree C.C Shot 제품" loading="lazy">
+		</div>
+	</div>
+</section>
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap'); .dg-formula {
+		--ink: #161413; --soft: #6b6f6d; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-formula,
+	.dg-formula * {
+		box-sizing: border-box;
+	}
+	
+	.dg-formula__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+	
+	.dg-formula__header {
+		margin-bottom: clamp(32px, 6vw, 50px);
+	}
+	
+	.dg-formula__sub {
+		margin: 0 0 10px; font-size: clamp(0.85rem, 1.2vw, 0.95rem); font-weight: 600; color: var(--soft); letter-spacing: -0.02em;
+	}
+	
+	.dg-formula__title {
+		margin: 0; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 600; line-height: 1.1; letter-spacing: -0.02em;
+	}
+	
+	.dg-formula__title-serif {
+		font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 400;
+	}
+	
+	.dg-formula__grid {
+		display: flex; flex-direction: column; gap: clamp(32px, 5vw, 40px);
+	}
+	
+	.dg-formula__col {
+		display: flex; flex-direction: column; gap: clamp(32px, 5vw, 40px);
+	}
+	
+	.dg-formula__card {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-formula__card--overlay {
+		position: relative; overflow: hidden; border-radius: clamp(16px, 2.5vw, 24px); aspect-ratio: 1 / 1.15; padding: clamp(24px, 4vw, 36px); justify-content: flex-end; color: #fff;
+	}
+	
+	.dg-formula__card--overlay img {
+		position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+	}
+	
+	.dg-formula__card--overlay .dg-formula__text {
+		position: relative; z-index: 2;
+	}
+	
+	.dg-formula__card--stacked .dg-formula__media {
+		border-radius: clamp(16px, 2.5vw, 24px); overflow: hidden; line-height: 0;
+	}
+	
+	.dg-formula__card--stacked img {
+		display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover;
+	}
+	
+	.dg-formula__card--stacked .dg-formula__text {
+		padding-top: clamp(20px, 3vw, 28px); color: var(--ink);
+	}
+	
+	.dg-formula__name {
+		margin: 0 0 16px; font-size: clamp(1.4rem, 2.2vw, 1.7rem); font-weight: 600; letter-spacing: -0.02em;
+	}
+	
+	.dg-formula__list {
+		margin: 0; padding: 0 0 0 18px; font-size: clamp(0.85rem, 1.2vw, 0.95rem); line-height: 1.55; letter-spacing: -0.02em;
+	}
+	
+	.dg-formula__list li {
+		margin-bottom: 6px; word-break: keep-all;
+	}
+	
+	.dg-formula__list li:last-child {
+		margin-bottom: 0;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-formula__grid {
+			flex-direction: row;
+		}
+		.dg-formula__col {
+			flex: 1;
+		}
+	}
+
+</style>
+
+<section class="dg-formula">
+	<div class="dg-formula__inner">
+		<div class="dg-formula__header">
+
+			<p class="dg-formula__sub">원료에 대한 설명입니다.</p>
+
+			<h2 class="dg-formula__title">Our <span class="dg-formula__title-serif">Calm Focus Formula</span>™</h2>
+		</div>
+
+		<div class="dg-formula__grid">
+			<div class="dg-formula__col">
+				<div class="dg-formula__card dg-formula__card--overlay">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp9.png" alt="L-테아닌 100MG" loading="lazy">
+					<div class="dg-formula__text">
+
+						<h3 class="dg-formula__name">L-테아닌 100MG</h3>
+
+						<ul class="dg-formula__list">
+							<li>긴장을 완화하는 알파(α)파를 유도하여, 카페인의 두근거림이나 일상의 불안감을 잠재웁니다.</li>
+							<li>차분함과 예리함이 공존하는 100mg을 설계했습니다.</li>
+							<li>하루 두 번까지 섭취 가능합니다.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="dg-formula__card dg-formula__card--stacked">
+					<div class="dg-formula__media">
+						<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp6.png" alt="비타민 B 복합체 50MG" loading="lazy">
+					</div>
+					<div class="dg-formula__text">
+
+						<h3 class="dg-formula__name">비타민 B 복합체(B6, B12) 50MG</h3>
+
+						<ul class="dg-formula__list">
+							<li>신경 전달 물질의 합성을 돕고 에너지를 생성합니다.</li>
+							<li>수용성 비타민으로서 몸에 무리를 주지 않으면서, 몰입에 필요한 최소한의 임계점을 확실히 넘겨주는 야무진 함량입니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="dg-formula__col">
+				<div class="dg-formula__card dg-formula__card--stacked">
+					<div class="dg-formula__media">
+						<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp8.png" alt="전해질 & 마그네슘 50MG" loading="lazy">
+					</div>
+					<div class="dg-formula__text">
+
+						<h3 class="dg-formula__name">전해질 &amp; 마그네슘 50MG</h3>
+
+						<ul class="dg-formula__list">
+							<li>뇌는 수분과 전해질의 전기 신호로 작동합니다. 삼투압 조절을 통해 뇌 세포에 수분을 즉각 공급하고 신경 전달 효율을 높입니다.</li>
+							<li>커피의 이뇨 작용으로 손실되는 미네랄을 보충하고, 당 스파이크 없는 수분 흡수를 돕는 정교한 용량입니다.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="dg-formula__card dg-formula__card--overlay">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp7.png" alt="이노시톨 200MG" loading="lazy">
+					<div class="dg-formula__text">
+
+						<h3 class="dg-formula__name">이노시톨 200MG</h3>
+
+						<ul class="dg-formula__list">
+							<li>뇌 세포 사이의 신호 전달을 돕는 '메신저' 역할</li>
+							<li>세포의 수용체가 가장 부드럽게 받아들일 수 있는 데일리 최적치를 담았습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Power up your setup" 2x2 체커보드 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 2x2 교차 그리드 (여백 없음) / 모바일: 세로 스택
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-power {
+		--ink: #161413; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
+		/* 이전 섹션들과의 간격을 위해 위아래 패딩 유지 */
+		padding-block: clamp(40px, 8vw, 80px);
+	}
+	
+	.dg-power,
+	.dg-power * {
+		box-sizing: border-box;
+	}
+	
+	.dg-power__inner {
+		max-width: 1200px; margin: 0 auto;
+		/* 타겟 이미지처럼 콘텐츠가 꽉 차 보이도록 좌우 패딩 최소화 */
+		padding-inline: clamp(16px, 4vw, 40px);
+	}
+	
+	.dg-power__grid {
+		display: grid; grid-template-columns: 1fr; background-color: #fff;
+	}
+	
+	.dg-power__cell {
+		display: flex; flex-direction: column; justify-content: center;
+	}
+	
+	.dg-power__cell--img {
+		line-height: 0; overflow: hidden;
+	}
+	
+	.dg-power__cell--img img {
+		display: block; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1 / 1;
+	}
+	
+	.dg-power__cell--text {
+		padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 64px); background-color: #fff;
+	}
+	
+	.dg-power__cell--logo {
+		padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 64px); align-items: center; background-color: #fff;
+	}
+	
+	.dg-power__cell--logo img {
+		display: block; width: 100%; max-width: clamp(140px, 20vw, 220px); height: auto;
+	}
+	/* 텍스트 타이포그래피 */
+	
+	.dg-power__title {
+		margin: 0 0 clamp(32px, 5vw, 56px); font-size: clamp(2.8rem, 5.5vw, 4.6rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em;
+	}
+	
+	.dg-power__sub {
+		margin: 0 0 16px; font-size: clamp(0.95rem, 1.4vw, 1.1rem); font-weight: 700; line-height: 1.4; word-break: keep-all;
+	}
+	
+	.dg-power__desc {
+		margin: 0; font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.65; word-break: keep-all;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-power__grid {
+			grid-template-columns: 1fr 1fr;
+		}
+		.dg-power__cell--img img {
+			/* PC에서는 그리드 높이에 맞춰 꽉 차게 렌더링 */
+			aspect-ratio: auto; height: 100%;
+		}
+	}
+
+</style>
+
+<section class="dg-power">
+	<div class="dg-power__inner">
+		<div class="dg-power__grid">
+
+			<!-- 1. 좌상단: 옐로우 시트러스 이미지 -->
+			<div class="dg-power__cell dg-power__cell--img">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png" alt="시트러스 텍스쳐" loading="lazy">
+			</div>
+
+			<!-- 2. 우상단: 텍스트 -->
+			<div class="dg-power__cell dg-power__cell--text">
+
+				<h2 class="dg-power__title">Power up
+					<br>your setup</h2>
+
+				<p class="dg-power__sub">뉴욕과 실리콘밸리의 리더들이— 가장 본질인 '뇌'를 챙기는 이유.</p>
+
+				<p class="dg-power__desc">
+					겉으로 보이는 피부나 피지컬 관리에는 집착하면서,
+					<br> 왜 정작 모든 것을 컨트롤하는 '뇌'의 지침은 방치할까요?
+					<br> 글로벌 트렌드를 이끄는 이들은 이미 알고 있습니다.
+					<br> 진짜 프로페셔널의 차이는 지치지 않는 멘탈과
+					<br> 맑은 몰입의 감각에서 시작된다는 것을요.
+				</p>
+			</div>
+
+			<!-- 3. 좌하단: 로고 -->
+			<div class="dg-power__cell dg-power__cell--logo">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo.png" alt="42degree 로고" loading="lazy">
+			</div>
+
+			<!-- 4. 우하단: 그린 라임 이미지 -->
+			<div class="dg-power__cell dg-power__cell--img">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png" alt="그린 텍스쳐" loading="lazy">
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Beyond Caffeine" 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 2단 분할 (좌측 텍스트, 우측 이미지) / 모바일: 세로 스택
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-beyond {
+		--ink: #161413; --soft: #4a4d4b; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-beyond,
+	.dg-beyond * {
+		box-sizing: border-box;
+	}
+	
+	.dg-beyond__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;
+	}
+	
+	.dg-beyond__text {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-beyond__title {
+		margin: 0 0 clamp(24px, 4vw, 40px); font-size: clamp(3.2rem, 6.5vw, 5.4rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em;
+	}
+	
+	.dg-beyond__sub {
+		margin: 0 0 clamp(20px, 3vw, 28px); font-size: clamp(1rem, 1.4vw, 1.15rem); font-weight: 600; line-height: 1.5; letter-spacing: -0.02em; word-break: keep-all;
+	}
+	
+	.dg-beyond__desc {
+		margin: 0 0 20px; color: var(--soft); font-size: clamp(0.95rem, 1.2vw, 1rem); line-height: 1.65; word-break: keep-all;
+	}
+	
+	.dg-beyond__desc:last-child {
+		margin-bottom: 0;
+	}
+	
+	.dg-beyond__media {
+		line-height: 0;
+	}
+	
+	.dg-beyond__media img {
+		display: block; width: 100%; height: auto; object-fit: cover;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-beyond__inner {
+			grid-template-columns: 1fr 1fr;
+		}
+		.dg-beyond__text {
+			padding-right: clamp(10px, 3vw, 40px);
+		}
+	}
+
+</style>
+
+<section class="dg-beyond">
+	<div class="dg-beyond__inner">
+		<div class="dg-beyond__text">
+
+			<h2 class="dg-beyond__title">Beyond
+				<br>Caffeine</h2>
+
+			<p class="dg-beyond__sub">
+				억지로 깨우는 각성이 아닌, —
+				<br> 스스로 깨어나는 '차분한 활력'
+			</p>
+
+			<p class="dg-beyond__desc">
+				오후 3시의 멍함을 쫓으려 또 다시 고카페인 음료나 커피를 찾고 있진 않나요? 심장만 두근거리는 일시적인 각성은 곧 더 깊은 방전을 가져옵니다.
+			</p>
+
+			<p class="dg-beyond__desc">
+				씨씨샷은 마법의 약이 아닙니다. 불안감과 긴장은 걷어내고, 온전히 당신의 생산적인 일에만 몰두할 수 있도록 설계된 가장 진보된 방식의 브레인 웰니스 리추얼입니다.
+			</p>
+		</div>
+
+		<div class="dg-beyond__media">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/hero_right.jpg" alt="Beyond Caffeine - 42degree" loading="lazy">
+		</div>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Focus on, Distress off" 4단 그리드 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 4단 그리드 / 모바일: 2단 그리드
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-focus {
+		--ink: #161413; --soft: #6b6f6d; --badge-bg: #634bf9;/* 배지 퍼플 컬러 */
+		background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-focus,
+	.dg-focus * {
+		box-sizing: border-box;
+	}
+	
+	.dg-focus__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+	/* 헤더 영역 (타이틀 + 배지) */
+	
+	.dg-focus__header {
+		display: flex; flex-direction: column; gap: clamp(20px, 4vw, 32px); margin-bottom: clamp(32px, 6vw, 56px);
+	}
+	
+	.dg-focus__title {
+		margin: 0; font-size: clamp(2.6rem, 5.5vw, 4.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.04em;
+	}
+	
+	.dg-focus__badges {
+		display: flex; flex-wrap: wrap; gap: 8px;
+	}
+	
+	.dg-focus__badge {
+		display: inline-flex; align-items: center; justify-content: center; background-color: var(--badge-bg); color: #fff; font-size: clamp(0.75rem, 1.1vw, 0.9rem); font-weight: 500; padding: 6px 14px; border-radius: 999px;/* 알약 형태 */
+		letter-spacing: -0.02em;
+	}
+	/* 4단 그리드 영역 */
+	
+	.dg-focus__grid {
+		display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(16px, 3vw, 24px);
+	}
+	
+	.dg-focus__card {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-focus__media {
+		width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background-color: #f9f9f9;/* 배경이 투명한 이미지를 위한 여백 처리 */
+	}
+	
+	.dg-focus__media img {
+		display: block; width: 100%; height: 100%; object-fit: cover;
+	}
+	
+	.dg-focus__text {
+		padding-top: clamp(16px, 2vw, 20px);
+	}
+	
+	.dg-focus__name {
+		margin: 0 0 6px; font-size: clamp(0.95rem, 1.3vw, 1.1rem); font-weight: 500; color: var(--ink); letter-spacing: -0.02em;
+	}
+	
+	.dg-focus__desc {
+		margin: 0; font-size: clamp(0.85rem, 1.1vw, 0.95rem); color: var(--soft); word-break: keep-all; line-height: 1.4;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-focus__header {
+			flex-direction: row; align-items: center; justify-content: space-between;
+		}
+		.dg-focus__badges {
+			max-width: 320px;/* PC에서 배지가 2줄로 자연스럽게 떨어지도록 넓이 제한 */
+			justify-content: flex-end;
+		}
+		.dg-focus__grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+</style>
+
+<section class="dg-focus">
+	<div class="dg-focus__inner">
+
+		<!-- 헤더 -->
+		<div class="dg-focus__header">
+
+			<h2 class="dg-focus__title">Focus on, Distress off</h2>
+			<div class="dg-focus__badges">
+				<span class="dg-focus__badge">무가당</span>
+				<span class="dg-focus__badge">무화학부형제</span>
+				<span class="dg-focus__badge">15KCAL</span>
+				<span class="dg-focus__badge">무카페인</span>
+				<span class="dg-focus__badge">무지방</span>
+				<span class="dg-focus__badge">HACCP 인증</span>
+			</div>
+		</div>
+
+		<!-- 그리드 -->
+		<div class="dg-focus__grid">
+			<!-- 1 -->
+			<div class="dg-focus__card">
+				<div class="dg-focus__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png" alt="100% Caffeine-Free" loading="lazy">
+				</div>
+				<div class="dg-focus__text">
+
+					<h3 class="dg-focus__name">100% Caffeine-Free</h3>
+
+					<p class="dg-focus__desc">카페인 크래시 제로</p>
+				</div>
+			</div>
+			<!-- 2 -->
+			<div class="dg-focus__card">
+				<div class="dg-focus__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png" alt="Premium Sourcing" loading="lazy">
+				</div>
+				<div class="dg-focus__text">
+
+					<h3 class="dg-focus__name">Premium Sourcing</h3>
+
+					<p class="dg-focus__desc">타협 없는 글로벌 원료</p>
+				</div>
+			</div>
+			<!-- 3 -->
+			<div class="dg-focus__card">
+				<div class="dg-focus__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/wadiz.jpg" alt="500% Validated" loading="lazy">
+				</div>
+				<div class="dg-focus__text">
+
+					<h3 class="dg-focus__name">500% Validated</h3>
+
+					<p class="dg-focus__desc">트렌드세터들의 증명</p>
+				</div>
+			</div>
+			<!-- 4 -->
+			<div class="dg-focus__card">
+				<div class="dg-focus__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A5%E1%84%86%E1%85%B5.jpg" alt="Brain Food" loading="lazy">
+				</div>
+				<div class="dg-focus__text">
+
+					<h3 class="dg-focus__name">Brain Food</h3>
+
+					<p class="dg-focus__desc">뇌과학 기반 포뮬러</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Premium Sourcing" 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 2단 분할 (좌측 이미지, 우측 텍스트) / 모바일: 세로 스택
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-sourcing {
+		--ink: #161413; --soft: #4a4d4b; background-color: #ffffff;/* 화보 느낌의 아주 옅은 그레이 배경 */
+		font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-sourcing,
+	.dg-sourcing * {
+		box-sizing: border-box;
+	}
+	
+	.dg-sourcing__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;
+	}
+	
+	.dg-sourcing__media {
+		line-height: 0;
+	}
+	
+	.dg-sourcing__media img {
+		display: block; width: 100%; height: auto; object-fit: cover;
+	}
+	
+	.dg-sourcing__text {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-sourcing__label {
+		margin: 0 0 clamp(20px, 3vw, 32px); font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 400; letter-spacing: -0.03em;
+	}
+	
+	.dg-sourcing__title {
+		margin: 0; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 400; line-height: 1.25; letter-spacing: -0.04em;
+	}
+	
+	.dg-sourcing__desc-box {
+		margin-top: clamp(40px, 6vw, 60px); padding-left: clamp(20px, 8vw, 140px);/* 텍스트 들여쓰기로 에디토리얼 레이아웃 구현 */
+	}
+	
+	.dg-sourcing__question {
+		margin: 0 0 20px; font-size: clamp(0.95rem, 1.3vw, 1.05rem); font-weight: 500; line-height: 1.5; letter-spacing: -0.02em;
+	}
+	
+	.dg-sourcing__answer {
+		margin: 0; font-size: clamp(0.85rem, 1.1vw, 0.95rem); line-height: 1.65; color: var(--ink); letter-spacing: -0.02em;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-sourcing__inner {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+</style>
+
+<section class="dg-sourcing">
+	<div class="dg-sourcing__inner">
+
+		<div class="dg-sourcing__media">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp19.png" alt="Premium Sourcing - 시트러스 원료" loading="lazy">
+		</div>
+
+		<div class="dg-sourcing__text">
+
+			<p class="dg-sourcing__label">Premium Sourcing</p>
+
+			<h2 class="dg-sourcing__title">
+				정교하게 설계된
+				<br>시트러스 콰텟 레이어.
+				<br>
+				<br> 전 세계에서 길어 올린
+				<br>타협 없는 원료 —
+			</h2>
+
+			<div class="dg-sourcing__desc-box">
+
+				<p class="dg-sourcing__question">
+					왜 네 가지 시트러스를
+					<br>레이어링했을까요? —
+				</p>
+
+				<p class="dg-sourcing__answer">
+					단순한 고함량 당류로는 고급스러운 리프
+					<br> 레시를 만들 수 없습니다.
+					<br> 설탕의 텁텁함은 완벽히 걷어내고,
+					<br> 첫맛의 청량함부터 숨을 내쉴 때의
+					<br> 우아한 아로마까지, 오후 3시의 감각을
+					<br> 가장 세련되게 깨우는 42° DEGREE만의
+					<br> 미각적 로직입니다.
+				</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "What's Inside Matters" 4단 그리드 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 4단 / 모바일: 2단
+     ▸ 이미지 비율 1:1 강제 크롭 적용
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap'); .dg-inside {
+		--ink: #111; --soft: #666; --title-color: #574e68;/* 은은한 퍼플그레이 */
+		background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-inside,
+	.dg-inside * {
+		box-sizing: border-box;
+	}
+	
+	.dg-inside__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+	/* 헤더 영역 */
+	
+	.dg-inside__header {
+		display: flex; flex-direction: column; align-items: flex-start; gap: clamp(16px, 3vw, 24px);
+	}
+	
+	.dg-inside__title {
+		margin: 0; font-size: clamp(3.2rem, 6.5vw, 5.2rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em;
+	}
+	
+	.dg-inside__list {
+		margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;
+	}
+	
+	.dg-inside__list li {
+		position: relative; padding-left: 16px; font-size: clamp(0.95rem, 1.3vw, 1.1rem); font-weight: 500; color: var(--ink); letter-spacing: -0.02em;
+	}
+	
+	.dg-inside__list li::before {
+		content: ""; position: absolute; left: 0; top: 0.45em; width: 6px; height: 6px; border-radius: 50%; background-color: var(--ink);
+	}
+	/* 4단 그리드 영역 */
+	
+	.dg-inside__grid {
+		display: grid; grid-template-columns: repeat(2, 1fr);/* 모바일에서는 2단 */
+		gap: clamp(20px, 4vw, 32px); margin-top: clamp(40px, 6vw, 64px);
+	}
+	
+	.dg-inside__card {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-inside__media {
+		width: 100%; aspect-ratio: 1 / 1;/* 가로세로 1:1 강제 비율 */
+		overflow: hidden; margin-bottom: clamp(16px, 2.5vw, 20px); background-color: #f4f4f4;
+	}
+	
+	.dg-inside__media img {
+		display: block; width: 100%; height: 100%; object-fit: cover;/* 이미지가 찌그러지지 않고 영역에 꽉 차도록 강제 크롭 */
+	}
+	
+	.dg-inside__name {
+		margin: 0 0 10px; font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.15rem, 1.6vw, 1.35rem); font-weight: 500; color: var(--title-color); line-height: 1.25; word-break: keep-all;
+	}
+	
+	.dg-inside__desc {
+		margin: 0; font-size: clamp(0.85rem, 1.1vw, 0.95rem); color: var(--soft); line-height: 1.6; word-break: keep-all;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-inside__header {
+			flex-direction: row; align-items: center; gap: clamp(32px, 5vw, 48px);
+		}
+		.dg-inside__grid {
+			grid-template-columns: repeat(4, 1fr);/* PC에서는 4단 */
+		}
+	}
+
+</style>
+
+<section class="dg-inside">
+	<div class="dg-inside__inner">
+
+		<div class="dg-inside__header">
+
+			<h2 class="dg-inside__title">What's Inside
+				<br>Matters</h2>
+
+			<ul class="dg-inside__list">
+				<li>정교하게 레이어링된 네 가지 감각</li>
+				<li>이토록 맛있는 stress care</li>
+			</ul>
+		</div>
+
+		<div class="dg-inside__grid">
+			<!-- 1 -->
+			<div class="dg-inside__card">
+				<div class="dg-inside__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="mandarin JEJU, KOREA" loading="lazy">
+				</div>
+
+				<h3 class="dg-inside__name">mandarin JEJU,
+					<br>KOREA</h3>
+
+				<p class="dg-inside__desc">자연스러운 단맛의 터치. 인위적인 설탕 없이도 입안에 부드럽고 싱그러운 시트러스 맛만 남겨줍니다.</p>
+			</div>
+
+			<!-- 2 -->
+			<div class="dg-inside__card">
+				<div class="dg-inside__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png" alt="lime - ISRAEL" loading="lazy">
+				</div>
+
+				<h3 class="dg-inside__name">lime - ISRAEL</h3>
+
+				<p class="dg-inside__desc">감각을 깨우는 날카롭고 신선한 에너지. 끈적임 없는 클린한 끝맛을 완성합니다.</p>
+			</div>
+
+			<!-- 3 -->
+			<div class="dg-inside__card">
+				<div class="dg-inside__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png" alt="ITALY- bergamot" loading="lazy">
+				</div>
+
+				<h3 class="dg-inside__name">ITALY- bergamot</h3>
+
+				<p class="dg-inside__desc">고급 홍차의 아로마를 완성하는 귀한 시트러스. 마시는 순간 코끝으로 전해지는 우아한 풍미를 담당합니다.</p>
+			</div>
+
+			<!-- 4 -->
+			<div class="dg-inside__card">
+				<div class="dg-inside__media">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp13.png" alt="lemon- ISRAEL" loading="lazy">
+				</div>
+
+				<h3 class="dg-inside__name">lemon- ISRAEL</h3>
+
+				<p class="dg-inside__desc">맑고 깨끗한 산미의 베이스. 인공적인 단맛을 덜어내고 입안 가득 청량한 첫인상을 남깁니다.</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "A perfect 5-star rating" 리얼 피드백 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 3단 스태거(계단식) 그리드 / 모바일: 세로 스택
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap'); .dg-review {
+		--ink: #161413; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
+		/* 전달주신 배경 이미지를 섹션 전체 백그라운드로 설정 */
+		background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp14.png'); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: clamp(24px, 4vw, 40px); padding-bottom: clamp(80px, 12vw, 160px);
+	}
+	
+	.dg-review,
+	.dg-review * {
+		box-sizing: border-box;
+	}
+	
+	.dg-review__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+	/* 상단 노티스 텍스트 */
+	
+	.dg-review__notice {
+		font-size: clamp(0.7rem, 1vw, 0.8rem); color: #111; margin-bottom: clamp(40px, 6vw, 80px);
+	}
+	/* 우측 정렬된 헤더 (별점 및 타이틀) */
+	
+	.dg-review__header {
+		text-align: right; margin-bottom: clamp(40px, 8vw, 80px);
+	}
+	
+	.dg-review__stars {
+		color: #c5de69;/* 타겟 이미지의 옐로우그린 컬러 */
+		font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: 4px; margin-bottom: 12px;
+	}
+	
+	.dg-review__title {
+		margin: 0 0 12px; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 400; letter-spacing: -0.04em; color: #111; line-height: 1.1;
+	}
+	
+	.dg-review__title-serif {
+		font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -0.02em;
+	}
+	
+	.dg-review__sub {
+		margin: 0; font-size: clamp(0.95rem, 1.4vw, 1.25rem); color: #fff; font-weight: 500; letter-spacing: -0.02em; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);/* 흰색 텍스트 시인성 확보 */
+	}
+	/* 3단 리뷰 카드 그리드 */
+	
+	.dg-review__grid {
+		display: grid; grid-template-columns: 1fr; gap: clamp(20px, 4vw, 32px);
+	}
+	
+	.dg-review__card {
+		background-color: #fff; padding: clamp(32px, 5vw, 48px) clamp(24px, 4vw, 40px); display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+	}
+	
+	.dg-review__quote {
+		margin: 0 0 24px; font-size: clamp(1.05rem, 1.4vw, 1.2rem); font-weight: 700; line-height: 1.45; word-break: keep-all;
+	}
+	
+	.dg-review__body {
+		margin: 0 0 32px; font-size: clamp(0.9rem, 1.1vw, 0.95rem); color: #333; line-height: 1.65; word-break: keep-all;
+	}
+	
+	.dg-review__author {
+		margin-top: auto; font-size: clamp(0.8rem, 1vw, 0.85rem); color: #666; letter-spacing: -0.02em;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-review__grid {
+			grid-template-columns: repeat(3, 1fr); align-items: start;
+		}
+		/* PC 환경에서 계단식(Staggered) 레이아웃 적용 */
+		.dg-review__card--2 {
+			margin-top: 60px;
+		}
+		.dg-review__card--3 {
+			margin-top: 120px;
+		}
+	}
+
+</style>
+
+<section class="dg-review">
+	<div class="dg-review__inner">
+
+		<div class="dg-review__notice">
+			본 후기는 실제 제품을 체험한 후 작성한 주관적인 후기입니다 (25.12~26.04)
+		</div>
+
+		<div class="dg-review__header">
+			<div class="dg-review__stars">★★★★★</div>
+
+			<h2 class="dg-review__title"><span class="dg-review__title-serif">A perfect</span> 5-star rating</h2>
+
+			<p class="dg-review__sub">정신적인 명료함을 찾는 프로들의 리얼 피드백</p>
+		</div>
+
+		<div class="dg-review__grid">
+			<!-- 리뷰 1 -->
+			<div class="dg-review__card dg-review__card--1">
+
+				<p class="dg-review__quote">"스트레스 케어와 몰입이 동
+					<br>시에 가능하단 게 놀라워요."</p>
+
+				<p class="dg-review__body">중요한 미팅이나 발표 전, 긴장감을 가라앉히는 완벽한 대안을 찾았습니다. 기존의 무겁고 부담스러운 각성제들과 달리, 이제 가방 속에 늘 넣어 다니는 나만의 필수 멘탈 관리 템이 될 것 같아요.</p>
+
+				<p class="dg-review__author">—글로벌 스포츠 브랜드 선임 | 정*훈</p>
+			</div>
+
+			<!-- 리뷰 2 -->
+			<div class="dg-review__card dg-review__card--2">
+
+				<p class="dg-review__quote">"맛있게 챙기는 스트레스 케어,
+					<br>고정관념을 깨네요."</p>
+
+				<p class="dg-review__body">처음엔 상큼한 오렌지 주스 맛 덕분에 가볍게 마셨는데, 마실수록 오후의 무겁고 멍한 기분이 맑아지는 게 느껴져요. 늦은 시간까지 지치지 않고 선명함을 유지하도록 도와줍니다.</p>
+
+				<p class="dg-review__author">—F&amp;B(외식업) 대표 | 김*우</p>
+			</div>
+
+			<!-- 리뷰 3 -->
+			<div class="dg-review__card dg-review__card--3">
+
+				<p class="dg-review__quote">"고강도 업무 속에서도
+					<br>놓칠 수 없는 자기관리"</p>
+
+				<p class="dg-review__body">상큼한 시트러스 향이 나른한 정신을 확실하게 깨워줍니다. 특히 패키지 디자인이 워낙 고급스럽고 세련되어서, 미팅룸이나 사무실 책상에 두면 어디 제품이냐는 질문을 가장 많이 받아요.</p>
+
+				<p class="dg-review__author">—외국계 컨설턴트 | 이*규</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Focus On Your Passion" 아웃트로 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ 배경 이미지 위에 텍스트가 얹혀지는 반응형 커버 레이아웃
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); .dg-outro {
+		--ink: #111; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); background-color: #fcfcfc; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp15.png'); background-repeat: no-repeat; background-position: center right; background-size: cover; min-height: clamp(480px, 55vw, 800px); display: flex; align-items: center; padding-block: clamp(60px, 8vw, 100px);
+	}
+	
+	.dg-outro,
+	.dg-outro * {
+		box-sizing: border-box;
+	}
+	
+	.dg-outro__inner {
+		width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+	
+	.dg-outro__title {
+		margin: 0 0 clamp(20px, 4vw, 32px); font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 400; line-height: 1.15; letter-spacing: -0.04em;
+	}
+	
+	.dg-outro__desc {
+		margin: 0 0 clamp(50px, 10vw, 120px); font-size: clamp(0.9rem, 1.2vw, 1.05rem); line-height: 1.6; letter-spacing: -0.02em; word-break: keep-all;
+	}
+	
+	.dg-outro__slogan {
+		margin: 0; font-size: clamp(1.4rem, 2.5vw, 2.2rem); font-weight: 400; letter-spacing: -0.02em;
+	}
+	
+	@media (max-width: 767px) {
+		.dg-outro {
+			/* 모바일에서는 음식 이미지가 텍스트에 가려지지 않도록 배경 위치 및 정렬 조정 */
+			background-position: 70% bottom; align-items: flex-start; padding-top: 80px;
+		}
+	}
+
+</style>
+
+<section class="dg-outro">
+	<div class="dg-outro__inner">
+
+		<h2 class="dg-outro__title">준비되셨나요?
+			<br>당신의 스위치를 켜세요.</h2>
+
+		<p class="dg-outro__desc">
+			어려운 단어는 잊으세요.
+			<br> 그저 하루 한 포, 당신의 일상에 스트레스 케어와 몰입을 위해.
+			<br> 42degree가 함께합니다.
+		</p>
+
+		<p class="dg-outro__slogan">: Focus On Your Passion</p>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Our story" 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ PC: 2단 분할 (좌측 이미지, 우측 텍스트) / 모바일: 세로 스택
+     ============================================================ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap'); .dg-story {
+		--ink: #161413; --soft: #333; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
+	}
+	
+	.dg-story,
+	.dg-story * {
+		box-sizing: border-box;
+	}
+	
+	.dg-story__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;
+	}
+	
+	.dg-story__media {
+		line-height: 0;
+	}
+	
+	.dg-story__media img {
+		display: block; width: 100%; height: auto; object-fit: cover;
+	}
+	
+	.dg-story__content {
+		display: flex; flex-direction: column;
+	}
+	
+	.dg-story__title {
+		margin: 0 0 clamp(8px, 1.5vw, 16px); font-size: clamp(3.4rem, 6vw, 4.8rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.04em;
+	}
+	
+	.dg-story__title-serif {
+		font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 400;
+	}
+	
+	.dg-story__sub {
+		margin: 0 0 clamp(24px, 4vw, 40px); font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 400; letter-spacing: -0.04em;
+	}
+	
+	.dg-story__body {
+		display: flex; flex-direction: column; gap: clamp(16px, 2.5vw, 24px); margin-bottom: clamp(32px, 5vw, 56px);
+	}
+	
+	.dg-story__desc {
+		margin: 0; font-size: clamp(0.9rem, 1.2vw, 1rem); color: var(--soft); line-height: 1.65; word-break: keep-all;
+	}
+	
+	.dg-story__actions {
+		display: flex; flex-wrap: wrap; gap: 12px;
+	}
+	
+	.dg-story__btn {
+		display: inline-flex; align-items: center; justify-content: center; height: 54px; padding: 0 24px; font-size: clamp(0.85rem, 1.1vw, 0.95rem); font-weight: 600; text-decoration: none; transition: opacity 0.2s; cursor: pointer;
+	}
+	
+	.dg-story__btn:hover {
+		opacity: 0.8;
+	}
+	
+	.dg-story__btn--primary {
+		background-color: var(--ink); color: #fff; flex: 1 1 140px;
+	}
+	
+	.dg-story__btn--secondary {
+		background-color: #fff; color: #555; border: 1px solid #ccc; flex: 2 1 200px; gap: 10px;
+	}
+	
+	.dg-story__btn--secondary span {
+		font-family: "Playfair Display", Georgia, serif; font-size: clamp(0.8rem, 1vw, 0.9rem); font-weight: 400;
+	}
+	
+	.dg-story__icon {
+		width: 18px; height: 18px; fill: none; stroke: #c13584;/* 인스타그램 그라데이션 포인트 컬러 */
+		stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+	}
+	
+	@media (min-width: 768px) {
+		.dg-story__inner {
+			grid-template-columns: 1fr 1fr;
+		}
+		.dg-story__actions {
+			flex-wrap: nowrap;
+		}
+	}
+
+</style>
+
+<section class="dg-story">
+	<div class="dg-story__inner">
+
+		<div class="dg-story__media">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study.jpg" alt="Our story - 42degree" loading="lazy">
+		</div>
+
+		<div class="dg-story__content">
+
+			<h2 class="dg-story__title">Our <span class="dg-story__title-serif">story</span></h2>
+
+			<p class="dg-story__sub">: Focus On Your Passion</p>
+
+			<div class="dg-story__body">
+
+				<p class="dg-story__desc">
+					우리는 믿고 있습니다.
+					<br> 진정한 안티에이징과 건강의 본질은 결국 나의 '정신'과
+					<br> '내면'을 능동적으로 다스리는 데 있다는 것을요.
+				</p>
+
+				<p class="dg-story__desc">
+					이 움직임에 공감하는 당신은, 내 삶의 속도를 스스로 조
+					<br> 절할 줄 알고, 가장 선명해야 할 순간을 주도적으로 선택
+					<br> 하는 진짜 능동적인 관리를 시작하게 될 것입니다.
+				</p>
+
+				<p class="dg-story__desc">
+					스트레스로부터 나를 보호하고, 온전한 내 삶에 몰입해보
+					<br> 세요. 숫자나 유행은 중요하지 않습니다.
+					<br> 나를 돌보는 리추얼의 힘을 믿고, 이 감각적인 여정에 기
+					<br> 꺼이 동참할 당신.
+				</p>
+
+				<p class="dg-story__desc">
+					42° DEGREE의 첫 번째 브레인 웰니스 리추얼에
+					<br> 지금 조인하세요.
+				</p>
+			</div>
+
+			<div class="dg-story__actions">
+				<!-- 임시 링크 처리 (회원가입 페이지 연결용) -->
+				<a class="dg-story__btn dg-story__btn--primary" href="https://42degree.co.kr/member/agreement.html">회원 가입</a>
+
+				<!-- 임시 링크 처리 (SNS 연결용) -->
+				<a class="dg-story__btn dg-story__btn--secondary" href="https://www.instagram.com/42degree.official/">
+					<svg viewBox="0 0 24 24" class="dg-story__icon">
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+					</svg>
+					<span>Follow us on social media</span>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</section>
