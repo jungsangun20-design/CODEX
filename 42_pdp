@@ -688,14 +688,51 @@
 			margin-top: 120px;
 		}
 	} .dg-details {
-		--ink: #161413; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 90px);
+		--ink: #161413; --soft: #5f6361; --accent: #5d3df5; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 90px);
 	}
 .dg-details__inner {
-		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(36px, 6vw, 72px); align-items: center;
+	}
+
+	.dg-details__title {
+		margin: 0; font-size: clamp(2rem, 4.2vw, 3.4rem); font-weight: 500; line-height: 1.18; letter-spacing: -0.06em; word-break: keep-all;
+	}
+
+	.dg-details__subtitle {
+		margin: clamp(20px, 3vw, 32px) 0 0; font-size: clamp(1.35rem, 2.6vw, 2.2rem); font-weight: 400; line-height: 1.35; letter-spacing: -0.05em; word-break: keep-all;
+	}
+
+	.dg-details__list {
+		list-style: none; margin: clamp(56px, 8vw, 110px) 0 0; padding: 0; display: flex; flex-direction: column; gap: clamp(14px, 2vw, 22px);
+	}
+
+	.dg-details__item {
+		display: grid; grid-template-columns: auto auto 1fr; gap: 12px; align-items: center; color: var(--soft); font-size: clamp(0.95rem, 1.5vw, 1.2rem); line-height: 1.35; word-break: keep-all;
+	}
+
+	.dg-details__ico {
+		width: 24px; height: 24px; border-radius: 50%; background: #000; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 19px; line-height: 1; font-weight: 700;
+	}
+
+	.dg-details__label {
+		display: inline-flex; align-items: center; min-height: 28px; padding: 0 10px; border-radius: 999px; background: var(--accent); color: #fff; font-size: clamp(0.85rem, 1.2vw, 1rem); font-weight: 700; white-space: nowrap;
+	}
+
+	.dg-details__media {
+		display: flex; justify-content: center;
 	}
 
 	.dg-details__img {
-		display: block !important; width: 100% !important; max-width: none !important; height: auto !important;
+		display: block !important; width: min(100%, 320px) !important; max-width: 320px !important; height: auto !important;
+	}
+
+	@media (min-width: 768px) {
+		.dg-details__inner {
+			grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
+		}
+		.dg-details__media {
+			justify-content: center;
+		}
 	}
 
 	.dg-guide {
@@ -1410,11 +1447,25 @@
 <!-- ============================================================
      42degree PDP · "꼼꼼히 따져보세요" 상세/영양정보 섹션
      ▸ 상세설명 영역에 붙여넣기
-     ▸ 단일 이미지 정보 섹션
+     ▸ 텍스트 + 영양정보 이미지 2단 섹션
      ============================================================ -->
 <section class="dg-details">
 	<div class="dg-details__inner">
-		<img class="dg-details__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png" alt="꼼꼼히 따져보세요. 매일 먹어도 부담 없는 설계와 영양정보" loading="lazy" width="1200" height="720" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png 1200w" sizes="(min-width: 768px) 1000px, 100vw">
+		<div class="dg-details__content">
+			<h2 class="dg-details__title">꼼꼼히 따져보세요.</h2>
+			<p class="dg-details__subtitle">— 매일 먹어도 부담 없는 설계.</p>
+
+			<ul class="dg-details__list">
+				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">식품의 유형</span><span>일반식품(혼합음료)</span></li>
+				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">소비기한</span><span>생산일로부터 18개월</span></li>
+				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">보관방법</span><span>고온, 직사광선을 피해 서늘한 곳에 보관</span></li>
+				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">제품구성</span><span>포티투디그리 씨씨샷 1박스 : 14포 구성<br>(하루 한 포에서 두 포, 2주 섭취 가능)</span></li>
+			</ul>
+		</div>
+
+		<div class="dg-details__media">
+			<img class="dg-details__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png" alt="42degree C.C. Shot 영양정보" loading="lazy" width="640" height="940" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png 640w" sizes="(min-width: 768px) 320px, 80vw">
+		</div>
 	</div>
 </section>
 <!-- ============================================================
