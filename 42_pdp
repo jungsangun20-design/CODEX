@@ -39,7 +39,7 @@
 	}
 	
 	.dg-switch__img {
-		display: block; width: 100%; height: auto; border-radius: clamp(16px, 2.5vw, 24px);
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; border-radius: clamp(16px, 2.5vw, 24px);
 	}
 	
 	@media (min-width:768px) {
@@ -133,7 +133,7 @@
 	}
 	
 	.dg-rec__media img {
-		display: block; width: 100%; height: auto;
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important;
 	}
 	
 	.dg-rec__title {
@@ -253,7 +253,7 @@
 	}
 	
 	.dg-intro__media img {
-		display: block; width: 100%; height: auto; border-radius: clamp(16px, 2.5vw, 24px); object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; border-radius: clamp(16px, 2.5vw, 24px); object-fit: cover;
 	}
 	
 	@media (min-width: 768px) {
@@ -366,7 +366,7 @@
 	}
 	
 	.dg-power__cell--img img {
-		display: block; width: 100%; height: 100%; object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: 100% !important; object-fit: cover !important;
 	}
 	
 	.dg-power__cell--text {
@@ -378,7 +378,7 @@
 	}
 	
 	.dg-power__cell--logo img {
-		display: block; width: 100%; max-width: clamp(140px, 20vw, 220px); height: auto;
+		display: block !important; width: 100% !important; max-width: clamp(140px, 20vw, 220px) !important; height: auto !important;
 	}
 	/* 텍스트 타이포그래피 */
 	
@@ -436,7 +436,7 @@
 	}
 	
 	.dg-beyond__media img {
-		display: block; width: 100%; height: auto; object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; object-fit: cover !important;
 	}
 	
 	@media (min-width: 768px) {
@@ -486,7 +486,7 @@
 	}
 	
 	.dg-focus__media img {
-		display: block; width: 100%; height: 100%; object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: 100% !important; object-fit: cover !important;
 	}
 	
 	.dg-focus__text {
@@ -525,7 +525,7 @@
 	}
 	
 	.dg-sourcing__media img {
-		display: block; width: 100%; height: auto; object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; object-fit: cover !important;
 	}
 	
 	.dg-sourcing__text {
@@ -723,7 +723,7 @@
 	}
 	
 	.dg-story__media img {
-		display: block; width: 100%; height: auto; object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; object-fit: cover !important;
 	}
 	
 	.dg-story__content {
@@ -1105,7 +1105,7 @@
 	</div>
 </section>
 <!-- ============================================================
-     42degree PDP · "Focus on, Distress off" 4단 그리드 섹션
+     42degree PDP · "Focus on, Stress off" 4단 그리드 섹션
      ▸ 상세설명 영역에 붙여넣기
      ▸ PC: 4단 그리드 / 모바일: 2단 그리드
      ============================================================ -->
@@ -1115,7 +1115,7 @@
 		<!-- 헤더 -->
 		<div class="dg-focus__header">
 
-			<h2 class="dg-focus__title">Focus on, Distress off</h2>
+			<h2 class="dg-focus__title">Focus on, Stress off</h2>
 			<div class="dg-focus__badges">
 				<span class="dg-focus__badge">무가당</span>
 				<span class="dg-focus__badge">무화학부형제</span>
@@ -1131,7 +1131,7 @@
 			<!-- 1 -->
 			<div class="dg-focus__card">
 				<div class="dg-focus__media">
-					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png" alt="100% Caffeine-Free" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png" alt="100% Caffeine-Free" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 				<div class="dg-focus__text">
 
