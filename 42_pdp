@@ -296,11 +296,11 @@
 	}
 	
 	.dg-formula__card--overlay {
-		position: relative; overflow: hidden; border-radius: clamp(16px, 2.5vw, 24px); aspect-ratio: 1 / 1.15; padding: clamp(24px, 4vw, 36px); justify-content: flex-end; color: #fff;
+		position: relative; isolation: isolate; overflow: hidden; border-radius: clamp(16px, 2.5vw, 24px); aspect-ratio: 1 / 1.15; min-height: clamp(420px, 48vw, 620px); padding: clamp(24px, 4vw, 36px); justify-content: flex-end; color: #fff; background-color: #161413;
 	}
 	
 	.dg-formula__card--overlay img {
-		position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+		position: absolute !important; inset: 0 !important; display: block !important; width: 100% !important; max-width: none !important; height: 100% !important; object-fit: cover !important; z-index: 1;
 	}
 	
 	.dg-formula__card--overlay .dg-formula__text {
@@ -308,11 +308,11 @@
 	}
 	
 	.dg-formula__card--stacked .dg-formula__media {
-		border-radius: clamp(16px, 2.5vw, 24px); overflow: hidden; line-height: 0;
+		aspect-ratio: 16 / 10; border-radius: clamp(16px, 2.5vw, 24px); overflow: hidden; line-height: 0;
 	}
 	
 	.dg-formula__card--stacked img {
-		display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: 100% !important; object-fit: cover !important;
 	}
 	
 	.dg-formula__card--stacked .dg-formula__text {
