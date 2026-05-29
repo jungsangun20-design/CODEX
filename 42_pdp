@@ -653,7 +653,7 @@
 	}
 	
 	.dg-review__card {
-		background-color: #fff; padding: clamp(32px, 5vw, 48px) clamp(24px, 4vw, 40px); display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+		background-color: #fff; margin: 0; padding: clamp(32px, 5vw, 48px) clamp(24px, 4vw, 40px); display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
 	}
 	
 	.dg-review__quote {
