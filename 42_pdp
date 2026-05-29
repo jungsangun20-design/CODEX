@@ -620,9 +620,9 @@
 			grid-template-columns: repeat(4, 1fr);/* PC에서는 4단 */
 		}
 	} .dg-review {
-		--ink: #161413; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
+		--ink: #161413; box-sizing: border-box; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
 		/* 전달주신 배경 이미지를 섹션 전체 백그라운드로 설정 */
-		background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp14.png'); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: clamp(24px, 4vw, 40px); padding-bottom: clamp(80px, 12vw, 160px);
+		max-width: 1200px; margin: 0 auto; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp14.png'); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: clamp(24px, 4vw, 40px); padding-bottom: clamp(80px, 12vw, 160px);
 	}
 .dg-review__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
@@ -687,8 +687,72 @@
 		.dg-review__card--3 {
 			margin-top: 120px;
 		}
-	} .dg-outro {
-		--ink: #111; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); background-color: #fcfcfc; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp15.png'); background-repeat: no-repeat; background-position: center right; background-size: cover; min-height: clamp(480px, 55vw, 800px); display: flex; align-items: center; padding-block: clamp(60px, 8vw, 100px);
+	} .dg-details {
+		--ink: #161413; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 90px);
+	}
+.dg-details__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+
+	.dg-details__img {
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important;
+	}
+
+	.dg-guide {
+		--ink: #111; --soft: #333; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(56px, 8vw, 100px);
+	}
+.dg-guide__inner {
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
+	}
+
+	.dg-guide__title {
+		margin: 0 0 clamp(28px, 5vw, 44px); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.06em;
+	}
+
+	.dg-guide__body {
+		display: flex; flex-direction: column; gap: clamp(28px, 5vw, 44px);
+	}
+
+	.dg-guide__block {
+		display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: start;
+	}
+
+	.dg-guide__icon {
+		width: 24px; height: 24px; margin-top: 2px; border-radius: 50%; background: #000; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 19px; line-height: 1; font-weight: 700;
+	}
+
+	.dg-guide__heading {
+		margin: 0 0 12px; font-size: clamp(1rem, 1.5vw, 1.15rem); font-weight: 800; line-height: 1.35; letter-spacing: -0.03em;
+	}
+
+	.dg-guide__list {
+		margin: 0; padding-left: 1.2em; color: var(--ink); font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.45; word-break: keep-all;
+	}
+
+	.dg-guide__list ul {
+		margin: 0; padding-left: 1.2em;
+	}
+
+	.dg-guide__list li + li {
+		margin-top: 12px;
+	}
+
+	.dg-guide__list li li {
+		margin-top: 0;
+	}
+
+	.dg-guide__subhead {
+		font-weight: 700;
+	}
+
+	@media (min-width: 768px) {
+		.dg-guide__inner {
+			max-width: 1080px;
+		}
+	}
+
+	.dg-outro {
+		--ink: #111; box-sizing: border-box; max-width: 1200px; margin: 0 auto; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); background-color: #fcfcfc; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp15.png'); background-repeat: no-repeat; background-position: center right; background-size: cover; min-height: clamp(480px, 55vw, 800px); display: flex; align-items: center; padding-block: clamp(60px, 8vw, 100px);
 	}
 .dg-outro__inner {
 		width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
@@ -1198,7 +1262,7 @@
 
 			<h2 class="dg-sourcing__title">
 				정교하게 설계된
-				<br>시트러스 콰텟 레이어.
+				<br>시트러스 쿼텟 레이어.
 				<br>
 				<br> 전 세계에서 길어 올린
 				<br>타협 없는 원료 —
@@ -1344,6 +1408,16 @@
 	</div>
 </section>
 <!-- ============================================================
+     42degree PDP · "꼼꼼히 따져보세요" 상세/영양정보 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ 단일 이미지 정보 섹션
+     ============================================================ -->
+<section class="dg-details">
+	<div class="dg-details__inner">
+		<img class="dg-details__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png" alt="꼼꼼히 따져보세요. 매일 먹어도 부담 없는 설계와 영양정보" loading="lazy" width="1200" height="720" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png 1200w" sizes="(min-width: 768px) 1000px, 100vw">
+	</div>
+</section>
+<!-- ============================================================
      42degree PDP · "Focus On Your Passion" 아웃트로 섹션
      ▸ 상세설명 영역에 붙여넣기
      ▸ 배경 이미지 위에 텍스트가 얹혀지는 반응형 커버 레이아웃
@@ -1361,6 +1435,84 @@
 		</p>
 
 		<p class="dg-outro__slogan">: Focus On Your Passion</p>
+	</div>
+</section>
+<!-- ============================================================
+     42degree PDP · "Shopping Guide" 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ 결제/배송/교환 및 반품 안내
+     ============================================================ -->
+<section class="dg-guide">
+	<div class="dg-guide__inner">
+		<h2 class="dg-guide__title">42degree SHOPPING GUIDE</h2>
+
+		<div class="dg-guide__body">
+			<div class="dg-guide__block">
+				<span class="dg-guide__icon" aria-hidden="true">+</span>
+				<div>
+					<h3 class="dg-guide__heading">01. PAYMENT INFO (상품 결제 정보)</h3>
+					<ul class="dg-guide__list">
+						<li><span class="dg-guide__subhead">신용카드 결제</span>
+							<ul>
+								<li>보안을 위해 고액 결제 시 카드사에서 확인 전화가 발송될 수 있습니다.</li>
+								<li>도난 카드 사용이나 타인 명의 주문 등 정상적인 주문이 아니라고 판단될 경우, 안전을 위해 주문이 임의 보류 또는 취소될 수 있습니다.</li>
+							</ul>
+						</li>
+						<li><span class="dg-guide__subhead">무통장 입금</span>
+							<ul>
+								<li>PC뱅킹, 인터넷뱅킹 혹은 은행 창구를 통해 직접 입금해 주세요.</li>
+								<li>주문 시 입력한 입금자명과 실제 입금자명이 반드시 일치해야 정상 처리가 가능합니다.</li>
+								<li>주문 후 7일 이내에 입금이 완료되지 않은 주문 건은 자동으로 취소됩니다.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dg-guide__block">
+				<span class="dg-guide__icon" aria-hidden="true">+</span>
+				<div>
+					<h3 class="dg-guide__heading">02. SHIPPING INFO (배송 정보)</h3>
+					<ul class="dg-guide__list">
+						<li>배송 방법 | 한진택배</li>
+						<li>배송 지역 | 전국 (제주 및 도서산간 지역은 별도의 추가 배송비가 발생할 수 있습니다.)</li>
+						<li>배송 비용 | 3,000원</li>
+						<li>배송 기간 | 입금 확인 후 1일~3일 소요 (주말 및 공휴일 제외)
+							<ul>
+								<li>모든 주문은 입금 확인 후 순차적으로 안전하게 출고됩니다.</li>
+								<li>상품 종류에 따라 배송이 다소 지연될 수 있는 점 양해 부탁드립니다.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dg-guide__block">
+				<span class="dg-guide__icon" aria-hidden="true">+</span>
+				<div>
+					<h3 class="dg-guide__heading">03. RETURNS &amp; EXCHANGES (교환 및 반품 안내)</h3>
+					<ul class="dg-guide__list">
+						<li><span class="dg-guide__subhead">교환 및 반품 주소지</span> : 서울 중구 장충단로13길 20 현대아울렛 11층 42degree 앞</li>
+						<li><span class="dg-guide__subhead">교환 및 반품이 가능한 경우</span>
+							<ul>
+								<li>단순 변심 : 상품을 수령하신 날로부터 7일 이내 신청 가능합니다. 단, 포장을 개봉했거나 단상자가 훼손되어 상품 가치가 상실된 경우는 제외됩니다.</li>
+								<li>상품 오배송 및 불량 : 배송 받으신 상품의 내용이 표시·광고 내용과 다르거나 다르게 이행된 경우, 수령일로부터 3개월 이내 혹은 그 사실을 알게 된 날로부터 30일 이내에 신청 가능합니다.</li>
+							</ul>
+						</li>
+						<li><span class="dg-guide__subhead">교환 및 반품이 불가능한 경우</span>
+							<ul>
+								<li>고객님의 책임 있는 사유로 상품이나 단상자 등이 멸실 또는 훼손된 경우</li>
+								<li>내용물 확인을 위해 겉포장 박스 등을 개봉한 경우는 제외</li>
+								<li>포장을 개봉하여 내부 스틱, 씰 등이 훼손되거나 상품 가치가 상실된 경우</li>
+								<li>고객님의 일부 사용/소비에 의해 상품의 가치가 현저히 감소한 경우</li>
+								<li>시간이 경과하여 재판매가 곤란할 정도로 상품의 가치가 감소한 경우</li>
+							</ul>
+						</li>
+						<li><span class="dg-guide__subhead">반송 비용 안내</span><br>고객님의 단순 변심으로 인한 교환 및 반품의 경우, 왕복 택송 비용은 고객님께서 부담하셔야 합니다. 관련하여 상세한 상담이 필요하신 경우, 42degree 공식 고객센터(채널톡)로 문의해 주시면 친절하게 안내해 드리겠습니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 <!-- ============================================================
