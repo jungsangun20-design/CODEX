@@ -207,6 +207,10 @@
 		display: block; width: 100%; height: 100%; object-fit: cover;
 	}
 	
+	.dg-enjoy__item--salad img {
+		transform: scale(1.18); transform-origin: center;
+	}
+
 	@media (min-width: 768px) {
 		.dg-enjoy__header {
 			flex-direction: row; align-items: flex-end; gap: 48px;
@@ -911,16 +915,16 @@
 
 		<div class="dg-enjoy__grid">
 			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg" alt="원액 그대로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg" alt="원액 그대로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png" alt="탄산수에 섞어서 에이드처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png" alt="탄산수에 섞어서 에이드처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png" alt="얼려먹는 간식처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png" alt="얼려먹는 간식처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
-			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png" alt="샐러드 드레싱으로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<div class="dg-enjoy__item dg-enjoy__item--salad">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png" alt="샐러드 드레싱으로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 		</div>
 	</div>
