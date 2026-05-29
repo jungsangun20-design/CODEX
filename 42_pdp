@@ -51,7 +51,7 @@
 		--ink: #161413; --soft: #6b6f6d; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
 	}
 .dg-alt__grid {
-		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; gap: clamp(12px, 2vw, 20px); grid-template-areas: "heading" "boxes" "features" "orange";
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; gap: 0; grid-template-areas: "heading" "boxes" "features" "orange"; background-color: #fff;
 	}
 	
 	.dg-alt__boxes {
@@ -73,17 +73,17 @@
 	
 	.dg-alt__boxes,
 	.dg-alt__orange {
-		overflow: hidden; line-height: 0; border-radius: 8px;
+		aspect-ratio: 4 / 3; overflow: hidden; line-height: 0; border-radius: 0;
 	}
 	
 	.dg-alt__boxes img,
 	.dg-alt__orange img {
-		display: block; width: 100%; height: auto;
+		display: block; width: 100%; height: 100%; object-fit: cover;
 	}
 	/* 헤딩 */
 	
 	.dg-alt__heading {
-		display: flex; align-items: center;
+		display: flex; align-items: center; min-height: clamp(140px, 24vw, 220px); padding: clamp(24px, 4vw, 40px) clamp(18px, 3vw, 32px); background-color: #fff;
 	}
 	
 	.dg-alt__heading h2 {
@@ -92,7 +92,7 @@
 	/* 피처 리스트 */
 	
 	.dg-alt__features {
-		list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: center; gap: clamp(16px, 2.2vw, 22px);
+		list-style: none; margin: 0; padding: clamp(32px, 5vw, 64px) clamp(20px, 4vw, 56px); display: flex; flex-direction: column; justify-content: center; gap: clamp(16px, 2.2vw, 22px); background-color: #fff;
 	}
 	
 	.dg-alt__feat {
@@ -113,11 +113,14 @@
 	
 	@media (min-width:768px) {
 		.dg-alt__grid {
-			grid-template-columns: 1fr 1.15fr; align-items: stretch; grid-template-areas: "boxes features" "heading orange";
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); grid-template-rows: clamp(360px, 40vw, 470px) clamp(140px, 16vw, 180px); align-items: stretch; grid-template-areas: "boxes features" "heading orange";
 		}
-		.dg-alt__boxes img,
-		.dg-alt__orange img {
-			width: 100%; height: 100%; object-fit: cover;
+		.dg-alt__boxes,
+		.dg-alt__orange {
+			aspect-ratio: auto; min-height: 0;
+		}
+		.dg-alt__heading {
+			min-height: 0;
 		}
 	} .dg-rec {
 		--ink: #161413; --soft: #9a9d9b; --teal: #16b1a3; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
@@ -348,7 +351,7 @@
 	}
 	
 	.dg-power__grid {
-		display: grid; grid-template-columns: 1fr; background-color: #fff;
+		display: grid; grid-template-columns: 1fr; gap: 0; background-color: #fff;
 	}
 	
 	.dg-power__cell {
@@ -356,11 +359,11 @@
 	}
 	
 	.dg-power__cell--img {
-		line-height: 0; overflow: hidden;
+		aspect-ratio: 4 / 3; line-height: 0; overflow: hidden;
 	}
 	
 	.dg-power__cell--img img {
-		display: block; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1 / 1;
+		display: block; width: 100%; height: 100%; object-fit: cover;
 	}
 	
 	.dg-power__cell--text {
@@ -368,7 +371,7 @@
 	}
 	
 	.dg-power__cell--logo {
-		padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 64px); align-items: center; background-color: #fff;
+		min-height: clamp(140px, 22vw, 220px); padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 64px); align-items: center; background-color: #fff;
 	}
 	
 	.dg-power__cell--logo img {
@@ -390,11 +393,13 @@
 	
 	@media (min-width: 768px) {
 		.dg-power__grid {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); grid-template-rows: clamp(360px, 40vw, 470px) clamp(130px, 15vw, 170px);
 		}
-		.dg-power__cell--img img {
-			/* PC에서는 그리드 높이에 맞춰 꽉 차게 렌더링 */
-			aspect-ratio: auto; height: 100%;
+		.dg-power__cell--img {
+			aspect-ratio: auto; min-height: 0;
+		}
+		.dg-power__cell--logo {
+			min-height: 0;
 		}
 	} .dg-beyond {
 		--ink: #161413; --soft: #4a4d4b; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
@@ -850,7 +855,7 @@
 				<br>제공하는 선명한 대안</h2>
 		</div>
 		<div class="dg-alt__orange">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="신선한 시트러스" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="신선한 시트러스" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 	</div>
 </section>
@@ -1032,7 +1037,7 @@
 
 			<!-- 1. 좌상단: 옐로우 시트러스 이미지 -->
 			<div class="dg-power__cell dg-power__cell--img">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png" alt="시트러스 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png" alt="시트러스 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 			</div>
 
 			<!-- 2. 우상단: 텍스트 -->
@@ -1059,7 +1064,7 @@
 
 			<!-- 4. 우하단: 그린 라임 이미지 -->
 			<div class="dg-power__cell dg-power__cell--img">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png" alt="그린 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png" alt="그린 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 			</div>
 
 		</div>
