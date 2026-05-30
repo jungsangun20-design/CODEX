@@ -928,6 +928,24 @@
 		display: block !important; width: 100% !important; max-width: none !important; height: 100% !important; object-fit: cover !important;
 	}
 
+	@media (min-width: 768px) {
+		.dg-outro__visuals {
+			display: flex; align-items: flex-start; justify-content: flex-end; gap: clamp(12px, 1.6vw, 18px);
+		}
+		.dg-outro__figure {
+			aspect-ratio: auto; overflow: visible; background: transparent;
+		}
+		.dg-outro__figure:first-child {
+			width: clamp(120px, 12vw, 160px);
+		}
+		.dg-outro__figure:nth-child(2) {
+			width: clamp(150px, 15vw, 200px);
+		}
+		.dg-outro__figure img {
+			width: 100% !important; max-width: 100% !important; height: auto !important; object-fit: contain !important; object-position: center top !important;
+		}
+	}
+
 	@media (max-width: 767px) {
 		.dg-outro {
 			padding-block: clamp(44px, 12vw, 64px);
