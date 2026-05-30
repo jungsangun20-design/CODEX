@@ -119,7 +119,7 @@
 			padding-inline: 0;
 		}
 		.dg-alt__heading h2 {
-			font-size: clamp(2rem, 9vw, 2.8rem); font-weight: 800; line-height: 1.18;
+			font-size: clamp(2rem, 9vw, 2.8rem); font-weight: 600; line-height: 1.18;
 		}
 		.dg-alt__boxes {
 			aspect-ratio: 1 / 1.12; min-height: 360px;
@@ -542,6 +542,15 @@
 	
 	.dg-focus__title {
 		margin: 0; font-size: clamp(2.6rem, 5.5vw, 4.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.04em;
+	}
+
+	@media (max-width: 767px) {
+		.dg-focus__title span {
+			display: block;
+		}
+		.dg-focus__title .dg-focus__comma {
+			display: none;
+		}
 	}
 	
 	.dg-focus__badges {
@@ -1332,7 +1341,7 @@
 		<!-- 헤더 -->
 		<div class="dg-focus__header">
 
-			<h2 class="dg-focus__title">Focus on, Stress off</h2>
+			<h2 class="dg-focus__title"><span>Focus on</span><span class="dg-focus__comma">,</span> <span>Stress off</span></h2>
 			<div class="dg-focus__badges">
 				<span class="dg-focus__badge">무가당</span>
 				<span class="dg-focus__badge">무화학부형제</span>
