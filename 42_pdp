@@ -1047,25 +1047,29 @@
 	}
 
 
-	/* 섹션 헤드 타이포그래피: Power up / your setup 기준으로 통일 */
-	.dg-alt__heading h2,
-	.dg-rec__title,
-	.dg-enjoy__title,
+	/* 섹션 헤드 타이포그래피: Power up / your setup 기준으로 영문 헤드 통일 */
 	.dg-intro__title,
 	.dg-formula__title,
 	.dg-focus__title,
 	.dg-sourcing__label,
-	.dg-details__title,
 	.dg-guide__title {
 		font-size: clamp(2.8rem, 5.5vw, 4.6rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em; word-break: keep-all;
 	}
 
+	/* 한글 포함 헤드는 dg-switch 첫 제목 기준으로 축소 */
+	.dg-alt__heading h2,
+	.dg-rec__title,
+	.dg-enjoy__title,
+	.dg-details__title {
+		font-size: clamp(2.15rem, 9.2vw, 3.2rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; word-break: keep-all;
+	}
+
 	.dg-alt__orange-copy-title {
-		font-size: clamp(2.4rem, 10vw, 3.2rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em;
+		font-size: clamp(2rem, 8.5vw, 3rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em;
 	}
 
 	.dg-alt__orange-copy-sub {
-		font-size: clamp(2rem, 8vw, 2.8rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.04em;
+		font-size: clamp(1.35rem, 5.5vw, 1.8rem); font-weight: 400; line-height: 1.25; letter-spacing: -0.02em;
 	}
 
 	@media (max-width: 767px) {
