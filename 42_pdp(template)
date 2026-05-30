@@ -54,6 +54,7 @@
 .action_button {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -63,6 +64,10 @@
     align-items: center !important;
     width: 100% !important;
     height: 56px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
     background-color: #000 !important;
     color: #fff !important;
     border-radius: 28px !important;
@@ -75,31 +80,6 @@
 .action_button .btnNormal {
     display: none !important;
 }
-
-@media all and (max-width: 767px) {
-    #orderFixArea .ec-base-button.gColumn {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-    }
-
-    #orderFixArea .actionWish,
-    #orderFixArea .actionCart {
-        display: none !important;
-    }
-
-    #orderFixArea .btnSubmit {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: calc(100% - 32px) !important;
-        max-width: 420px !important;
-        margin: 0 auto !important;
-        text-align: center !important;
-    }
-}
-
 /* 좌측 상품 이미지 하단 추가 썸네일 영역 숨김 */
 .imgArea .listImg,
 .imgArea .listImg *,
