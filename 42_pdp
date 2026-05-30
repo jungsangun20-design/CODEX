@@ -1,20 +1,19 @@
 <style>
-	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
-
-	[class^="dg-"],
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css'); [class^="dg-"],
 	[class*=" dg-"] {
 		box-sizing: border-box;
 	}
-
+	
 	[class^="dg-"] *,
 	[class*=" dg-"] * {
 		box-sizing: inherit;
 	}
-
-.dg-switch {
+	
+	.dg-switch {
 		--ink: #161413; --soft: #6b6f6d; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(40px, 7vw, 90px);
 	}
-.dg-switch__inner {
+	
+	.dg-switch__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(28px, 5vw, 52px); align-items: start;
 	}
 	
@@ -46,10 +45,13 @@
 		.dg-switch__inner {
 			grid-template-columns: 1.05fr 1fr; gap: clamp(40px, 5vw, 72px); align-items: center;
 		}
-	} .dg-alt {
+	}
+	
+	.dg-alt {
 		--ink: #161413; --soft: #6b6f6d; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
 	}
-.dg-alt__grid {
+	
+	.dg-alt__grid {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; gap: 0; grid-template-areas: "heading" "boxes" "features" "orange" "orangeCopy"; background-color: #fff;
 	}
 	
@@ -68,7 +70,7 @@
 	.dg-alt__orange {
 		grid-area: orange;
 	}
-
+	
 	.dg-alt__orange-copy {
 		display: none; grid-area: orangeCopy;
 	}
@@ -113,7 +115,7 @@
 	.dg-alt__d {
 		margin: 0; color: var(--soft); font-size: clamp(.8rem, 1.1vw, .9rem); line-height: 1.6; word-break: keep-all;
 	}
-
+	
 	@media (max-width:767px) {
 		.dg-alt__features {
 			padding-inline: 0;
@@ -149,10 +151,13 @@
 		.dg-alt__heading {
 			min-height: 0;
 		}
-	} .dg-rec {
+	}
+	
+	.dg-rec {
 		--ink: #161413; --soft: #9a9d9b; --teal: #16b1a3; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
 	}
-.dg-rec__inner {
+	
+	.dg-rec__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(28px, 5vw, 48px); align-items: center;
 	}
 	
@@ -196,10 +201,13 @@
 		.dg-rec__inner {
 			grid-template-columns: .92fr 1fr; gap: clamp(36px, 5vw, 64px);
 		}
-	} .dg-enjoy {
+	}
+	
+	.dg-enjoy {
 		--ink: #161413; --soft: #6b6f6d; --bg-sec: #ffffff; background-color: var(--bg-sec); font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-enjoy__inner {
+	
+	.dg-enjoy__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
 	
@@ -238,7 +246,7 @@
 	.dg-enjoy__item--salad img {
 		transform: scale(1.18) !important; transform-origin: center !important;
 	}
-
+	
 	@media (min-width: 768px) {
 		.dg-enjoy__header {
 			flex-direction: row; align-items: flex-end; gap: 48px;
@@ -252,10 +260,13 @@
 		.dg-enjoy__grid {
 			grid-template-columns: repeat(4, 1fr);
 		}
-	} .dg-intro {
+	}
+	
+	.dg-intro {
 		--ink: #161413; --soft: #6b6f6d; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-intro__inner {
+	
+	.dg-intro__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(32px, 5vw, 60px); align-items: center;
 	}
 	
@@ -288,10 +299,13 @@
 		.dg-intro__inner {
 			grid-template-columns: 1fr 1fr;
 		}
-	} .dg-formula {
+	}
+	
+	.dg-formula {
 		--ink: #161413; --soft: #6b6f6d; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-formula__inner {
+	
+	.dg-formula__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
 	
@@ -358,7 +372,7 @@
 	.dg-formula__list li {
 		position: relative; margin-bottom: 6px; padding-left: 16px; word-break: keep-all;
 	}
-
+	
 	.dg-formula__list li::before {
 		content: ""; position: absolute; left: 0; top: .72em; width: 4px; height: 4px; border-radius: 50%; background: currentColor; transform: translateY(-50%);
 	}
@@ -376,6 +390,7 @@
 		}
 	}
 	/* Formula 모바일 안정화: 실제 기기에서 overlay 카드가 가로로 튀는 현상 방지 */
+	
 	.dg-formula,
 	.dg-formula__inner,
 	.dg-formula__header,
@@ -384,17 +399,17 @@
 	.dg-formula__card {
 		max-width: 100%; min-width: 0; overflow-wrap: anywhere;
 	}
-
+	
 	.dg-formula {
 		overflow-x: hidden;
 	}
-
+	
 	.dg-formula__header,
 	.dg-formula__card--stacked .dg-formula__text,
 	.dg-formula__card--overlay .dg-formula__text {
 		text-align: left;
 	}
-
+	
 	@media (max-width: 767px) {
 		.dg-formula__inner {
 			overflow-x: hidden;
@@ -417,12 +432,14 @@
 			padding-top: clamp(20px, 3vw, 28px); color: var(--ink);
 		}
 	}
+	
 	.dg-power {
 		--ink: #161413; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
 		/* 이전 섹션들과의 간격을 위해 위아래 패딩 유지 */
 		padding-block: clamp(40px, 8vw, 80px);
 	}
-.dg-power__inner {
+	
+	.dg-power__inner {
 		max-width: 1200px; margin: 0 auto;
 		/* 타겟 이미지처럼 콘텐츠가 꽉 차 보이도록 좌우 패딩 최소화 */
 		padding-inline: clamp(16px, 4vw, 40px);
@@ -468,7 +485,7 @@
 	.dg-power__desc {
 		margin: 0; font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.65; word-break: keep-all;
 	}
-
+	
 	@media (max-width: 767px) {
 		.dg-power__cell--text {
 			padding-inline: 0;
@@ -483,12 +500,18 @@
 			aspect-ratio: auto; min-height: 0;
 		}
 		.dg-power__cell--logo {
-			min-height: 0; display: flex; justify-content: center; align-items: center; padding: clamp(32px, 4vw, 56px);
+			min-height: 0; height: 100%; display: flex; justify-content: center; align-items: center; padding: 0;
 		}
-	} .dg-beyond {
+		.dg-power__cell--logo img {
+			width: auto !important; max-width: clamp(130px, 14vw, 180px) !important; max-height: 82% !important; height: auto !important; object-fit: contain !important;
+		}
+	}
+	
+	.dg-beyond {
 		--ink: #161413; --soft: #4a4d4b; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-beyond__inner {
+	
+	.dg-beyond__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;
 	}
 	
@@ -527,11 +550,14 @@
 		.dg-beyond__text {
 			padding-right: clamp(10px, 3vw, 40px);
 		}
-	} .dg-focus {
+	}
+	
+	.dg-focus {
 		--ink: #161413; --soft: #6b6f6d; --badge-bg: #634bf9;/* 배지 퍼플 컬러 */
 		background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-focus__inner {
+	
+	.dg-focus__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
 	/* 헤더 영역 (타이틀 + 배지) */
@@ -543,7 +569,7 @@
 	.dg-focus__title {
 		margin: 0; font-size: clamp(2.6rem, 5.5vw, 4.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.04em;
 	}
-
+	
 	@media (max-width: 767px) {
 		.dg-focus__title span {
 			display: block;
@@ -602,11 +628,14 @@
 		.dg-focus__grid {
 			grid-template-columns: repeat(4, 1fr);
 		}
-	} .dg-sourcing {
+	}
+	
+	.dg-sourcing {
 		--ink: #161413; --soft: #4a4d4b; background-color: #ffffff;/* 화보 느낌의 아주 옅은 그레이 배경 */
 		font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-sourcing__inner {
+	
+	.dg-sourcing__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;
 	}
 	
@@ -646,11 +675,14 @@
 		.dg-sourcing__inner {
 			grid-template-columns: 1fr 1fr;
 		}
-	} .dg-inside {
+	}
+	
+	.dg-inside {
 		--ink: #111; --soft: #666; --title-color: #574e68;/* 은은한 퍼플그레이 */
 		background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-inside__inner {
+	
+	.dg-inside__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
 	/* 헤더 영역 */
@@ -709,12 +741,15 @@
 		.dg-inside__grid {
 			grid-template-columns: repeat(4, 1fr);/* PC에서는 4단 */
 		}
-	} .dg-review {
+	}
+	
+	.dg-review {
 		--ink: #161413; box-sizing: border-box; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
 		/* 전달주신 배경 이미지를 섹션 전체 백그라운드로 설정 */
 		max-width: 1200px; margin: 0 auto; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp14.png'); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: clamp(24px, 4vw, 40px); padding-bottom: clamp(80px, 12vw, 160px);
 	}
-.dg-review__inner {
+	
+	.dg-review__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
 	/* 상단 노티스 텍스트 */
@@ -777,41 +812,44 @@
 		.dg-review__card--3 {
 			margin-top: 120px;
 		}
-	} .dg-details {
+	}
+	
+	.dg-details {
 		--ink: #161413; --soft: #5f6361; --accent: #5d3df5; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 90px);
 	}
-.dg-details__inner {
+	
+	.dg-details__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(36px, 6vw, 72px); align-items: center;
 	}
-
+	
 	.dg-details__title {
 		margin: 0; font-size: clamp(2rem, 4.2vw, 3.4rem); font-weight: 500; line-height: 1.18; letter-spacing: -0.06em; word-break: keep-all;
 	}
-
+	
 	.dg-details__subtitle {
 		margin: clamp(20px, 3vw, 32px) 0 0; font-size: clamp(1.35rem, 2.6vw, 2.2rem); font-weight: 400; line-height: 1.35; letter-spacing: -0.05em; word-break: keep-all;
 	}
-
+	
 	.dg-details__list {
 		list-style: none; margin: clamp(56px, 8vw, 110px) 0 0; padding: 0; display: flex; flex-direction: column; gap: clamp(14px, 2vw, 22px);
 	}
-
+	
 	.dg-details__item {
 		display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; color: var(--soft); font-size: clamp(0.95rem, 1.5vw, 1.2rem); line-height: 1.35; word-break: keep-all;
 	}
-
+	
 	.dg-details__label {
 		display: inline-flex; align-items: center; min-height: 28px; padding: 0 10px; border-radius: 999px; background: var(--accent); color: #fff; font-size: clamp(0.85rem, 1.2vw, 1rem); font-weight: 700; white-space: nowrap;
 	}
-
+	
 	.dg-details__media {
 		display: flex; justify-content: center;
 	}
-
+	
 	.dg-details__img {
 		display: block !important; width: min(100%, 320px) !important; max-width: 320px !important; height: auto !important;
 	}
-
+	
 	@media (min-width: 768px) {
 		.dg-details__inner {
 			grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
@@ -820,86 +858,88 @@
 			justify-content: center;
 		}
 	}
-
+	
 	.dg-guide {
 		--ink: #111; --soft: #333; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(56px, 8vw, 100px);
 	}
-.dg-guide__inner {
+	
+	.dg-guide__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
-
+	
 	.dg-guide__title {
 		margin: 0 0 clamp(28px, 5vw, 44px); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.06em;
 	}
-
+	
 	.dg-guide__body {
 		display: flex; flex-direction: column; gap: clamp(28px, 5vw, 44px);
 	}
-
+	
 	.dg-guide__block {
 		display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: start;
 	}
-
+	
 	.dg-guide__icon {
 		width: 24px; height: 24px; margin-top: 2px; border-radius: 50%; background: #000; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 19px; line-height: 1; font-weight: 700;
 	}
-
+	
 	.dg-guide__heading {
 		margin: 0 0 12px; font-size: clamp(1rem, 1.5vw, 1.15rem); font-weight: 800; line-height: 1.35; letter-spacing: -0.03em;
 	}
-
+	
 	.dg-guide__list {
 		margin: 0; padding-left: 0; list-style: none !important; color: var(--ink); font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.45; word-break: keep-all;
 	}
-
+	
 	.dg-guide__list ul {
 		margin: 6px 0 0; padding-left: 0; list-style: none !important;
 	}
-
+	
 	.dg-guide__list li {
 		display: block !important; position: relative; padding-left: 1.05em;
 	}
-
+	
 	.dg-guide__list > li::before {
 		content: ""; position: absolute; left: 0; top: .72em; width: 4px; height: 4px; border-radius: 50%; background: currentColor; transform: translateY(-50%);
 	}
-
+	
 	.dg-guide__list ul > li::before {
 		content: ""; position: absolute; left: 0; top: .72em; width: 5px; height: 5px; border: 1px solid currentColor; border-radius: 50%; background: transparent; transform: translateY(-50%);
 	}
-
+	
 	.dg-guide__list li + li {
 		margin-top: 12px;
 	}
-
+	
 	.dg-guide__list li li {
 		margin-top: 0;
 	}
-
+	
 	.dg-guide__subhead {
 		font-weight: 700;
 	}
-
+	
 	@media (max-width: 767px) {
 		.dg-guide__title-main,
 		.dg-guide__title-sub {
 			display: block;
 		}
 	}
-
+	
 	@media (min-width: 768px) {
 		.dg-guide__inner {
 			max-width: 1080px;
 		}
 	}
-
+	
 	.dg-outro {
 		--ink: #111; --highlight: #ffe547; box-sizing: border-box; max-width: 1200px; margin: 0 auto; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); background-color: #fff; padding-block: clamp(56px, 7vw, 92px); overflow: hidden;
 	}
-.dg-outro__inner {
+	
+	.dg-outro__inner {
 		width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); gap: clamp(28px, 5vw, 72px); align-items: end;
 	}
-
+	
 	.dg-outro__copy {
 		min-width: 0;
 	}
@@ -911,23 +951,23 @@
 	.dg-outro__desc {
 		margin: 0 0 clamp(22px, 3.5vw, 34px); font-size: clamp(0.9rem, 1.2vw, 1.05rem); line-height: 1.6; letter-spacing: -0.02em; word-break: keep-all;
 	}
-
+	
 	.dg-outro__slogan {
 		display: inline-block; margin: 0; padding: 4px 10px 6px; background: var(--highlight); color: #000; font-family: "Georgia Pro", Georgia, "Times New Roman", serif; font-style: italic; font-size: clamp(1.7rem, 3vw, 2.65rem); line-height: 1.05; letter-spacing: -0.04em;
 	}
-
+	
 	.dg-outro__visuals {
 		display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(8px, 1.4vw, 12px); align-items: end; width: 100%; min-width: 0;
 	}
-
+	
 	.dg-outro__figure {
 		margin: 0; aspect-ratio: 1 / 1; overflow: hidden; background: #fff; border-radius: 6px;
 	}
-
+	
 	.dg-outro__figure img {
 		display: block !important; width: 100% !important; max-width: none !important; height: 100% !important; object-fit: cover !important;
 	}
-
+	
 	@media (min-width: 768px) {
 		.dg-outro__visuals {
 			display: flex; align-items: flex-start; justify-content: flex-end; gap: clamp(12px, 1.6vw, 18px);
@@ -945,7 +985,7 @@
 			width: 100% !important; max-width: 100% !important; height: auto !important; object-fit: contain !important; object-position: center top !important;
 		}
 	}
-
+	
 	@media (max-width: 767px) {
 		.dg-outro {
 			padding-block: clamp(44px, 12vw, 64px);
@@ -969,10 +1009,12 @@
 			object-fit: contain !important; object-position: center top !important;
 		}
 	}
+	
 	.dg-story {
 		--ink: #161413; --soft: #333; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
-.dg-story__inner {
+	
+	.dg-story__inner {
 		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; grid-template-columns: 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;
 	}
 	
@@ -1045,9 +1087,8 @@
 			flex-wrap: nowrap;
 		}
 	}
-
-
 	/* 섹션 헤드 타이포그래피: Power up / your setup 기준으로 영문 헤드 통일 */
+	
 	.dg-intro__title,
 	.dg-formula__title,
 	.dg-focus__title,
@@ -1055,23 +1096,23 @@
 	.dg-guide__title {
 		font-size: clamp(2.8rem, 5.5vw, 4.6rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em; word-break: keep-all;
 	}
-
 	/* 한글 포함 헤드는 dg-switch 첫 제목 기준으로 축소 */
+	
 	.dg-alt__heading h2,
 	.dg-rec__title,
 	.dg-enjoy__title,
 	.dg-details__title {
 		font-size: clamp(2.15rem, 9.2vw, 3.2rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; word-break: keep-all;
 	}
-
+	
 	.dg-alt__orange-copy-title {
 		font-size: clamp(2rem, 8.5vw, 3rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em;
 	}
-
+	
 	.dg-alt__orange-copy-sub {
 		font-size: clamp(1.35rem, 5.5vw, 1.8rem); font-weight: 400; line-height: 1.25; letter-spacing: -0.02em;
 	}
-
+	
 	@media (max-width: 767px) {
 		.dg-rec__list li {
 			font-size: clamp(0.92rem, 3.4vw, 1rem); line-height: 1.45;
@@ -1080,8 +1121,8 @@
 			width: 20px; height: 20px; font-size: 11px;
 		}
 	}
-
 	/* 공통 정렬: 모든 섹션의 텍스트/이미지 시작점과 좌우 여백을 동일하게 맞춤 */
+	
 	.dg-switch__inner,
 	.dg-alt__grid,
 	.dg-rec__inner,
@@ -1100,10 +1141,31 @@
 	.dg-story__inner {
 		box-sizing: border-box; width: min(100%, 1200px); max-width: 1200px; margin-inline: auto; padding-inline: clamp(20px, 5vw, 64px);
 	}
-
+	
 	.dg-review,
 	.dg-outro {
 		box-sizing: border-box; width: min(100%, 1200px); max-width: 1200px; margin-inline: auto;
+	}
+	
+	@media (max-width: 767px) {
+		.dg-switch__inner,
+		.dg-alt__grid,
+		.dg-rec__inner,
+		.dg-enjoy__inner,
+		.dg-intro__inner,
+		.dg-formula__inner,
+		.dg-power__inner,
+		.dg-beyond__inner,
+		.dg-focus__inner,
+		.dg-sourcing__inner,
+		.dg-inside__inner,
+		.dg-review__inner,
+		.dg-details__inner,
+		.dg-outro__inner,
+		.dg-guide__inner,
+		.dg-story__inner {
+			padding-inline: 16px;
+		}
 	}
 
 </style>
@@ -1126,7 +1188,7 @@
 			<p class="dg-switch__body">카페인 0%, 맑게 깨어나는 첫 번째 브레인 웰니스 리추얼 'C.C. Shot' — 42degree meet the rainbow within.</p>
 		</div>
 		<div class="dg-switch__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg" alt="42degree C.C. Shot" class="dg-switch__img" width="1200" height="900" decoding="async" fetchpriority="high" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg" alt="42degree C.C. Shot" width="1200" height="900" decoding="async" fetchpriority="high" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw" class="dg-switch__img">
 		</div>
 	</div>
 </section>
@@ -1178,8 +1240,10 @@
 		<div class="dg-alt__orange">
 			<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;image-rendering:auto!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="신선한 시트러스" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
-		<div class="dg-alt__orange-copy" aria-hidden="true">
+		<div aria-hidden="true" class="dg-alt__orange-copy">
+
 			<p class="dg-alt__orange-copy-title">Hormone Happy Hour</p>
+
 			<p class="dg-alt__orange-copy-sub">오후 3시, 나를 위한 한잔</p>
 		</div>
 	</div>
@@ -1621,7 +1685,7 @@
 		</div>
 
 		<div class="dg-review__header">
-			<div class="dg-review__stars" role="img" aria-label="5점 만점에 5점">★★★★★</div>
+			<div aria-label="5점 만점에 5점" class="dg-review__stars" role="img">★★★★★</div>
 
 			<h2 class="dg-review__title"><span class="dg-review__title-serif">A perfect</span> 5-star rating</h2>
 
@@ -1630,6 +1694,7 @@
 
 		<div class="dg-review__grid">
 			<!-- 리뷰 1 -->
+
 			<blockquote class="dg-review__card dg-review__card--1">
 
 				<p class="dg-review__quote">"스트레스 케어와 몰입이 동
@@ -1641,6 +1706,7 @@
 			</blockquote>
 
 			<!-- 리뷰 2 -->
+
 			<blockquote class="dg-review__card dg-review__card--2">
 
 				<p class="dg-review__quote">"맛있게 챙기는 스트레스 케어,
@@ -1652,6 +1718,7 @@
 			</blockquote>
 
 			<!-- 리뷰 3 -->
+
 			<blockquote class="dg-review__card dg-review__card--3">
 
 				<p class="dg-review__quote">"고강도 업무 속에서도
@@ -1673,7 +1740,9 @@
 <section class="dg-details">
 	<div class="dg-details__inner">
 		<div class="dg-details__content">
+
 			<h2 class="dg-details__title">꼼꼼히 따져보세요.</h2>
+
 			<p class="dg-details__subtitle">— 매일 먹어도 부담 없는 설계.</p>
 
 			<ul class="dg-details__list">
@@ -1685,7 +1754,7 @@
 		</div>
 
 		<div class="dg-details__media">
-			<img class="dg-details__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png" alt="42degree C.C. Shot 영양정보" loading="lazy" width="640" height="940" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png 640w" sizes="(min-width: 768px) 320px, 80vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png" alt="42degree C.C. Shot 영양정보" loading="lazy" width="640" height="940" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png 640w" sizes="(min-width: 768px) 320px, 80vw" class="dg-details__img">
 		</div>
 	</div>
 </section>
@@ -1697,6 +1766,7 @@
 <section class="dg-outro">
 	<div class="dg-outro__inner">
 		<div class="dg-outro__copy">
+
 			<h2 class="dg-outro__title">준비되셨나요?
 				<br>당신의 스위치를 켜세요.</h2>
 
@@ -1709,7 +1779,7 @@
 			<p class="dg-outro__slogan">: Focus On Your Passion</p>
 		</div>
 
-		<div class="dg-outro__visuals" aria-label="42degree 라이프스타일 이미지">
+		<div aria-label="42degree 라이프스타일 이미지" class="dg-outro__visuals">
 			<figure class="dg-outro__figure">
 				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp20.png" alt="42degree C.C. Shot과 오렌지 음료" loading="lazy" width="640" height="640" decoding="async">
 			</figure>
@@ -1726,21 +1796,26 @@
      ============================================================ -->
 <section class="dg-guide">
 	<div class="dg-guide__inner">
+
 		<h2 class="dg-guide__title"><span class="dg-guide__title-main">42degree</span> <span class="dg-guide__title-sub">Shopping Guide</span></h2>
 
 		<div class="dg-guide__body">
 			<div class="dg-guide__block">
-				<span class="dg-guide__icon" aria-hidden="true">+</span>
+				<span aria-hidden="true" class="dg-guide__icon">+</span>
 				<div>
+
 					<h3 class="dg-guide__heading">01. PAYMENT INFO (상품 결제 정보)</h3>
+
 					<ul class="dg-guide__list">
 						<li><span class="dg-guide__subhead">신용카드 결제</span>
+
 							<ul>
 								<li>보안을 위해 고액 결제 시 카드사에서 확인 전화가 발송될 수 있습니다.</li>
 								<li>도난 카드 사용이나 타인 명의 주문 등 정상적인 주문이 아니라고 판단될 경우, 안전을 위해 주문이 임의 보류 또는 취소될 수 있습니다.</li>
 							</ul>
 						</li>
 						<li><span class="dg-guide__subhead">무통장 입금</span>
+
 							<ul>
 								<li>PC뱅킹, 인터넷뱅킹 혹은 은행 창구를 통해 직접 입금해 주세요.</li>
 								<li>주문 시 입력한 입금자명과 실제 입금자명이 반드시 일치해야 정상 처리가 가능합니다.</li>
@@ -1752,14 +1827,17 @@
 			</div>
 
 			<div class="dg-guide__block">
-				<span class="dg-guide__icon" aria-hidden="true">+</span>
+				<span aria-hidden="true" class="dg-guide__icon">+</span>
 				<div>
+
 					<h3 class="dg-guide__heading">02. SHIPPING INFO (배송 정보)</h3>
+
 					<ul class="dg-guide__list">
 						<li>배송 방법 | 한진택배</li>
 						<li>배송 지역 | 전국 (제주 및 도서산간 지역은 별도의 추가 배송비가 발생할 수 있습니다.)</li>
 						<li>배송 비용 | 3,000원</li>
 						<li>배송 기간 | 입금 확인 후 1일~3일 소요 (주말 및 공휴일 제외)
+
 							<ul>
 								<li>모든 주문은 입금 확인 후 순차적으로 안전하게 출고됩니다.</li>
 								<li>상품 종류에 따라 배송이 다소 지연될 수 있는 점 양해 부탁드립니다.</li>
@@ -1770,18 +1848,22 @@
 			</div>
 
 			<div class="dg-guide__block">
-				<span class="dg-guide__icon" aria-hidden="true">+</span>
+				<span aria-hidden="true" class="dg-guide__icon">+</span>
 				<div>
+
 					<h3 class="dg-guide__heading">03. RETURNS &amp; EXCHANGES (교환 및 반품 안내)</h3>
+
 					<ul class="dg-guide__list">
 						<li><span class="dg-guide__subhead">교환 및 반품 주소지</span> : 서울 중구 장충단로13길 20 현대아울렛 11층 42degree 앞</li>
 						<li><span class="dg-guide__subhead">교환 및 반품이 가능한 경우</span>
+
 							<ul>
 								<li>단순 변심 : 상품을 수령하신 날로부터 7일 이내 신청 가능합니다. 단, 포장을 개봉했거나 단상자가 훼손되어 상품 가치가 상실된 경우는 제외됩니다.</li>
 								<li>상품 오배송 및 불량 : 배송 받으신 상품의 내용이 표시·광고 내용과 다르거나 다르게 이행된 경우, 수령일로부터 3개월 이내 혹은 그 사실을 알게 된 날로부터 30일 이내에 신청 가능합니다.</li>
 							</ul>
 						</li>
 						<li><span class="dg-guide__subhead">교환 및 반품이 불가능한 경우</span>
+
 							<ul>
 								<li>고객님의 책임 있는 사유로 상품이나 단상자 등이 멸실 또는 훼손된 경우</li>
 								<li>내용물 확인을 위해 겉포장 박스 등을 개봉한 경우는 제외</li>
@@ -1790,7 +1872,8 @@
 								<li>시간이 경과하여 재판매가 곤란할 정도로 상품의 가치가 감소한 경우</li>
 							</ul>
 						</li>
-						<li><span class="dg-guide__subhead">반송 비용 안내</span><br>고객님의 단순 변심으로 인한 교환 및 반품의 경우, 왕복 택송 비용은 고객님께서 부담하셔야 합니다. 관련하여 상세한 상담이 필요하신 경우, 42degree 공식 고객센터(채널톡)로 문의해 주시면 친절하게 안내해 드리겠습니다.</li>
+						<li><span class="dg-guide__subhead">반송 비용 안내</span>
+							<br>고객님의 단순 변심으로 인한 교환 및 반품의 경우, 왕복 택송 비용은 고객님께서 부담하셔야 합니다. 관련하여 상세한 상담이 필요하신 경우, 42degree 공식 고객센터(채널톡)로 문의해 주시면 친절하게 안내해 드리겠습니다.</li>
 					</ul>
 				</div>
 			</div>
@@ -1838,8 +1921,8 @@
 				<a class="dg-story__btn dg-story__btn--primary" href="https://42degree.co.kr/member/agreement.html">회원 가입</a>
 
 				<!-- 임시 링크 처리 (SNS 연결용) -->
-				<a class="dg-story__btn dg-story__btn--secondary" href="https://www.instagram.com/42degree.official/" target="_blank" rel="noopener noreferrer">
-					<svg viewBox="0 0 24 24" class="dg-story__icon" aria-hidden="true" focusable="false">
+				<a class="dg-story__btn dg-story__btn--secondary" href="https://www.instagram.com/42degree.official/" rel="noopener noreferrer" target="_blank">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="dg-story__icon">
 						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
 						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
 						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
