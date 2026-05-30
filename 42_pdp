@@ -173,7 +173,7 @@
 	}
 	
 	.dg-rec__lead {
-		margin: 10px 0 0; color: var(--soft); font-size: clamp(.85rem, 1.2vw, .95rem); line-height: 1.6; word-break: keep-all;
+		margin: 10px 0 0; color: var(--ink); font-size: clamp(.85rem, 1.2vw, .95rem); font-weight: 400; line-height: 1.6; word-break: keep-all;
 	}
 	
 	.dg-rec__list {
@@ -181,7 +181,7 @@
 	}
 	
 	.dg-rec__list li {
-		display: flex; align-items: flex-start; gap: 10px; color: #33403d; font-size: clamp(.85rem, 1.2vw, .95rem); line-height: 1.45; word-break: keep-all;
+		display: flex; align-items: flex-start; gap: 10px; color: #33403d; font-size: clamp(0.95rem, 1.35vw, 1.08rem); line-height: 1.5; word-break: keep-all;
 	}
 	
 	.dg-rec__list strong {
@@ -1046,6 +1046,36 @@
 		}
 	}
 
+
+	/* 섹션 헤드 타이포그래피: Power up / your setup 기준으로 통일 */
+	.dg-alt__heading h2,
+	.dg-rec__title,
+	.dg-enjoy__title,
+	.dg-intro__title,
+	.dg-formula__title,
+	.dg-focus__title,
+	.dg-sourcing__label,
+	.dg-details__title,
+	.dg-guide__title {
+		font-size: clamp(2.8rem, 5.5vw, 4.6rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em; word-break: keep-all;
+	}
+
+	.dg-alt__orange-copy-title {
+		font-size: clamp(2.4rem, 10vw, 3.2rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em;
+	}
+
+	.dg-alt__orange-copy-sub {
+		font-size: clamp(2rem, 8vw, 2.8rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.04em;
+	}
+
+	@media (max-width: 767px) {
+		.dg-rec__list li {
+			font-size: clamp(0.92rem, 3.4vw, 1rem); line-height: 1.45;
+		}
+		.dg-rec__chk {
+			width: 20px; height: 20px; font-size: 11px;
+		}
+	}
 
 	/* 공통 정렬: 모든 섹션의 텍스트/이미지 시작점과 좌우 여백을 동일하게 맞춤 */
 	.dg-switch__inner,
