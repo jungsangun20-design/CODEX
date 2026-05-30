@@ -258,8 +258,8 @@
                 <h2>What's<br>your story?</h2>
 
                 <div class="brand-story-actions">
-                    <a href="/member/join.html" class="brand-story-button">Join the club</a>
-                    <a href="/product/list.html" class="brand-story-button">See what's in store</a>
+                    <a href="https://42degree.co.kr/member/agreement.html" class="brand-story-button">Join the club</a>
+                    <a href="https://42degree.co.kr/product/%EC%94%A8%EC%94%A8%EC%83%B7/11/category/23/display/1/" class="brand-story-button">See what's in the store</a>
                 </div>
             </div>
 
@@ -383,7 +383,7 @@
                         가장 나다운 몰입과 평온이 시작되는 곳.<br>
                         이제 당신만의 42도를 찾아보세요.
                     </p>
-                    <a href="/member/join.html" class="brand-story-button">join us !</a>
+                    <a href="https://42degree.co.kr/member/agreement.html" class="brand-story-button">join us !</a>
                 </div>
             </div>
         </div>
