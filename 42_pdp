@@ -39,7 +39,7 @@
 	}
 	
 	.dg-switch__img {
-		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; border-radius: clamp(16px, 2.5vw, 24px);
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; border-radius: 0;
 	}
 	
 	@media (min-width:768px) {
@@ -50,7 +50,7 @@
 		--ink: #161413; --soft: #6b6f6d; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(36px, 6vw, 80px);
 	}
 .dg-alt__grid {
-		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; gap: 0; grid-template-areas: "heading" "boxes" "features" "orange"; background-color: #fff;
+		max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px); display: grid; gap: 0; grid-template-areas: "heading" "boxes" "features" "orange" "orangeCopy"; background-color: #fff;
 	}
 	
 	.dg-alt__boxes {
@@ -67,6 +67,10 @@
 	
 	.dg-alt__orange {
 		grid-area: orange;
+	}
+
+	.dg-alt__orange-copy {
+		display: none; grid-area: orangeCopy;
 	}
 	/* 이미지 셀 */
 	
@@ -113,6 +117,24 @@
 	@media (max-width:767px) {
 		.dg-alt__features {
 			padding-inline: 0;
+		}
+		.dg-alt__heading h2 {
+			font-size: clamp(2rem, 9vw, 2.8rem); font-weight: 800; line-height: 1.18;
+		}
+		.dg-alt__boxes {
+			aspect-ratio: 1 / 1.12; min-height: 360px;
+		}
+		.dg-alt__boxes img {
+			object-position: center center;
+		}
+		.dg-alt__orange-copy {
+			display: block; margin-top: clamp(18px, 5vw, 26px);
+		}
+		.dg-alt__orange-copy-title {
+			margin: 0; font-size: clamp(1.35rem, 6vw, 1.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em;
+		}
+		.dg-alt__orange-copy-sub {
+			margin: 8px 0 0; color: var(--soft); font-size: clamp(0.95rem, 4vw, 1.08rem); line-height: 1.45; letter-spacing: -0.02em;
 		}
 	}
 	
@@ -259,7 +281,7 @@
 	}
 	
 	.dg-intro__media img {
-		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; border-radius: clamp(16px, 2.5vw, 24px); object-fit: cover;
+		display: block !important; width: 100% !important; max-width: none !important; height: auto !important; border-radius: 0; object-fit: cover;
 	}
 	
 	@media (min-width: 768px) {
@@ -445,6 +467,12 @@
 	
 	.dg-power__desc {
 		margin: 0; font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.65; word-break: keep-all;
+	}
+
+	@media (max-width: 767px) {
+		.dg-power__cell--text {
+			padding-inline: 0;
+		}
 	}
 	
 	@media (min-width: 768px) {
@@ -760,11 +788,7 @@
 	}
 
 	.dg-details__item {
-		display: grid; grid-template-columns: auto auto 1fr; gap: 12px; align-items: center; color: var(--soft); font-size: clamp(0.95rem, 1.5vw, 1.2rem); line-height: 1.35; word-break: keep-all;
-	}
-
-	.dg-details__ico {
-		width: 24px; height: 24px; border-radius: 50%; background: #000; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 19px; line-height: 1; font-weight: 700;
+		display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; color: var(--soft); font-size: clamp(0.95rem, 1.5vw, 1.2rem); line-height: 1.35; word-break: keep-all;
 	}
 
 	.dg-details__label {
@@ -816,11 +840,15 @@
 	}
 
 	.dg-guide__list {
-		margin: 0; padding-left: 1.2em; color: var(--ink); font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.45; word-break: keep-all;
+		margin: 0; padding-left: 1.2em; list-style: disc outside !important; color: var(--ink); font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.45; word-break: keep-all;
 	}
 
 	.dg-guide__list ul {
-		margin: 0; padding-left: 1.2em;
+		margin: 0; padding-left: 1.2em; list-style: circle outside !important;
+	}
+
+	.dg-guide__list li {
+		display: list-item !important;
 	}
 
 	.dg-guide__list li + li {
@@ -835,6 +863,13 @@
 		font-weight: 700;
 	}
 
+	@media (max-width: 767px) {
+		.dg-guide__title-main,
+		.dg-guide__title-sub {
+			display: block;
+		}
+	}
+
 	@media (min-width: 768px) {
 		.dg-guide__inner {
 			max-width: 1080px;
@@ -842,7 +877,7 @@
 	}
 
 	.dg-outro {
-		--ink: #111; box-sizing: border-box; max-width: 1200px; margin: 0 auto; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); background-color: #fcfcfc; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp15.png'); background-repeat: no-repeat; background-position: center right; background-size: cover; min-height: clamp(480px, 55vw, 800px); display: flex; align-items: center; padding-block: clamp(60px, 8vw, 100px);
+		--ink: #111; box-sizing: border-box; max-width: 1200px; margin: 0 auto; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); background-color: #fcfcfc; min-height: clamp(260px, 30vw, 420px); display: flex; align-items: center; padding-block: clamp(56px, 7vw, 90px);
 	}
 .dg-outro__inner {
 		width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 64px);
@@ -853,19 +888,9 @@
 	}
 	
 	.dg-outro__desc {
-		margin: 0 0 clamp(50px, 10vw, 120px); font-size: clamp(0.9rem, 1.2vw, 1.05rem); line-height: 1.6; letter-spacing: -0.02em; word-break: keep-all;
+		margin: 0; font-size: clamp(0.9rem, 1.2vw, 1.05rem); line-height: 1.6; letter-spacing: -0.02em; word-break: keep-all;
 	}
-	
-	.dg-outro__slogan {
-		margin: 0; font-size: clamp(1.4rem, 2.5vw, 2.2rem); font-weight: 400; letter-spacing: -0.02em;
-	}
-	
-	@media (max-width: 767px) {
-		.dg-outro {
-			/* 모바일에서는 음식 이미지가 텍스트에 가려지지 않도록 배경 위치 및 정렬 조정 */
-			background-position: 70% bottom; align-items: flex-start; padding-top: 80px;
-		}
-	} .dg-story {
+	.dg-story {
 		--ink: #161413; --soft: #333; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
 .dg-story__inner {
@@ -1039,6 +1064,10 @@
 		</div>
 		<div class="dg-alt__orange">
 			<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;image-rendering:auto!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="신선한 시트러스" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+		</div>
+		<div class="dg-alt__orange-copy" aria-hidden="true">
+			<p class="dg-alt__orange-copy-title">Hormone Happy Hour</p>
+			<p class="dg-alt__orange-copy-sub">오후 3시, 나를 위한 한잔</p>
 		</div>
 	</div>
 </section>
@@ -1535,10 +1564,10 @@
 			<p class="dg-details__subtitle">— 매일 먹어도 부담 없는 설계.</p>
 
 			<ul class="dg-details__list">
-				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">식품의 유형</span><span>일반식품(혼합음료)</span></li>
-				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">소비기한</span><span>생산일로부터 18개월</span></li>
-				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">보관방법</span><span>고온, 직사광선을 피해 서늘한 곳에 보관</span></li>
-				<li class="dg-details__item"><span class="dg-details__ico" aria-hidden="true">+</span><span class="dg-details__label">제품구성</span><span>포티투디그리 씨씨샷 1박스 : 14포 구성<br>(하루 한 포에서 두 포, 2주 섭취 가능)</span></li>
+				<li class="dg-details__item"><span class="dg-details__label">식품의 유형</span><span>일반식품(혼합음료)</span></li>
+				<li class="dg-details__item"><span class="dg-details__label">소비기한</span><span>생산일로부터 18개월</span></li>
+				<li class="dg-details__item"><span class="dg-details__label">보관방법</span><span>고온, 직사광선을 피해 서늘한 곳에 보관</span></li>
+				<li class="dg-details__item"><span class="dg-details__label">제품구성</span><span>포티투디그리 씨씨샷 1박스 : 14포 구성<br>(하루 한 포에서 두 포, 2주 섭취 가능)</span></li>
 			</ul>
 		</div>
 
@@ -1564,7 +1593,6 @@
 			<br> 42degree가 함께합니다.
 		</p>
 
-		<p class="dg-outro__slogan">: Focus On Your Passion</p>
 	</div>
 </section>
 <!-- ============================================================
@@ -1574,7 +1602,7 @@
      ============================================================ -->
 <section class="dg-guide">
 	<div class="dg-guide__inner">
-		<h2 class="dg-guide__title">42degree SHOPPING GUIDE</h2>
+		<h2 class="dg-guide__title"><span class="dg-guide__title-main">42degree</span> <span class="dg-guide__title-sub">Shopping Guide</span></h2>
 
 		<div class="dg-guide__body">
 			<div class="dg-guide__block">
