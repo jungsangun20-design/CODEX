@@ -1279,7 +1279,7 @@
 
 			<!-- 3. 좌하단: 로고 -->
 			<div class="dg-power__cell dg-power__cell--logo">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo.png" alt="42degree 로고" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2.png" alt="42degree 로고" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 			</div>
 
 			<!-- 4. 우하단: 그린 라임 이미지 -->
