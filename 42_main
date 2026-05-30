@@ -515,6 +515,24 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
   .dg-story-hero__mark{ width:min(76vw,330px); }
   .dg-story-hero__title{ font-size:clamp(48px,16vw,68px); letter-spacing:-.07em; }
 }
+
+
+/* ════════ SECTION 2 · HOW IT ALL BEGAN ════════ */
+.dg-about-began{ width:100%; background:#fff; color:#000; font-family:var(--dg-font-body); }
+.dg-about-began, .dg-about-began *{ box-sizing:border-box; }
+.dg-about-began__inner{ max-width:1440px; margin:0 auto; padding:clamp(34px,5.2vw,74px) clamp(24px,5vw,72px) clamp(44px,6vw,86px); display:grid; grid-template-columns:minmax(0,1.42fr) minmax(220px,.58fr); align-items:start; column-gap:clamp(38px,7vw,96px); }
+.dg-about-began__title{ margin:0; color:#000; font-family:var(--dg-font-body); font-size:clamp(48px,6vw,86px); font-weight:400; line-height:.97; letter-spacing:-.075em; word-break:keep-all; }
+.dg-about-began__copy{ margin:clamp(42px,4.8vw,66px) 0 0; max-width:700px; color:#000; font-family:var(--dg-font-body); font-size:clamp(14px,1.25vw,16px); font-weight:400; line-height:1.42; letter-spacing:-.045em; word-break:keep-all; }
+.dg-about-began__copy p{ margin:0; }
+.dg-about-began__copy p + p{ margin-top:clamp(20px,2.2vw,28px); }
+.dg-about-began__media{ width:100%; line-height:0; }
+.dg-about-began__img{ display:block; width:100%; height:auto; object-fit:cover; }
+@media (max-width:767px){
+  .dg-about-began__inner{ padding:42px 24px 56px; grid-template-columns:1fr; gap:30px; }
+  .dg-about-began__title{ font-size:clamp(42px,13vw,60px); line-height:1; }
+  .dg-about-began__copy{ margin-top:28px; font-size:14px; line-height:1.55; }
+  .dg-about-began__media{ max-width:420px; }
+}
 </style></div>
 <section class="dg-story-hero" id="shop" data-ez="contents-1ussfzn-1">
   <!-- [SEO] 페이지 대표 h1 (화면엔 숨김). layout 로고가 이미 h1이면 이 줄 삭제 -->
@@ -533,19 +551,18 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
     </div>
   </div>
 </section>
-<section class="dg-ritual" data-ez="module-03bnl82-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
-  <div class="dg-ritual__inner">
-    <div class="dg-ritual__head">
-      <p class="dg-ritual__eyebrow">The Ritual of Mind</p>
-      <div class="dg-ritual__col">
-        <h2 class="dg-ritual__title">The logic of<br>inner peace</h2>
-        <p class="dg-ritual__lead">스트레스 케어는 무조건적인 휴식이 아닌,<br> 뇌의 과부하를 정돈하는 것에서 시작됩니다.<br>카페인에 의존하는 각성이 아닌, 내면에서부터 차오르는<br>차분한 몰입과 건강한 활력을 직접 경험해보세요.</p>
+<section class="dg-about-began" data-ez="module-03bnl82-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-about-began__inner">
+    <div class="dg-about-began__content">
+      <h2 class="dg-about-began__title">How It All Began :<br>42°의 시작</h2>
+      <div class="dg-about-began__copy">
+        <p>매일 아침을 깨우던 각성제와 만성적인 스트레스.<br>그리고 어느덧 한계에 다다랐음을 직감했던 번아웃의 순간들.<br>남들에게는 치열한 열정으로 포장되었지만,<br>속으로는 카페인에 의존해 겨우 하루를 버텨내던 날들이었습니다.<br>피로감은 이내 숨길 수 없이 겉으로도 투명하게 드러나기 시작했죠.</p>
+        <p>저희는 진심으로 즐기면서도 스트레스를 관리할 수 있는 더 건강한 방법을 원했고,<br>그렇게 바로 42degree를 시작했습니다.</p>
       </div>
     </div>
-    <hr class="dg-ritual__rule">
-  </div>
-  <div class="dg-ritual__media">
-    <img class="dg-ritual__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_1.png" alt loading="lazy">
+    <div class="dg-about-began__media">
+      <img class="dg-about-began__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about1.png" alt="42degree가 시작된 작업 공간" loading="lazy">
+    </div>
   </div>
 </section>
 <section class="dg-belief" data-ez="module-15st45c-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
