@@ -109,6 +109,12 @@
 	.dg-alt__d {
 		margin: 0; color: var(--soft); font-size: clamp(.8rem, 1.1vw, .9rem); line-height: 1.6; word-break: keep-all;
 	}
+
+	@media (max-width:767px) {
+		.dg-alt__features {
+			padding-inline: 0;
+		}
+	}
 	
 	@media (min-width:768px) {
 		.dg-alt__grid {
