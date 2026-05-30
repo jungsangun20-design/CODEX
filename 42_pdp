@@ -330,11 +330,15 @@
 	}
 	
 	.dg-formula__list {
-		margin: 0; padding: 0 0 0 18px; font-size: clamp(0.85rem, 1.2vw, 0.95rem); line-height: 1.55; letter-spacing: -0.02em;
+		margin: 0; padding: 0; list-style: none !important; font-size: clamp(0.85rem, 1.2vw, 0.95rem); line-height: 1.55; letter-spacing: -0.02em;
 	}
 	
 	.dg-formula__list li {
-		margin-bottom: 6px; word-break: keep-all;
+		position: relative; margin-bottom: 6px; padding-left: 16px; word-break: keep-all;
+	}
+
+	.dg-formula__list li::before {
+		content: ""; position: absolute; left: 0; top: .72em; width: 4px; height: 4px; border-radius: 50%; background: currentColor; transform: translateY(-50%);
 	}
 	
 	.dg-formula__list li:last-child {
