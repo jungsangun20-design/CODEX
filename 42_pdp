@@ -1109,6 +1109,27 @@
 		box-sizing: border-box; width: min(100%, 1200px); max-width: 1200px; margin-inline: auto;
 	}
 
+	@media (max-width: 767px) {
+		.dg-switch__inner,
+		.dg-alt__grid,
+		.dg-rec__inner,
+		.dg-enjoy__inner,
+		.dg-intro__inner,
+		.dg-formula__inner,
+		.dg-power__inner,
+		.dg-beyond__inner,
+		.dg-focus__inner,
+		.dg-sourcing__inner,
+		.dg-inside__inner,
+		.dg-review__inner,
+		.dg-details__inner,
+		.dg-outro__inner,
+		.dg-guide__inner,
+		.dg-story__inner {
+			padding-inline: 16px;
+		}
+	}
+
 </style>
 
 <!-- ============================================================
