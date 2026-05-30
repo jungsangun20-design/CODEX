@@ -840,15 +840,23 @@
 	}
 
 	.dg-guide__list {
-		margin: 0; padding-left: 1.2em; list-style: disc outside !important; color: var(--ink); font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.45; word-break: keep-all;
+		margin: 0; padding-left: 0; list-style: none !important; color: var(--ink); font-size: clamp(0.9rem, 1.2vw, 1rem); line-height: 1.45; word-break: keep-all;
 	}
 
 	.dg-guide__list ul {
-		margin: 0; padding-left: 1.2em; list-style: circle outside !important;
+		margin: 6px 0 0; padding-left: 0; list-style: none !important;
 	}
 
 	.dg-guide__list li {
-		display: list-item !important;
+		display: block !important; position: relative; padding-left: 1.05em;
+	}
+
+	.dg-guide__list > li::before {
+		content: ""; position: absolute; left: 0; top: .72em; width: 4px; height: 4px; border-radius: 50%; background: currentColor; transform: translateY(-50%);
+	}
+
+	.dg-guide__list ul > li::before {
+		content: ""; position: absolute; left: 0; top: .72em; width: 5px; height: 5px; border: 1px solid currentColor; border-radius: 50%; background: transparent; transform: translateY(-50%);
 	}
 
 	.dg-guide__list li + li {
