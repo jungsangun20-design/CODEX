@@ -342,7 +342,50 @@
 		.dg-formula__col {
 			flex: 1;
 		}
-	} .dg-power {
+	}
+	/* Formula 모바일 안정화: 실제 기기에서 overlay 카드가 가로로 튀는 현상 방지 */
+	.dg-formula,
+	.dg-formula__inner,
+	.dg-formula__header,
+	.dg-formula__grid,
+	.dg-formula__col,
+	.dg-formula__card {
+		max-width: 100%; min-width: 0; overflow-wrap: anywhere;
+	}
+
+	.dg-formula {
+		overflow-x: hidden;
+	}
+
+	.dg-formula__header,
+	.dg-formula__card--stacked .dg-formula__text,
+	.dg-formula__card--overlay .dg-formula__text {
+		text-align: left;
+	}
+
+	@media (max-width: 767px) {
+		.dg-formula__inner {
+			overflow-x: hidden;
+		}
+		.dg-formula__title {
+			font-size: clamp(2rem, 10vw, 2.8rem); word-break: keep-all; overflow-wrap: break-word;
+		}
+		.dg-formula__grid,
+		.dg-formula__col,
+		.dg-formula__card {
+			width: 100%; max-width: 100%; min-width: 0;
+		}
+		.dg-formula__card--overlay {
+			aspect-ratio: auto; min-height: 0; padding: 0; overflow: visible; color: var(--ink); background-color: #fff;
+		}
+		.dg-formula__card--overlay img {
+			position: relative !important; inset: auto !important; width: 100% !important; max-width: none !important; height: auto !important; aspect-ratio: 16 / 10; border-radius: clamp(16px, 2.5vw, 24px); object-fit: cover !important;
+		}
+		.dg-formula__card--overlay .dg-formula__text {
+			padding-top: clamp(20px, 3vw, 28px); color: var(--ink);
+		}
+	}
+	.dg-power {
 		--ink: #161413; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
 		/* 이전 섹션들과의 간격을 위해 위아래 패딩 유지 */
 		padding-block: clamp(40px, 8vw, 80px);
