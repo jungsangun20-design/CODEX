@@ -494,41 +494,109 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
   .fd-faq-image-area { order: 1; flex: none; height: 350px; width: 100%; }
   .fd-faq-image-area img { position: relative; height: 100%; }
 }
+
+
+/* ════════ SECTION 1 · STORY HERO (Cafe24 custom) ════════ */
+.dg-story-hero{ width:100%; background:#fff; color:#000; font-family:var(--dg-font-body); overflow:hidden; }
+.dg-story-hero, .dg-story-hero *{ box-sizing:border-box; }
+.dg-story-hero__inner{ min-height:clamp(390px,43vw,520px); max-width:1440px; margin:0 auto; padding:clamp(44px,7vw,96px) clamp(24px,5vw,72px) clamp(22px,3vw,44px); display:grid; grid-template-columns:minmax(260px,.82fr) minmax(320px,1.18fr); align-items:end; column-gap:clamp(34px,6vw,96px); }
+.dg-story-hero__content{ padding-bottom:clamp(0px,1.2vw,18px); }
+.dg-story-hero__eyebrow{ margin:0 0 4px; font-family:var(--dg-font-body); font-size:clamp(12px,1.2vw,14px); font-weight:400; line-height:1.35; letter-spacing:-.02em; color:#000; }
+.dg-story-hero__title{ margin:0; font-family:var(--dg-font-body); font-size:clamp(58px,7.7vw,112px); font-weight:400; line-height:.96; letter-spacing:-.075em; color:#000; }
+.dg-story-hero__actions{ display:flex; flex-wrap:wrap; gap:6px; margin-top:clamp(22px,2.2vw,30px); }
+.dg-story-hero__btn{ display:inline-flex; align-items:center; justify-content:center; min-height:23px; padding:5px 20px 6px; border:0; border-radius:999px; background:#000; color:#fff; font-family:var(--dg-font-body); font-size:12px; font-weight:400; line-height:1; letter-spacing:-.02em; text-decoration:none; transition:opacity .25s ease, transform .25s ease; }
+.dg-story-hero__btn:hover{ opacity:.82; transform:translateY(-1px); color:#fff; }
+.dg-story-hero__mark-wrap{ display:flex; justify-content:center; align-items:center; line-height:0; }
+.dg-story-hero__mark{ display:block; width:min(48vw,470px); max-width:100%; height:auto; object-fit:contain; }
+@media (max-width:767px){
+  .dg-story-hero__inner{ min-height:auto; padding:64px 24px 34px; grid-template-columns:1fr; align-items:start; gap:34px; }
+  .dg-story-hero__content{ order:2; padding-bottom:0; }
+  .dg-story-hero__mark-wrap{ order:1; justify-content:center; }
+  .dg-story-hero__mark{ width:min(76vw,330px); }
+  .dg-story-hero__title{ font-size:clamp(48px,16vw,68px); letter-spacing:-.07em; }
+}
+
+
+/* ════════ SECTION 2 · HOW IT ALL BEGAN ════════ */
+.dg-about-began{ width:100%; background:#fff; color:#000; font-family:var(--dg-font-body); }
+.dg-about-began, .dg-about-began *{ box-sizing:border-box; }
+.dg-about-began__inner{ max-width:1440px; margin:0 auto; padding:clamp(34px,5.2vw,74px) clamp(24px,5vw,72px) clamp(44px,6vw,86px); display:grid; grid-template-columns:minmax(0,1.42fr) minmax(220px,.58fr); align-items:start; column-gap:clamp(38px,7vw,96px); }
+.dg-about-began__title{ margin:0; color:#000; font-family:var(--dg-font-body); font-size:clamp(48px,6vw,86px); font-weight:400; line-height:.97; letter-spacing:-.075em; word-break:keep-all; }
+.dg-about-began__copy{ margin:clamp(42px,4.8vw,66px) 0 0; max-width:700px; color:#000; font-family:var(--dg-font-body); font-size:clamp(14px,1.25vw,16px); font-weight:400; line-height:1.42; letter-spacing:-.045em; word-break:keep-all; }
+.dg-about-began__copy p{ margin:0; }
+.dg-about-began__copy p + p{ margin-top:clamp(20px,2.2vw,28px); }
+.dg-about-began__media{ width:100%; line-height:0; }
+.dg-about-began__img{ display:block; width:100%; height:auto; object-fit:cover; }
+@media (max-width:767px){
+  .dg-about-began__inner{ padding:42px 24px 56px; grid-template-columns:1fr; gap:30px; }
+  .dg-about-began__title{ font-size:clamp(42px,13vw,60px); line-height:1; }
+  .dg-about-began__copy{ margin-top:28px; font-size:14px; line-height:1.55; }
+  .dg-about-began__media{ max-width:420px; }
+}
+
+
+/* ════════ SECTION 3 · BRAIN WELLNESS FIRST ════════ */
+.dg-brain-first{ width:100%; background:#fff; color:#000; font-family:var(--dg-font-body); }
+.dg-brain-first, .dg-brain-first *{ box-sizing:border-box; }
+.dg-brain-first__inner{ max-width:1440px; margin:0 auto; padding:clamp(34px,5.2vw,74px) clamp(24px,5vw,72px) clamp(44px,6vw,86px); display:grid; grid-template-columns:minmax(220px,.78fr) minmax(0,1.22fr); align-items:start; column-gap:clamp(38px,6.4vw,92px); }
+.dg-brain-first__media{ width:100%; line-height:0; }
+.dg-brain-first__img{ display:block; width:100%; height:auto; object-fit:cover; }
+.dg-brain-first__content{ padding-top:clamp(24px,3vw,44px); }
+.dg-brain-first__title{ margin:0; color:#000; font-family:var(--dg-font-body); font-size:clamp(46px,5.5vw,78px); font-weight:400; line-height:1.1; letter-spacing:-.075em; word-break:keep-all; }
+.dg-brain-first__copy{ margin:clamp(36px,4vw,54px) 0 0; max-width:720px; color:#000; font-family:var(--dg-font-body); font-size:clamp(14px,1.25vw,16px); font-weight:400; line-height:1.42; letter-spacing:-.045em; word-break:keep-all; }
+.dg-brain-first__copy p{ margin:0; }
+.dg-brain-first__copy p + p{ margin-top:clamp(18px,2vw,25px); }
+@media (max-width:767px){
+  .dg-brain-first__inner{ padding:42px 24px 56px; grid-template-columns:1fr; gap:30px; }
+  .dg-brain-first__media{ max-width:420px; }
+  .dg-brain-first__content{ padding-top:0; }
+  .dg-brain-first__title{ font-size:clamp(40px,12vw,56px); line-height:1.08; }
+  .dg-brain-first__copy{ margin-top:28px; font-size:14px; line-height:1.55; }
+}
 </style></div>
-<section class="dg-hero" id="shop" data-ez="contents-1ussfzn-1">
+<section class="dg-story-hero" id="shop" data-ez="contents-1ussfzn-1">
   <!-- [SEO] 페이지 대표 h1 (화면엔 숨김). layout 로고가 이미 h1이면 이 줄 삭제 -->
-  <h1 class="dg-sr-only">42degree — 매일의 Stress Care, Calm &amp; Clarity™</h1>
-  <div class="dg-hero__media">
-    <img class="dg-hero__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42banner.jpg" alt="42degree Citrus Blend &amp; CC Shot" loading="eager" fetchpriority="high">
-    <div class="dg-hero__overlay">
-      <p class="dg-hero__copy">무거운 긴장은 덜어내고, 맑은 몰입만 남기도록, 매일의 Stress Care.</p>
-      <a class="dg-btn dg-btn--light dg-hero__cta" href="/product/%EC%94%A8%EC%94%A8%EC%83%B7/11/category/23/display/1/">SHOP THE SHOT</a>
-    </div>
-  </div>
-</section>
-<section class="dg-ritual" data-ez="module-03bnl82-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
-  <div class="dg-ritual__inner">
-    <div class="dg-ritual__head">
-      <p class="dg-ritual__eyebrow">The Ritual of Mind</p>
-      <div class="dg-ritual__col">
-        <h2 class="dg-ritual__title">The logic of<br>inner peace</h2>
-        <p class="dg-ritual__lead">스트레스 케어는 무조건적인 휴식이 아닌,<br> 뇌의 과부하를 정돈하는 것에서 시작됩니다.<br>카페인에 의존하는 각성이 아닌, 내면에서부터 차오르는<br>차분한 몰입과 건강한 활력을 직접 경험해보세요.</p>
+  <h1 class="dg-sr-only">42degree — What’s your story?</h1>
+  <div class="dg-story-hero__inner">
+    <div class="dg-story-hero__content">
+      <p class="dg-story-hero__eyebrow">Share your truth with the world</p>
+      <p class="dg-story-hero__title">What’s<br>your story?</p>
+      <div class="dg-story-hero__actions" aria-label="42degree quick links">
+        <a class="dg-story-hero__btn" href="/member/join.html">Join the club</a>
+        <a class="dg-story-hero__btn" href="/product/list.html?cate_no=23">See what’s in store</a>
       </div>
     </div>
-    <hr class="dg-ritual__rule">
-  </div>
-  <div class="dg-ritual__media">
-    <img class="dg-ritual__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_1.png" alt loading="lazy">
+    <div class="dg-story-hero__mark-wrap" aria-hidden="true">
+      <img class="dg-story-hero__mark" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2.png" alt="" loading="eager" fetchpriority="high">
+    </div>
   </div>
 </section>
-<section class="dg-belief" data-ez="module-15st45c-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
-  <div class="dg-belief__inner">
-    <div class="dg-belief__text">
-      <h2 class="dg-belief__title">We believe brain wellness should be part of daily rituals, not a complex science.</h2>
-      <p class="dg-belief__body">바쁘게 돌아가는 현대 사회에서 — 뇌의 긴장을 풀고 마음을 맑게 유지하는 것은 더 이상 특별한 치료가 아닌 매일의 습관이어야 합니다. — 42degree는 인지심리학적 통찰과 섬세하게 설계된 원료를 바탕으로, 당신이 언제 어디서나 가장 간편하게 내면의 평온을 되찾을 수 있도록 돕습니다.</p>
+<section class="dg-about-began" data-ez="module-03bnl82-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-about-began__inner">
+    <div class="dg-about-began__content">
+      <h2 class="dg-about-began__title">How It All Began :<br>42°의 시작</h2>
+      <div class="dg-about-began__copy">
+        <p>매일 아침을 깨우던 각성제와 만성적인 스트레스.<br>그리고 어느덧 한계에 다다랐음을 직감했던 번아웃의 순간들.<br>남들에게는 치열한 열정으로 포장되었지만,<br>속으로는 카페인에 의존해 겨우 하루를 버텨내던 날들이었습니다.<br>피로감은 이내 숨길 수 없이 겉으로도 투명하게 드러나기 시작했죠.</p>
+        <p>저희는 진심으로 즐기면서도 스트레스를 관리할 수 있는 더 건강한 방법을 원했고,<br>그렇게 바로 42degree를 시작했습니다.</p>
+      </div>
     </div>
-    <div class="dg-belief__media">
-      <img class="dg-belief__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png" alt="42degree CC Shot 스틱" loading="lazy">
+    <div class="dg-about-began__media">
+      <img class="dg-about-began__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about1.png" alt="42degree가 시작된 작업 공간" loading="lazy">
+    </div>
+  </div>
+</section>
+<section class="dg-brain-first" data-ez="module-15st45c-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-brain-first__inner">
+    <div class="dg-brain-first__media">
+      <img class="dg-brain-first__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about2.png" alt="책상 위 노트북과 소파가 있는 42degree 작업 공간" loading="lazy">
+    </div>
+    <div class="dg-brain-first__content">
+      <h2 class="dg-brain-first__title">국내 최초<br>브레인 웰니스 브랜드</h2>
+      <div class="dg-brain-first__copy">
+        <p>‘더 나은 성과를 내기 위해,<br>왜 우리는 뇌와 마음을 이토록 혹사시켜야만 할까?’<br>이 의문이 모든 것의 시작이었습니다.</p>
+        <p>학부 시절 심리학을 전공했고, 인지·응용심리학의 관점에서<br>치열하게 고민한 결과는 명확했습니다.</p>
+        <p>진정한 몰입과 집중은 뇌를 강제로 쥐어짜는 자극적인 각성이<br>아니라, 과열된 뇌의 긴장을 차분히 가라앉히는<br>‘안정(Clarity)’에서 온다는 것을요.</p>
+      </div>
     </div>
   </div>
 </section>
