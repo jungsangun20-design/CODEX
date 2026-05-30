@@ -669,12 +669,13 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
         <h2 class="fd-faq-title">FAQs</h2>
         <div class="fd-faq-accordion-wrap">
           <div class="fd-faq-item">
-            <button class="fd-faq-question" type="button" aria-expanded="false"><span>C.C. Shot은 하루에 몇 번 마시는 것이 좋나요?</span><span class="fd-faq-icon">+</span></button>
-            <div class="fd-faq-answer">정해진 섭취 횟수는 없으나, 나만의 리추얼을 만들기 위해 하루 한 스틱을 권장합니다. 아침 일찍 혹은 오후의 휴식 시간에 자연스럽게 즐겨보세요.</div>
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>하루에 몇 포까지 마셔도 되나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">42degree가 설계한 최적의 밸런스를 위해 하루 1~2포 섭취를 가장 권장 드립니다.<br>
+*L-테아닌 1일 최대 섭취량 200mg 기준</div>
           </div>
           <div class="fd-faq-item">
-            <button class="fd-faq-question" type="button" aria-expanded="false"><span>임산부나 수유부도 섭취할 수 있나요?</span><span class="fd-faq-icon">+</span></button>
-            <div class="fd-faq-answer">본 제품은 건강기능식품이 아닌 일반 가공식품이나, 성분의 특성상 개인차가 있을 수 있습니다. 자세한 사항은 전문의와 상담을 권장합니다.</div>
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>임산부나 수유부가 마셔도 되나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">씨씨샷의 모든 원료는 안전한 식품원료입니다. 하지만 임신·수유기에는 몸이 민감할 수 있으므로, 원료 성분을 확인하신 후 전문의와 상의하여 섭취하시길 권장합니다.</div>
           </div>
           <div class="fd-faq-item">
             <button class="fd-faq-question" type="button" aria-expanded="false"><span>언제 섭취하는 것이 가장 효과적인가요?</span><span class="fd-faq-icon">+</span></button>
@@ -689,8 +690,8 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
             <div class="fd-faq-answer">직사광선을 피하고 서늘한 곳에 보관해주세요. 스틱을 개봉한 후에는 즉시 섭취하시는 것을 권장합니다.</div>
           </div>
           <div class="fd-faq-item">
-            <button class="fd-faq-question" type="button" aria-expanded="false"><span>배송은 얼마나 걸리나요?</span><span class="fd-faq-icon">+</span></button>
-            <div class="fd-faq-answer">영업일 기준 평균 2~3일 정도 소요됩니다. 고객님께 안전하게 전달하기 위해 최선을 다하고 있습니다.</div>
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>침전물이나 알갱이가 보이는데 괜찮은 건가요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">네, 안심하셔도 됩니다. 이는 천연 과일에서 유래한 천연 펄프(Pulp) 성분으로, 원료를 가공 없이 담아 발생하는 자연스러운 현상입니다. 가볍게 흔들어 드세요.</div>
           </div>
         </div>
       </div>
