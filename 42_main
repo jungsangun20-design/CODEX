@@ -1,0 +1,746 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/layout/basic/js/main.js)-->
+<!--@css(/layout/basic/css/main.css)-->
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1q9qx6k-1"><script>document.documentElement.classList.add('dg-js');</script><style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
+:root{
+  --dg-ink:#161413;
+  --dg-ink-soft:#4b4e4c;
+  --dg-line:#dcdedc;
+  --dg-btn:#141413;
+  --dg-font-display:"Pretendard Variable",Pretendard,-apple-system,"Helvetica Neue",sans-serif;
+  --dg-font-body:"Pretendard Variable",Pretendard,-apple-system,sans-serif;
+  --dg-maxw:1200px;
+  --dg-gutter:clamp(20px,5vw,64px);
+}
+
+/* SEO/접근성: 화면엔 안 보이지만 스크린리더·검색엔진이 읽는 텍스트 */
+.dg-sr-only{ position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* ── 카페24 상단 GNB 스크롤 시 투명화 제어 (의도된 동작 — 그대로 유지) ── */
+#header, header, .header, .xans-layout-header {
+  transition: background-color 0.3s ease, background 0.3s ease !important;
+}
+.dg-header-scrolled,
+#header.is-sticky, .header.is-sticky, .xans-layout-header.is-sticky,
+#header.fixed, .header.fixed, .xans-layout-header.fixed {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* ── 공통 버튼 ── */
+.dg-btn{ display:inline-flex; align-items:center; justify-content:center;
+  padding:1.05em 2.8em; border:0; border-radius:999px; cursor:pointer;
+  font-family:var(--dg-font-body); font-weight:600; font-size:.95rem;
+  letter-spacing:.04em; line-height:1;
+  background:var(--dg-btn); color:#fff; text-decoration:none;
+  transition:transform .3s ease, opacity .3s ease, background .3s ease, color .3s ease; }
+.dg-btn:hover{ transform:translateY(-2px); opacity:.92; }
+.dg-btn--light{ background:#fff; color:var(--dg-ink); box-shadow:0 10px 34px rgba(0,0,0,.16); text-transform:uppercase; }
+.dg-btn--light:hover{ background:var(--dg-ink); color:#fff; opacity:1; }
+.dg-btn--block{ display:flex; width:100%; }
+.dg-btn--outline{ background:#fff; color:var(--dg-ink); border:1.5px solid var(--dg-ink); }
+.dg-btn--outline:hover{ background:var(--dg-ink); color:#fff; opacity:1; }
+
+/* ════════ SECTION 1 · HERO ════════ */
+.dg-hero{ position:relative; width:100%; font-family:var(--dg-font-body); }
+.dg-hero, .dg-hero *{ box-sizing:border-box; }
+.dg-hero__media{ position:relative; width:100%; line-height:0; overflow:hidden; }
+.dg-hero__img{ display:block; width:100%; height:auto; }
+.dg-hero__overlay{ position:absolute; left:50%; bottom:12%; transform:translateX(-50%);
+  width:100%; padding-inline:var(--dg-gutter); line-height:1.5;
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  gap:clamp(18px,2.6vw,32px); }
+.dg-hero__copy{ margin:0; color:#fff; font-family:var(--dg-font-display); font-weight:500;
+  font-size:clamp(.95rem,1.8vw,1.35rem); line-height:1.5; text-shadow:0 1px 16px rgba(0,0,0,.28); word-break:keep-all; }
+.dg-hero__copy, .dg-hero__cta{ opacity:0; transform:translateY(16px); animation:dgHeroUp .9s ease forwards; }
+.dg-hero__copy{ animation-delay:.15s; }
+.dg-hero__cta{  animation-delay:.38s; }
+@keyframes dgHeroUp{ to{ opacity:1; transform:none; } }
+@media (min-width:768px){
+  .dg-hero__media { height: clamp(480px, 42vw, 680px); }
+  .dg-hero__img { height: 100%; object-fit: cover; object-position: center; }
+  .dg-hero__overlay { bottom: 12%; }
+}
+@media (max-width:767px){
+  .dg-hero__media { height: 100vh; height: 100dvh; }
+  .dg-hero__img { height: 100%; object-fit: cover; object-position: center; }
+  .dg-hero__overlay { bottom: 15%; gap:22px; padding-inline:24px; width:100%; }
+  .dg-hero__copy { font-size:1.05rem; line-height:1.55; max-width:280px; margin:0 auto; }
+  .dg-hero__cta { width:100%; max-width:280px; padding:1.15em 0; font-size:1rem; }
+}
+
+/* ════════ SECTION 2 · THE RITUAL OF MIND ════════ */
+.dg-ritual{ font-family:var(--dg-font-body); padding-top:clamp(56px,9vw,120px); }
+.dg-ritual, .dg-ritual *{ box-sizing:border-box; }
+.dg-ritual__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-ritual__head{ display:grid; grid-template-columns:1fr; gap:1.4rem; align-items:start; }
+.dg-ritual__eyebrow{ margin:0; font-weight:700; font-size:.72rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--dg-ink); }
+.dg-ritual__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
+  font-weight:400; line-height:1.04; letter-spacing:-.02em; font-size:clamp(2.6rem,9vw,5.5rem); text-align:left; }
+.dg-ritual__lead{ margin:1.3rem 0 0; color:var(--dg-ink-soft); text-align:left;
+  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:52ch; }
+.dg-ritual__rule{ border:0; border-top:1px solid var(--dg-line); margin:clamp(26px,4vw,46px) 0 0; }
+.dg-ritual__media{ width:100%; aspect-ratio:40/9; overflow:hidden;
+  margin-top:clamp(26px,4vw,50px); line-height:0; }
+.dg-ritual__img{ display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+@media (min-width:768px){ .dg-ritual__head{ grid-template-columns:1fr 1.5fr; gap:2rem; } }
+
+/* ════════ SECTION 3 · WE BELIEVE ════════ */
+.dg-belief{ font-family:var(--dg-font-body); padding-block:clamp(52px,8vw,110px); }
+.dg-belief, .dg-belief *{ box-sizing:border-box; }
+.dg-belief__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
+  display:grid; grid-template-columns:1fr; gap:clamp(30px,5vw,56px); align-items:start; }
+.dg-belief__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
+  font-weight:500; line-height:1.12; letter-spacing:-.02em; font-size:clamp(1.7rem,4.6vw,3rem); }
+.dg-belief__body{ margin:1.6rem 0 0 12%; color:var(--dg-ink-soft);
+  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:46ch; }
+.dg-belief__media{ line-height:0; }
+.dg-belief__img{ display:block; width:100%; height:auto; }
+@media (min-width:768px){
+  .dg-belief__inner{ grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,56px); }
+  .dg-belief__body{ margin-left:30%; }
+}
+
+/* ════════ SECTION 4 · JOIN ════════ */
+.dg-join{ width:100%; font-family:var(--dg-font-body); }
+.dg-join, .dg-join *{ box-sizing:border-box; }
+.dg-join__inner{ display:grid; grid-template-columns:1fr; }
+.dg-join__text{ display:flex; flex-direction:column; justify-content:center;
+  padding:clamp(48px,8vw,110px) var(--dg-gutter); }
+.dg-join__textinner{ width:100%; max-width:480px; }
+.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.7; }
+.dg-join__title{ margin:1.4rem 0 1.9rem; color:var(--dg-ink); font-family:var(--dg-font-display);
+  font-weight:600; line-height:1.32; letter-spacing:-.01em; font-size:clamp(1.45rem,3.6vw,2.2rem); }
+.dg-join__cta{ display:flex; flex-direction:column; gap:.7rem; }
+.dg-join__media{ line-height:0; }
+.dg-join__img{ display:block; width:100%; height:auto; }
+@media (min-width:768px){
+  .dg-join__inner{ grid-template-columns:1fr 1fr; align-items:stretch; }
+  .dg-join__media{ position:relative; }
+  .dg-join__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+}
+
+/* ════════ SECTION 5 · FORMULA ════════ */
+.dg-formula{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); }
+.dg-formula, .dg-formula *{ box-sizing:border-box; }
+.dg-formula__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-formula__head{ margin-bottom:clamp(24px,4vw,32px); text-align:left; }
+.dg-formula__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
+  font-size:clamp(1.8rem,4.5vw,2.8rem); letter-spacing:-.03em; color:var(--dg-ink); }
+.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.9rem,1.3vw,1rem); }
+.dg-formula__track{ display:flex; flex-direction:column; gap:32px; }
+.dg-formula__card{ display:flex; flex-direction:column; }
+.dg-formula__media{ width:100%; aspect-ratio:4/3; border-radius:clamp(16px,3vw,28px);
+  overflow:hidden; margin-bottom:16px; }
+.dg-formula__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.dg-formula__card:hover .dg-formula__img{ transform:scale(1.03); }
+.dg-formula__text{ background:#f2f4f5; padding:clamp(20px,3vw,28px); flex-grow:1;
+  display:flex; flex-direction:column; border-top:3px solid #e7e9e7; }
+.dg-formula__name{ margin:0 0 14px; font-size:clamp(.95rem,1.2vw,1.05rem);
+  font-weight:700; color:var(--dg-ink); letter-spacing:-.01em; }
+.dg-formula__list{ margin:0; padding:0; list-style:none; }
+.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.82rem,1.1vw,.92rem);
+  line-height:1.6; color:var(--dg-ink); margin-bottom:6px; word-break:keep-all; }
+.dg-formula__item::before{ content:"•"; position:absolute; left:0; top:0; color:var(--dg-ink); }
+.dg-formula__note{ margin:24px 0 0; font-size:clamp(.82rem,1.1vw,.92rem); line-height:1.6;
+  color:var(--dg-ink-soft); word-break:keep-all; }
+@media (min-width:768px){
+  .dg-formula__track{ flex-direction:row; overflow-x:auto; scroll-snap-type:x mandatory;
+    padding-bottom:20px; gap:24px; -webkit-overflow-scrolling:touch; }
+  .dg-formula__track::-webkit-scrollbar{ height:6px; }
+  .dg-formula__track::-webkit-scrollbar-track{ background:#f1f1f1; border-radius:4px; }
+  .dg-formula__track::-webkit-scrollbar-thumb{ background:var(--dg-line); border-radius:4px; }
+  .dg-formula__track::-webkit-scrollbar-thumb:hover{ background:var(--dg-ink-soft); }
+  .dg-formula__card{ flex:0 0 calc(31.5%); scroll-snap-align:start; }
+}
+
+/* ════════ SECTION 6 · REVIEW ════════ */
+.dg-review{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); background:#ffffff; }
+.dg-review, .dg-review *{ box-sizing:border-box; }
+.dg-review__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-review__head{ margin-bottom:clamp(32px,5vw,50px); text-align:left; }
+.dg-review__title{ margin:0 0 12px; font-family:var(--dg-font-display); font-weight:400;
+  font-size:clamp(2rem,5vw,3rem); letter-spacing:-.03em; color:var(--dg-ink); }
+.dg-review__desc{ margin:0; font-size:clamp(.95rem,1.3vw,1.1rem); line-height:1.5; color:var(--dg-ink); }
+.dg-review__grid{ display:grid; grid-template-columns:1fr; gap:clamp(16px,2vw,24px); }
+@media (min-width:768px){ .dg-review__grid{ grid-template-columns:repeat(3, 1fr); } }
+.dg-review__card{ background:#ffffff; border:1px solid var(--dg-ink); border-radius:clamp(20px,3vw,28px);
+  padding:clamp(28px,3.5vw,36px); display:flex; flex-direction:column; justify-content:space-between;
+  transition:opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+/* JS 동작 시에만 숨겼다가 스크롤로 등장 (JS 실패/비활성 시 그냥 보임) */
+html.dg-js .dg-review__card{ opacity:0; transform:translateY(40px); }
+html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
+.dg-review__card:nth-child(2){ transition-delay:0.15s; }
+.dg-review__card:nth-child(3){ transition-delay:0.3s; }
+.dg-review__text{ margin:0 0 36px; color:var(--dg-ink); font-size:clamp(1rem,1.15vw,1.1rem);
+  line-height:1.7; word-break:keep-all; }
+.dg-review__footer{ display:flex; justify-content:space-between; align-items:center;
+  padding-top:20px; border-top:1px solid var(--dg-line); }
+.dg-review__author{ margin:0; color:var(--dg-ink); font-size:clamp(.85rem,1vw,.95rem); font-weight:700; }
+.dg-review__stars{ color:var(--dg-ink); font-size:clamp(.9rem,1vw,.95rem); letter-spacing:1px; }
+
+/* ════════ SECTION 7 · ORIGINS ════════ */
+.dg-origins{ font-family:var(--dg-font-body); padding-block:clamp(40px,6vw,80px); background:#ffffff; }
+.dg-origins, .dg-origins *{ box-sizing:border-box; }
+.dg-origins__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-origins__media{ width:100%; margin-bottom:clamp(20px,3vw,30px); line-height:0; }
+.dg-origins__img{ display:block; width:100%; height:auto; }
+.dg-origins__title{ margin:0 0 clamp(16px,2vw,24px); font-family:var(--dg-font-display);
+  font-weight:600; font-size:clamp(1.1rem, 1.4vw, 1.25rem); color:var(--dg-ink); line-height:1.4; }
+.dg-origins__copy{ margin:0 0 clamp(40px,6vw,60px); color:var(--dg-ink); font-family:var(--dg-font-body);
+  font-weight:400; font-size:clamp(1.4rem,2.6vw,2.1rem); line-height:1.45; letter-spacing:-.03em; word-break:keep-all; }
+.dg-origins__rule{ border:0; border-top:1px solid var(--dg-line); margin:0; }
+@media (max-width:767px){ .dg-pc-br{ display:none; } .dg-origins__copy{ font-size:1.25rem; } }
+
+/* ════════ SECTION 8 · TOP ARTICLES ════════ */
+.dg-articles{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); background:#ffffff; }
+.dg-articles, .dg-articles *{ box-sizing:border-box; }
+.dg-articles__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
+  display:grid; grid-template-columns:1fr; gap:clamp(32px,5vw,40px); align-items:start; }
+.dg-articles__head{ margin:0; }
+.dg-articles__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
+  font-size:clamp(2.4rem,6vw,3.2rem); letter-spacing:-.04em; color:var(--dg-ink); }
+.dg-articles__grid{ display:grid; grid-template-columns:1fr; gap:clamp(40px,6vw,56px); }
+.dg-article{ display:flex; flex-direction:column; }
+.dg-article__media{ width:100%; aspect-ratio:1/1; overflow:hidden; margin-bottom:16px; background:#fff; }
+.dg-article__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.dg-article:hover .dg-article__img{ transform:scale(1.03); }
+.dg-article__text{ display:flex; flex-direction:column; border-top:1px solid var(--dg-line); padding-top:16px; }
+.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1.05rem,1.4vw,1.15rem);
+  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.4; }
+.dg-article__desc{ margin:0; font-size:clamp(.85rem,1.1vw,.95rem); line-height:1.65; color:var(--dg-ink); word-break:keep-all; }
+@media (min-width:768px){
+  .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
+  .dg-articles__grid{ grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); }
+}
+
+/* ════════ SECTION 9 · FAQ ════════ */
+.fd-faq-section { padding: 100px 20px; background-color: #ffffff; }
+.fd-container { max-width: var(--dg-maxw); margin: 0 auto; }        /* [추가] 다른 섹션과 폭 정렬 */
+.fd-faq-unified-card { display: flex; background-color: #f0efef; border-radius: 40px; overflow: hidden; align-items: stretch; width: 100%; box-sizing: border-box; }
+.fd-faq-content-area { flex: 6; padding: 70px 60px; display: flex; flex-direction: column; justify-content: center; }
+.fd-faq-title { font-family: var(--dg-font-body); font-size: 48px; font-weight: 700; color: #000000; margin: 0 0 35px; letter-spacing: -0.04em; }
+.fd-faq-item { border-bottom: 1px solid rgba(0,0,0,.1); }            /* [수정] 흰색→어두운 색 (회색 배경에서 보이게) */
+.fd-faq-item:last-child { border-bottom: none; }
+.fd-faq-question { font-family: var(--dg-font-body); width:100%; background:none; border:0; -webkit-appearance:none; appearance:none; text-align:left;
+  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 18px; font-weight: 600; color: #000000; cursor: pointer; user-select: none; }
+.fd-faq-icon { font-size: 24px; font-weight: 300; color: #000000; margin-left: 20px; transition: transform 0.3s ease; display: inline-block; }
+.fd-faq-item.active .fd-faq-icon { transform: rotate(45deg); }
+.fd-faq-answer { max-height: 0; overflow: hidden; font-size: 18px; line-height: 1.6; color: #000000; word-break: keep-all;
+  font-family: var(--dg-font-body); font-weight: 400; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; }
+.fd-faq-item.active .fd-faq-answer { max-height: 500px; padding: 0 0 20px; }
+.fd-faq-item.active .fd-faq-question { padding-bottom: 12px; }
+.fd-faq-image-area { flex: 4; position: relative; background-color: #ffffff; overflow: hidden; }
+.fd-faq-image-area img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+@media (max-width: 768px) {
+  .fd-faq-section { padding: 60px 20px; }
+  .fd-faq-unified-card { flex-direction: column; border-radius: 30px; }
+  .fd-faq-content-area { order: 2; padding: 50px 30px; }
+  .fd-faq-title { font-size: 34px; margin-bottom: 25px; }
+  .fd-faq-question { font-size: 16px; padding: 16px 0; }
+  .fd-faq-answer { font-size: 16px; }
+  .fd-faq-image-area { order: 1; flex: none; height: 350px; width: 100%; }
+  .fd-faq-image-area img { position: relative; height: 100%; }
+}
+</style></div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-096cgwq-1"><style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
+:root{
+  --dg-ink:#161413;
+  --dg-ink-soft:#4b4e4c;
+  --dg-line:#dcdedc;
+  --dg-btn:#141413;
+  --dg-font-display:"Pretendard Variable",Pretendard,-apple-system,"Helvetica Neue",sans-serif;
+  --dg-font-body:"Pretendard Variable",Pretendard,-apple-system,sans-serif;
+  --dg-maxw:1200px;
+  --dg-gutter:clamp(20px,5vw,64px);
+}
+
+/* SEO/접근성: 화면엔 안 보이지만 스크린리더·검색엔진이 읽는 텍스트 */
+.dg-sr-only{ position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* ── 카페24 상단 GNB 스크롤 시 투명화 제어 (의도된 동작 — 그대로 유지) ── */
+#header, header, .header, .xans-layout-header {
+  transition: background-color 0.3s ease, background 0.3s ease !important;
+}
+.dg-header-scrolled,
+#header.is-sticky, .header.is-sticky, .xans-layout-header.is-sticky,
+#header.fixed, .header.fixed, .xans-layout-header.fixed {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* ── 공통 버튼 ── */
+.dg-btn{ display:inline-flex; align-items:center; justify-content:center;
+  padding:1.05em 2.8em; border:0; border-radius:999px; cursor:pointer;
+  font-family:var(--dg-font-body); font-weight:600; font-size:.95rem;
+  letter-spacing:.04em; line-height:1;
+  background:var(--dg-btn); color:#fff; text-decoration:none;
+  transition:transform .3s ease, opacity .3s ease, background .3s ease, color .3s ease; }
+.dg-btn:hover{ transform:translateY(-2px); opacity:.92; }
+.dg-btn--light{ background:#fff; color:var(--dg-ink); box-shadow:0 10px 34px rgba(0,0,0,.16); text-transform:uppercase; }
+.dg-btn--light:hover{ background:var(--dg-ink); color:#fff; opacity:1; }
+.dg-btn--block{ display:flex; width:100%; }
+.dg-btn--outline{ background:#fff; color:var(--dg-ink); border:1.5px solid var(--dg-ink); }
+.dg-btn--outline:hover{ background:var(--dg-ink); color:#fff; opacity:1; }
+
+/* ════════ SECTION 1 · HERO ════════ */
+.dg-hero{ position:relative; width:100%; font-family:var(--dg-font-body); }
+.dg-hero, .dg-hero *{ box-sizing:border-box; }
+.dg-hero__media{ position:relative; width:100%; line-height:0; overflow:hidden; }
+.dg-hero__img{ display:block; width:100%; height:auto; }
+.dg-hero__overlay{ position:absolute; left:50%; bottom:12%; transform:translateX(-50%);
+  width:100%; padding-inline:var(--dg-gutter); line-height:1.5;
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  gap:clamp(18px,2.6vw,32px); }
+.dg-hero__copy{ margin:0; color:#fff; font-family:var(--dg-font-display); font-weight:500;
+  font-size:clamp(.95rem,1.8vw,1.35rem); line-height:1.5; text-shadow:0 1px 16px rgba(0,0,0,.28); word-break:keep-all; }
+.dg-hero__copy, .dg-hero__cta{ opacity:0; transform:translateY(16px); animation:dgHeroUp .9s ease forwards; }
+.dg-hero__copy{ animation-delay:.15s; }
+.dg-hero__cta{  animation-delay:.38s; }
+@keyframes dgHeroUp{ to{ opacity:1; transform:none; } }
+@media (min-width:768px){
+  .dg-hero__media { height: clamp(480px, 42vw, 680px); }
+  .dg-hero__img { height: 100%; object-fit: cover; object-position: center; }
+  .dg-hero__overlay { bottom: 12%; }
+}
+@media (max-width:767px){
+  .dg-hero__media { height: 100vh; height: 100dvh; }
+  .dg-hero__img { height: 100%; object-fit: cover; object-position: center; }
+  .dg-hero__overlay { bottom: 15%; gap:22px; padding-inline:24px; width:100%; }
+  .dg-hero__copy { font-size:1.05rem; line-height:1.55; max-width:280px; margin:0 auto; }
+  .dg-hero__cta { width:100%; max-width:280px; padding:1.15em 0; font-size:1rem; }
+}
+
+/* ════════ SECTION 2 · THE RITUAL OF MIND ════════ */
+.dg-ritual{ font-family:var(--dg-font-body); padding-top:clamp(56px,9vw,120px); }
+.dg-ritual, .dg-ritual *{ box-sizing:border-box; }
+.dg-ritual__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-ritual__head{ display:grid; grid-template-columns:1fr; gap:1.4rem; align-items:start; }
+.dg-ritual__eyebrow{ margin:0; font-weight:700; font-size:.72rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--dg-ink); }
+.dg-ritual__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
+  font-weight:400; line-height:1.04; letter-spacing:-.02em; font-size:clamp(2.6rem,9vw,5.5rem); text-align:left; }
+.dg-ritual__lead{ margin:1.3rem 0 0; color:var(--dg-ink-soft); text-align:left;
+  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:52ch; }
+.dg-ritual__rule{ border:0; border-top:1px solid var(--dg-line); margin:clamp(26px,4vw,46px) 0 0; }
+.dg-ritual__media{ width:100%; aspect-ratio:40/9; overflow:hidden;
+  margin-top:clamp(26px,4vw,50px); line-height:0; }
+.dg-ritual__img{ display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+@media (min-width:768px){ .dg-ritual__head{ grid-template-columns:1fr 1.5fr; gap:2rem; } }
+
+/* ════════ SECTION 3 · WE BELIEVE ════════ */
+.dg-belief{ font-family:var(--dg-font-body); padding-block:clamp(52px,8vw,110px); }
+.dg-belief, .dg-belief *{ box-sizing:border-box; }
+.dg-belief__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
+  display:grid; grid-template-columns:1fr; gap:clamp(30px,5vw,56px); align-items:start; }
+.dg-belief__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
+  font-weight:500; line-height:1.12; letter-spacing:-.02em; font-size:clamp(1.7rem,4.6vw,3rem); }
+.dg-belief__body{ margin:1.6rem 0 0 12%; color:var(--dg-ink-soft);
+  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:46ch; }
+.dg-belief__media{ line-height:0; }
+.dg-belief__img{ display:block; width:100%; height:auto; }
+@media (min-width:768px){
+  .dg-belief__inner{ grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,56px); }
+  .dg-belief__body{ margin-left:30%; }
+}
+
+/* ════════ SECTION 4 · JOIN ════════ */
+.dg-join{ width:100%; font-family:var(--dg-font-body); }
+.dg-join, .dg-join *{ box-sizing:border-box; }
+.dg-join__inner{ display:grid; grid-template-columns:1fr; }
+.dg-join__text{ display:flex; flex-direction:column; justify-content:center;
+  padding:clamp(48px,8vw,110px) var(--dg-gutter); }
+.dg-join__textinner{ width:100%; max-width:480px; }
+.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.7; }
+.dg-join__title{ margin:1.4rem 0 1.9rem; color:var(--dg-ink); font-family:var(--dg-font-display);
+  font-weight:600; line-height:1.32; letter-spacing:-.01em; font-size:clamp(1.45rem,3.6vw,2.2rem); }
+.dg-join__cta{ display:flex; flex-direction:column; gap:.7rem; }
+.dg-join__media{ line-height:0; }
+.dg-join__img{ display:block; width:100%; height:auto; }
+@media (min-width:768px){
+  .dg-join__inner{ grid-template-columns:1fr 1fr; align-items:stretch; }
+  .dg-join__media{ position:relative; }
+  .dg-join__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+}
+
+/* ════════ SECTION 5 · FORMULA ════════ */
+.dg-formula{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); }
+.dg-formula, .dg-formula *{ box-sizing:border-box; }
+.dg-formula__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-formula__head{ margin-bottom:clamp(24px,4vw,32px); text-align:left; }
+.dg-formula__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
+  font-size:clamp(1.8rem,4.5vw,2.8rem); letter-spacing:-.03em; color:var(--dg-ink); }
+.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.9rem,1.3vw,1rem); }
+.dg-formula__track{ display:flex; flex-direction:column; gap:32px; }
+.dg-formula__card{ display:flex; flex-direction:column; }
+.dg-formula__media{ width:100%; aspect-ratio:4/3; border-radius:clamp(16px,3vw,28px);
+  overflow:hidden; margin-bottom:16px; }
+.dg-formula__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.dg-formula__card:hover .dg-formula__img{ transform:scale(1.03); }
+.dg-formula__text{ background:#f2f4f5; padding:clamp(20px,3vw,28px); flex-grow:1;
+  display:flex; flex-direction:column; border-top:3px solid #e7e9e7; }
+.dg-formula__name{ margin:0 0 14px; font-size:clamp(.95rem,1.2vw,1.05rem);
+  font-weight:700; color:var(--dg-ink); letter-spacing:-.01em; }
+.dg-formula__list{ margin:0; padding:0; list-style:none; }
+.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.82rem,1.1vw,.92rem);
+  line-height:1.6; color:var(--dg-ink); margin-bottom:6px; word-break:keep-all; }
+.dg-formula__item::before{ content:"•"; position:absolute; left:0; top:0; color:var(--dg-ink); }
+.dg-formula__note{ margin:24px 0 0; font-size:clamp(.82rem,1.1vw,.92rem); line-height:1.6;
+  color:var(--dg-ink-soft); word-break:keep-all; }
+@media (min-width:768px){
+  .dg-formula__track{ flex-direction:row; overflow-x:auto; scroll-snap-type:x mandatory;
+    padding-bottom:20px; gap:24px; -webkit-overflow-scrolling:touch; }
+  .dg-formula__track::-webkit-scrollbar{ height:6px; }
+  .dg-formula__track::-webkit-scrollbar-track{ background:#f1f1f1; border-radius:4px; }
+  .dg-formula__track::-webkit-scrollbar-thumb{ background:var(--dg-line); border-radius:4px; }
+  .dg-formula__track::-webkit-scrollbar-thumb:hover{ background:var(--dg-ink-soft); }
+  .dg-formula__card{ flex:0 0 calc(31.5%); scroll-snap-align:start; }
+}
+
+/* ════════ SECTION 6 · REVIEW ════════ */
+.dg-review{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); background:#ffffff; }
+.dg-review, .dg-review *{ box-sizing:border-box; }
+.dg-review__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-review__head{ margin-bottom:clamp(32px,5vw,50px); text-align:left; }
+.dg-review__title{ margin:0 0 12px; font-family:var(--dg-font-display); font-weight:400;
+  font-size:clamp(2rem,5vw,3rem); letter-spacing:-.03em; color:var(--dg-ink); }
+.dg-review__desc{ margin:0; font-size:clamp(.95rem,1.3vw,1.1rem); line-height:1.5; color:var(--dg-ink); }
+.dg-review__grid{ display:grid; grid-template-columns:1fr; gap:clamp(16px,2vw,24px); }
+@media (min-width:768px){ .dg-review__grid{ grid-template-columns:repeat(3, 1fr); } }
+.dg-review__card{ background:#ffffff; border:1px solid var(--dg-ink); border-radius:clamp(20px,3vw,28px);
+  padding:clamp(28px,3.5vw,36px); display:flex; flex-direction:column; justify-content:space-between;
+  transition:opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+/* JS 동작 시에만 숨겼다가 스크롤로 등장 (JS 실패/비활성 시 그냥 보임) */
+html.dg-js .dg-review__card{ opacity:0; transform:translateY(40px); }
+html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
+.dg-review__card:nth-child(2){ transition-delay:0.15s; }
+.dg-review__card:nth-child(3){ transition-delay:0.3s; }
+.dg-review__text{ margin:0 0 36px; color:var(--dg-ink); font-size:clamp(1rem,1.15vw,1.1rem);
+  line-height:1.7; word-break:keep-all; }
+.dg-review__footer{ display:flex; justify-content:space-between; align-items:center;
+  padding-top:20px; border-top:1px solid var(--dg-line); }
+.dg-review__author{ margin:0; color:var(--dg-ink); font-size:clamp(.85rem,1vw,.95rem); font-weight:700; }
+.dg-review__stars{ color:var(--dg-ink); font-size:clamp(.9rem,1vw,.95rem); letter-spacing:1px; }
+
+/* ════════ SECTION 7 · ORIGINS ════════ */
+.dg-origins{ font-family:var(--dg-font-body); padding-block:clamp(40px,6vw,80px); background:#ffffff; }
+.dg-origins, .dg-origins *{ box-sizing:border-box; }
+.dg-origins__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
+.dg-origins__media{ width:100%; margin-bottom:clamp(20px,3vw,30px); line-height:0; }
+.dg-origins__img{ display:block; width:100%; height:auto; }
+.dg-origins__title{ margin:0 0 clamp(16px,2vw,24px); font-family:var(--dg-font-display);
+  font-weight:600; font-size:clamp(1.1rem, 1.4vw, 1.25rem); color:var(--dg-ink); line-height:1.4; }
+.dg-origins__copy{ margin:0 0 clamp(40px,6vw,60px); color:var(--dg-ink); font-family:var(--dg-font-body);
+  font-weight:400; font-size:clamp(1.4rem,2.6vw,2.1rem); line-height:1.45; letter-spacing:-.03em; word-break:keep-all; }
+.dg-origins__rule{ border:0; border-top:1px solid var(--dg-line); margin:0; }
+@media (max-width:767px){ .dg-pc-br{ display:none; } .dg-origins__copy{ font-size:1.25rem; } }
+
+/* ════════ SECTION 8 · TOP ARTICLES ════════ */
+.dg-articles{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); background:#ffffff; }
+.dg-articles, .dg-articles *{ box-sizing:border-box; }
+.dg-articles__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
+  display:grid; grid-template-columns:1fr; gap:clamp(32px,5vw,40px); align-items:start; }
+.dg-articles__head{ margin:0; }
+.dg-articles__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
+  font-size:clamp(2.4rem,6vw,3.2rem); letter-spacing:-.04em; color:var(--dg-ink); }
+.dg-articles__grid{ display:grid; grid-template-columns:1fr; gap:clamp(40px,6vw,56px); }
+.dg-article{ display:flex; flex-direction:column; }
+.dg-article__media{ width:100%; aspect-ratio:1/1; overflow:hidden; margin-bottom:16px; background:#fff; }
+.dg-article__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.dg-article:hover .dg-article__img{ transform:scale(1.03); }
+.dg-article__text{ display:flex; flex-direction:column; border-top:1px solid var(--dg-line); padding-top:16px; }
+.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1.05rem,1.4vw,1.15rem);
+  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.4; }
+.dg-article__desc{ margin:0; font-size:clamp(.85rem,1.1vw,.95rem); line-height:1.65; color:var(--dg-ink); word-break:keep-all; }
+@media (min-width:768px){
+  .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
+  .dg-articles__grid{ grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); }
+}
+
+/* ════════ SECTION 9 · FAQ ════════ */
+.fd-faq-section { padding: 100px 20px; background-color: #ffffff; }
+.fd-container { max-width: var(--dg-maxw); margin: 0 auto; }        /* [추가] 다른 섹션과 폭 정렬 */
+.fd-faq-unified-card { display: flex; background-color: #f0efef; border-radius: 40px; overflow: hidden; align-items: stretch; width: 100%; box-sizing: border-box; }
+.fd-faq-content-area { flex: 6; padding: 70px 60px; display: flex; flex-direction: column; justify-content: center; }
+.fd-faq-title { font-family: var(--dg-font-body); font-size: 48px; font-weight: 700; color: #000000; margin: 0 0 35px; letter-spacing: -0.04em; }
+.fd-faq-item { border-bottom: 1px solid rgba(0,0,0,.1); }            /* [수정] 흰색→어두운 색 (회색 배경에서 보이게) */
+.fd-faq-item:last-child { border-bottom: none; }
+.fd-faq-question { font-family: var(--dg-font-body); width:100%; background:none; border:0; -webkit-appearance:none; appearance:none; text-align:left;
+  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 18px; font-weight: 600; color: #000000; cursor: pointer; user-select: none; }
+.fd-faq-icon { font-size: 24px; font-weight: 300; color: #000000; margin-left: 20px; transition: transform 0.3s ease; display: inline-block; }
+.fd-faq-item.active .fd-faq-icon { transform: rotate(45deg); }
+.fd-faq-answer { max-height: 0; overflow: hidden; font-size: 18px; line-height: 1.6; color: #000000; word-break: keep-all;
+  font-family: var(--dg-font-body); font-weight: 400; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; }
+.fd-faq-item.active .fd-faq-answer { max-height: 500px; padding: 0 0 20px; }
+.fd-faq-item.active .fd-faq-question { padding-bottom: 12px; }
+.fd-faq-image-area { flex: 4; position: relative; background-color: #ffffff; overflow: hidden; }
+.fd-faq-image-area img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+@media (max-width: 768px) {
+  .fd-faq-section { padding: 60px 20px; }
+  .fd-faq-unified-card { flex-direction: column; border-radius: 30px; }
+  .fd-faq-content-area { order: 2; padding: 50px 30px; }
+  .fd-faq-title { font-size: 34px; margin-bottom: 25px; }
+  .fd-faq-question { font-size: 16px; padding: 16px 0; }
+  .fd-faq-answer { font-size: 16px; }
+  .fd-faq-image-area { order: 1; flex: none; height: 350px; width: 100%; }
+  .fd-faq-image-area img { position: relative; height: 100%; }
+}
+</style></div>
+<section class="dg-hero" id="shop" data-ez="contents-1ussfzn-1">
+  <!-- [SEO] 페이지 대표 h1 (화면엔 숨김). layout 로고가 이미 h1이면 이 줄 삭제 -->
+  <h1 class="dg-sr-only">42degree — 매일의 Stress Care, Calm &amp; Clarity™</h1>
+  <div class="dg-hero__media">
+    <img class="dg-hero__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42banner.jpg" alt="42degree Citrus Blend &amp; CC Shot" loading="eager" fetchpriority="high">
+    <div class="dg-hero__overlay">
+      <p class="dg-hero__copy">무거운 긴장은 덜어내고, 맑은 몰입만 남기도록, 매일의 Stress Care.</p>
+      <a class="dg-btn dg-btn--light dg-hero__cta" href="/product/%EC%94%A8%EC%94%A8%EC%83%B7/11/category/23/display/1/">SHOP THE SHOT</a>
+    </div>
+  </div>
+</section>
+<section class="dg-ritual" data-ez="module-03bnl82-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-ritual__inner">
+    <div class="dg-ritual__head">
+      <p class="dg-ritual__eyebrow">The Ritual of Mind</p>
+      <div class="dg-ritual__col">
+        <h2 class="dg-ritual__title">The logic of<br>inner peace</h2>
+        <p class="dg-ritual__lead">스트레스 케어는 무조건적인 휴식이 아닌,<br> 뇌의 과부하를 정돈하는 것에서 시작됩니다.<br>카페인에 의존하는 각성이 아닌, 내면에서부터 차오르는<br>차분한 몰입과 건강한 활력을 직접 경험해보세요.</p>
+      </div>
+    </div>
+    <hr class="dg-ritual__rule">
+  </div>
+  <div class="dg-ritual__media">
+    <img class="dg-ritual__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_1.png" alt loading="lazy">
+  </div>
+</section>
+<section class="dg-belief" data-ez="module-15st45c-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-belief__inner">
+    <div class="dg-belief__text">
+      <h2 class="dg-belief__title">We believe brain wellness should be part of daily rituals, not a complex science.</h2>
+      <p class="dg-belief__body">바쁘게 돌아가는 현대 사회에서 — 뇌의 긴장을 풀고 마음을 맑게 유지하는 것은 더 이상 특별한 치료가 아닌 매일의 습관이어야 합니다. — 42degree는 인지심리학적 통찰과 섬세하게 설계된 원료를 바탕으로, 당신이 언제 어디서나 가장 간편하게 내면의 평온을 되찾을 수 있도록 돕습니다.</p>
+    </div>
+    <div class="dg-belief__media">
+      <img class="dg-belief__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png" alt="42degree CC Shot 스틱" loading="lazy">
+    </div>
+  </div>
+</section>
+<section class="dg-join" data-ez="module-0bdigoq-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-join__inner">
+    <div class="dg-join__text">
+      <div class="dg-join__textinner">
+        <p class="dg-join__intro">42degree 카카오 채널을 추가하고,<br> 일상에서 실천할 수 있는 심리학 기반의 브레인 웰니스 팁과 오직 멤버에게만 제공되는 시크릿 혜택을 가장 먼저 받아보세요.</p>
+        <h2 class="dg-join__title">우리의 웰니스 커뮤니티에 합류하고<br> 마음을 맑게 가꿔보세요.</h2>
+        <div class="dg-join__cta">
+          <a class="dg-btn dg-btn--outline dg-btn--block" href="https://pf.kakao.com/_yxfzTX" target="_blank" rel="noopener">카카오 채널 추가하기</a>
+          <a class="dg-btn dg-btn--block" href="/member/join.html">회원가입 하기</a>
+        </div>
+      </div>
+    </div>
+    <div class="dg-join__media">
+      <img class="dg-join__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_2.png" alt loading="lazy">
+    </div>
+  </div>
+</section>
+<section class="dg-formula" data-ez="module-13mvv2q-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-formula__inner">
+    <div class="dg-formula__head">
+      <h2 class="dg-formula__title">Calm Focus Formula™</h2>
+      <p class="dg-formula__desc">원료에 대한 설명입니다.</p>
+    </div>
+    <div class="dg-formula__track">
+      <article class="dg-formula__card">
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_3.png" alt="L-Theanine 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__text">
+          <h3 class="dg-formula__name">L-Theanine (긴장 완화)</h3>
+          <ul class="dg-formula__list">
+            <li class="dg-formula__item">안정을 유도하는 알파파 발생 활성화</li>
+            <li class="dg-formula__item">스트레스로 인한 무거운 긴장감 완화</li>
+            <li class="dg-formula__item">자연에서 온 안전한 식물성 성분</li>
+          </ul>
+          <p class="dg-formula__note">과부하된 마음에 차분한 휴식이 필요한 순간.</p>
+        </div>
+      </article>
+      <article class="dg-formula__card">
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_4.png" alt="Inositol 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__text">
+          <h3 class="dg-formula__name">Inositol (신경 신호 전달)</h3>
+          <ul class="dg-formula__list">
+            <li class="dg-formula__item">세포 신호 전달과 일상적인 생체 리듬 지원</li>
+            <li class="dg-formula__item">흐트러진 내면의 감각을 투명하게 정돈</li>
+            <li class="dg-formula__item">매일 부담 없이 섭취 가능한 안심 포뮬러</li>
+          </ul>
+          <p class="dg-formula__note">매일 맑고 일정한 흐름을 유지하고 싶을 때.</p>
+        </div>
+      </article>
+      <article class="dg-formula__card">
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_5.png" alt="Vitamin B Complex 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__text">
+          <h3 class="dg-formula__name">Vitamin B Complex (맑은 몰입)</h3>
+          <ul class="dg-formula__list">
+            <li class="dg-formula__item">에너지 대사를 도와 지친 일상에 활력 선사</li>
+            <li class="dg-formula__item">정신적 소모와 신체 피로를 동시에 케어</li>
+            <li class="dg-formula__item">카페인 없이 차오르는 건강한 몰입감</li>
+          </ul>
+          <p class="dg-formula__note">중요한 순간, 깊은 집중력이 필요한 분을 위해.</p>
+        </div>
+      </article>
+      <article class="dg-formula__card">
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_6.png" alt="Electrolytes &amp; Magnesium 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__text">
+          <h3 class="dg-formula__name">Electrolytes &amp; Magnesium.</h3>
+          <ul class="dg-formula__list">
+            <li class="dg-formula__item">뇌 세포의 핵심 에너지원 활성화 및 신경 신호 전달</li>
+            <li class="dg-formula__item">스트레스로 인해 체내에서 가장 먼저 고갈되는 마그네슘 즉각 충전</li>
+            <li class="dg-formula__item">흥분된 신경계를 차분하게 진정시키고 천연 안정제 역할 수행</li>
+          </ul>
+          <p class="dg-formula__note">스트레스로 지친 신경계를 정돈하고<br>뇌의 신호 흐름을 깨우고 싶을 때.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="dg-review" data-ez="module-0u0k4op-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-review__inner">
+    <div class="dg-review__head">
+      <h2 class="dg-review__title">Voices of 42degree</h2>
+      <p class="dg-review__desc">매일의 Stress - Care를 관리하는<br>이들의 솔직한 리뷰.</p>
+    </div>
+    <div class="dg-review__grid">
+      <article class="dg-review__card">
+        <p class="dg-review__text">“오후에 커피 마시면 밤에 잠을 못 자서 늘 박**나 얼**만 마셨거든요. 이건 마시면 가슴 두근거리는 것 없이 차분하게 집중이 오래가서 좋아요.”</p>
+        <div class="dg-review__footer"><p class="dg-review__author">— 이*희 (사회복지사)</p><span class="dg-review__stars">★★★★★</span></div>
+      </article>
+      <article class="dg-review__card">
+        <p class="dg-review__text">“취재 일정이 불규칙해서 만성 피로를 달고 사는데, 마감 직전에 한 포 짜먹으면 정신이 맑아져요. 액상이라 물 없이 그냥 먹을 수 있는 게 제일 편합니다.”</p>
+        <div class="dg-review__footer"><p class="dg-review__author">— 황*원 (기자)</p><span class="dg-review__stars">★★★★★</span></div>
+      </article>
+      <article class="dg-review__card">
+        <p class="dg-review__text">“몸에 아무리 좋다고 해도 맛없으면 손이 안 가잖아요. 오후 3시쯤 머리 무거울 때 마시는데, 눈 감고 마시면 그냥 맛있는 오렌지 주스 같아요.”</p>
+        <div class="dg-review__footer"><p class="dg-review__author">— 송*수 (대기업 선임)</p><span class="dg-review__stars">★★★★★</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="dg-origins" data-ez="module-025umdk-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-origins__inner">
+    <div class="dg-origins__media">
+      <img class="dg-origins__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_7.png" alt="42degree The Origins Edition" loading="lazy">
+    </div>
+    <h2 class="dg-origins__title">42degree<br>The Origins Edition</h2>
+    <p class="dg-origins__copy">뇌 과학 트렌드부터 마인드풀 라이프스타일 팁까지,<br class="dg-pc-br">번아웃의 고리를 끊고 높은 성취와 깊은 휴식 사이의 완벽한 밸런스를<br class="dg-pc-br">찾는 것에 주목합니다</p>
+    <hr class="dg-origins__rule">
+  </div>
+</section>
+<section class="dg-articles" data-ez="module-1mfpea5-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <div class="dg-articles__inner">
+    <div class="dg-articles__head">
+      <h2 class="dg-articles__title">Top articles</h2>
+    </div>
+    <div class="dg-articles__grid">
+      <article class="dg-article">
+        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/juicy.jpg" alt="What is Nootropics? 누트로픽 아티클 이미지" loading="lazy"></div>
+        <div class="dg-article__text">
+          <h3 class="dg-article__name">What is Nootropics? :<br>일의 효율을 바꾸는 뇌 과학.</h3>
+          <p class="dg-article__desc">단순히 잠을 깨우는 각성제를 넘어, 뇌의 인지 기능과 집중력을 건강하게 끌어올리는 누트로픽(Nootropics). 끊임없이 쏟아지는 업무 속에서 무거운 불안감은 덜어내고 맑은 몰입을 유지하는 법, 그리고 이것이 현대인의 커리어에 왜 필수적인 무기가 되는지 그 과학적 근거를 짚어봅니다.</p>
+        </div>
+      </article>
+      <article class="dg-article">
+        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box.jpg" alt="The Mindful Ritual 아티클 이미지" loading="lazy"></div>
+        <div class="dg-article__text">
+          <h3 class="dg-article__name">The Mindful Ritual :<br>우리가 calm focus에 주목하는 이유.</h3>
+          <p class="dg-article__desc">과부하된 일상에서 스스로 무너지지 않고 중심을 지키는 것은 어떻게 가능할까. 42degree의 창립자가 심리학적 통찰을 바탕으로 직접 마주했던 번아웃의 순간들, 그리고 지친 현대 여성들의 일상에 '마음의 온도'를 맞추는 투명한 브레인 리추얼을 제안하기까지의 진솔한 기록을 전합니다.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<div class="fd-faq-section" id="fdFaqSec" data-ez="contents-11gjrao-1">
+  <div class="fd-container">
+    <div class="fd-faq-unified-card">
+      <div class="fd-faq-content-area">
+        <h2 class="fd-faq-title">FAQs</h2>
+        <div class="fd-faq-accordion-wrap">
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>C.C. Shot은 하루에 몇 번 마시는 것이 좋나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">정해진 섭취 횟수는 없으나, 나만의 리추얼을 만들기 위해 하루 한 스틱을 권장합니다. 아침 일찍 혹은 오후의 휴식 시간에 자연스럽게 즐겨보세요.</div>
+          </div>
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>임산부나 수유부도 섭취할 수 있나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">본 제품은 건강기능식품이 아닌 일반 가공식품이나, 성분의 특성상 개인차가 있을 수 있습니다. 자세한 사항은 전문의와 상담을 권장합니다.</div>
+          </div>
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>언제 섭취하는 것이 가장 효과적인가요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">'맑은 각성'이 필요한 순간, 아침 일찍 혹은 집중이 필요한 시간에 섭취하시면 좋습니다. 억지로 잠을 깨우는 것이 아닌 뇌가 스스로 에너지를 내도록 돕습니다.</div>
+          </div>
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>C.C. Shot은 어떤 맛인가요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">상쾌한 고급 시트러스 맛입니다. 당 스파이크 걱정 없이 신호 전달 효율을 높이는 정교한 냉각수처럼, 카페인 의존 없이 감각을 깨워줍니다.</div>
+          </div>
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>보관 방법은 어떻게 되나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">직사광선을 피하고 서늘한 곳에 보관해주세요. 스틱을 개봉한 후에는 즉시 섭취하시는 것을 권장합니다.</div>
+          </div>
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>배송은 얼마나 걸리나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">영업일 기준 평균 2~3일 정도 소요됩니다. 고객님께 안전하게 전달하기 위해 최선을 다하고 있습니다.</div>
+          </div>
+        </div>
+      </div>
+      <div class="fd-faq-image-area">
+        <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/cut.jpg" alt="42degree FAQ 이미지" loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0hft9iu-1"><script>
+document.addEventListener("DOMContentLoaded", function() {
+  // 1. 카페24 GNB 스크롤 투명화 (의도된 동작 — 유지)
+  const headerElement = document.querySelector('#header') || document.querySelector('.xans-layout-header') || document.querySelector('header');
+  if (headerElement) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) headerElement.classList.add('dg-header-scrolled');
+      else headerElement.classList.remove('dg-header-scrolled');
+    });
+  }
+
+  // 2. 리뷰 카드 스크롤 등장 (Section 6)
+  const reviewObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); reviewObserver.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.dg-review__card').forEach(card => reviewObserver.observe(card));
+
+  // 3. FAQ 아코디언 (+ aria-expanded 상태 토글)
+  const faqSec = document.getElementById('fdFaqSec');
+  if (faqSec) {
+    const faqItems = faqSec.querySelectorAll('.fd-faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.fd-faq-question');
+      const answer = item.querySelector('.fd-faq-answer');
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(o => {
+          o.classList.remove('active');
+          o.querySelector('.fd-faq-answer').style.maxHeight = '0';
+          o.querySelector('.fd-faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          question.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  }
+});
+</script></div>
+<!--#ez="1/3"-->
