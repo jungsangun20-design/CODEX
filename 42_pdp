@@ -19,19 +19,19 @@
 	}
 	
 	.dg-switch__quote {
-		margin: 0; font-weight: 600; line-height: 1.35; letter-spacing: -.02em; font-size: clamp(1.5rem, 3.6vw, 2.5rem); word-break: keep-all;
+		margin: 0; font-weight: 700; line-height: 1.28; letter-spacing: -.035em; font-size: clamp(2.15rem, 9.2vw, 3.2rem); word-break: keep-all;
 	}
 	
 	.dg-switch__attr {
-		margin: 14px 0 0; font-weight: 500; line-height: 1.45; font-size: clamp(1rem, 1.8vw, 1.35rem); word-break: keep-all;
+		margin: clamp(16px, 4vw, 22px) 0 0; font-weight: 600; line-height: 1.45; font-size: clamp(1.15rem, 4.6vw, 1.45rem); word-break: keep-all;
 	}
 	
 	.dg-switch__plus {
-		width: 30px; height: 30px; margin: clamp(28px, 4vw, 46px) 0 14px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--ink); color: #fff; font-size: 18px; font-weight: 400; line-height: 1;
+		width: 22px; height: 22px; margin: clamp(24px, 5vw, 40px) 0 14px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--ink); color: #fff; font-size: 13px; font-weight: 400; line-height: 1;
 	}
 	
 	.dg-switch__body {
-		margin: 0; color: var(--soft); font-size: clamp(.8rem, 1.1vw, .9rem); line-height: 1.65; max-width: 42ch; word-break: keep-all;
+		margin: 0; color: var(--soft); font-size: clamp(.98rem, 3.8vw, 1.08rem); line-height: 1.7; max-width: 42ch; word-break: keep-all;
 	}
 	
 	.dg-switch__media {
