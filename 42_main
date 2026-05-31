@@ -131,8 +131,8 @@
 .dg-formula__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
 .dg-formula__head{ margin-bottom:clamp(24px,4vw,32px); text-align:left; }
 .dg-formula__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(1.8rem,4.5vw,2.8rem); letter-spacing:-.03em; color:var(--dg-ink); }
-.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.9rem,1.3vw,1rem); }
+  font-size:clamp(2rem,5vw,3rem); line-height:1.05; letter-spacing:-.03em; color:var(--dg-ink); }
+.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.95rem,1.3vw,1.1rem); line-height:1.5; }
 .dg-formula__track{ display:flex; flex-direction:column; gap:32px; }
 .dg-formula__card{ display:flex; flex-direction:column; }
 .dg-formula__media{ width:100%; aspect-ratio:4/3; border-radius:clamp(16px,3vw,28px);
@@ -141,13 +141,13 @@
 .dg-formula__card:hover .dg-formula__img{ transform:scale(1.03); }
 .dg-formula__text{ background:#f2f4f5; padding:clamp(20px,3vw,28px); flex-grow:1;
   display:flex; flex-direction:column; border-top:3px solid #e7e9e7; }
-.dg-formula__name{ margin:0 0 14px; font-size:clamp(.95rem,1.2vw,1.05rem);
-  font-weight:700; color:var(--dg-ink); letter-spacing:-.01em; }
+.dg-formula__name{ margin:0 0 14px; font-size:clamp(1rem,1.15vw,1.1rem);
+  font-weight:700; line-height:1.35; color:var(--dg-ink); letter-spacing:-.01em; }
 .dg-formula__list{ margin:0; padding:0; list-style:none; }
-.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.82rem,1.1vw,.92rem);
+.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.9rem,1.05vw,1rem);
   line-height:1.6; color:var(--dg-ink); margin-bottom:6px; word-break:keep-all; }
 .dg-formula__item::before{ content:"•"; position:absolute; left:0; top:0; color:var(--dg-ink); }
-.dg-formula__note{ margin:24px 0 0; font-size:clamp(.82rem,1.1vw,.92rem); line-height:1.6;
+.dg-formula__note{ margin:24px 0 0; font-size:clamp(.9rem,1.05vw,1rem); line-height:1.6;
   color:var(--dg-ink-soft); word-break:keep-all; }
 @media (min-width:768px){
   .dg-formula__track{ flex-direction:row; overflow-x:auto; scroll-snap-type:x mandatory;
