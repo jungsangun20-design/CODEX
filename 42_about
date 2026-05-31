@@ -205,6 +205,13 @@
             line-height: 1.5;
         }
 
+        @media (max-width: 767px) {
+            html.brand-story-about-page .xans-layout-mobileaction,
+            body:has(.brand-story-about) .xans-layout-mobileaction {
+                display: none !important;
+            }
+        }
+
         @media (max-width: 768px) {
             .brand-story-about {
                 --brand-story-section-y: 40px;
@@ -451,6 +458,7 @@
                 return;
             }
 
+            document.documentElement.classList.add('brand-story-about-page');
             document.documentElement.classList.add('brand-story-js');
 
             var revealSection = function (section) {
