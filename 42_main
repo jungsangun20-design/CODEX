@@ -115,7 +115,7 @@
 .dg-join__textinner{ width:100%; max-width:480px; }
 .dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.6; letter-spacing:-.02em; }
 .dg-join__title{ margin:1.4rem 0 1.9rem; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:500; line-height:1.18; letter-spacing:-.03em; font-size:clamp(1.75rem,4vw,2.5rem); }
+  font-weight:500; line-height:1.18; letter-spacing:-.03em; font-size:clamp(1.6rem,3.4vw,2.2rem); }
 .dg-join__cta{ display:flex; flex-direction:column; gap:.7rem; }
 .dg-join__cta .dg-btn{ font-size:clamp(.9rem,1vw,.95rem); font-weight:600; line-height:1; letter-spacing:.04em; }
 .dg-join__media{ line-height:0; }
@@ -131,7 +131,7 @@
   .dg-belief__title{ font-size:clamp(1.75rem,8vw,2.25rem); line-height:1.15; }
   .dg-belief__body{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
   .dg-join__intro{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
-  .dg-join__title{ font-size:clamp(1.55rem,7vw,2rem); line-height:1.2; }
+  .dg-join__title{ font-size:clamp(1.35rem,5.8vw,1.75rem); line-height:1.22; }
 }
 
 /* ════════ SECTION 5 · FORMULA ════════ */
