@@ -35,6 +35,17 @@
             background-color: #ffffff;
         }
 
+        html.brand-story-js .brand-story-about .brand-story-section {
+            opacity: 0;
+            transform: translateY(-24px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        html.brand-story-js .brand-story-about .brand-story-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         .brand-story-row {
             display: flex;
             align-items: center;
@@ -234,6 +245,19 @@
             .brand-story-copy p {
                 margin-bottom: 20px;
             }
+
+            html.brand-story-js .brand-story-about .brand-story-section {
+                transform: translateY(-16px);
+                transition-duration: .55s;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html.brand-story-js .brand-story-about .brand-story-section {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -294,7 +318,7 @@
 
             <div class="brand-story-media-wrap">
                 <div class="brand-story-media">
-                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about1.png" alt="42도의 시작" width="840" height="840" loading="lazy" decoding="async">
+                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about1_opt.jpg" alt="42도의 시작" width="840" height="840" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -305,7 +329,7 @@
         <div class="brand-story-row">
             <div class="brand-story-media-wrap">
                 <div class="brand-story-media">
-                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about2.png" alt="국내 최초 브레인 웰니스 브랜드" width="840" height="840" loading="lazy" decoding="async">
+                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about2_opt.jpg" alt="국내 최초 브레인 웰니스 브랜드" width="840" height="840" loading="lazy" decoding="async">
                 </div>
             </div>
 
@@ -349,7 +373,7 @@
 
             <div class="brand-story-media-wrap">
                 <div class="brand-story-media">
-                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about3.png" alt="Power up your setup" width="840" height="840" loading="lazy" decoding="async">
+                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about3_opt.jpg" alt="Power up your setup" width="840" height="840" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -360,7 +384,7 @@
         <div class="brand-story-row brand-story-row--top">
             <div class="brand-story-media-wrap">
                 <div class="brand-story-media">
-                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about4.png" alt="The Philosophy of 42도" width="840" height="840" loading="lazy" decoding="async">
+                    <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/about4_opt.jpg" alt="The Philosophy of 42도" width="840" height="840" loading="lazy" decoding="async">
                 </div>
             </div>
 
@@ -407,5 +431,54 @@
             </div>
         </div>
     </div>
+
+    <script>
+        (function () {
+            var brandStory = document.querySelector('.brand-story-about');
+
+            if (!brandStory) {
+                return;
+            }
+
+            var sections = Array.prototype.slice.call(brandStory.querySelectorAll('.brand-story-section'));
+
+            if (!sections.length) {
+                return;
+            }
+
+            document.documentElement.classList.add('brand-story-js');
+
+            var revealSection = function (section) {
+                section.classList.add('is-visible');
+            };
+
+            var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!('IntersectionObserver' in window) || prefersReducedMotion) {
+                sections.forEach(revealSection);
+                return;
+            }
+
+            revealSection(sections[0]);
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    revealSection(entry.target);
+                    observer.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -8% 0px'
+            });
+
+            sections.slice(1).forEach(function (section) {
+                observer.observe(section);
+            });
+        }());
+    </script>
 </section>
 <!-- 카페24 쇼핑몰 브랜드 스토리 영역 끝 -->
