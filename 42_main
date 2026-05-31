@@ -81,9 +81,9 @@
 .dg-ritual__eyebrow{ margin:0; font-weight:700; font-size:.72rem; letter-spacing:.16em;
   text-transform:uppercase; color:var(--dg-ink); }
 .dg-ritual__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:400; line-height:1.04; letter-spacing:-.02em; font-size:clamp(2.6rem,9vw,5.5rem); text-align:left; }
+  font-weight:400; line-height:1.02; letter-spacing:-.04em; font-size:clamp(2.8rem,7vw,5.5rem); text-align:left; }
 .dg-ritual__lead{ margin:1.3rem 0 0; color:var(--dg-ink-soft); text-align:left;
-  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:52ch; }
+  font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.65; letter-spacing:-.02em; max-width:52ch; }
 .dg-ritual__rule{ border:0; border-top:1px solid var(--dg-line); margin:clamp(26px,4vw,46px) 0 0; }
 .dg-ritual__media{ width:100%; aspect-ratio:40/9; overflow:hidden;
   margin-top:clamp(26px,4vw,50px); line-height:0; }
@@ -96,9 +96,9 @@
 .dg-belief__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
   display:grid; grid-template-columns:1fr; gap:clamp(30px,5vw,56px); align-items:start; }
 .dg-belief__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:500; line-height:1.12; letter-spacing:-.02em; font-size:clamp(1.7rem,4.6vw,3rem); }
+  font-weight:400; line-height:1.12; letter-spacing:-.035em; font-size:clamp(1.9rem,4.4vw,3rem); }
 .dg-belief__body{ margin:1.6rem 0 0 12%; color:var(--dg-ink-soft);
-  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:46ch; }
+  font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.65; letter-spacing:-.02em; max-width:46ch; }
 .dg-belief__media{ line-height:0; }
 .dg-belief__img{ display:block; width:100%; height:auto; }
 @media (min-width:768px){
@@ -113,263 +113,25 @@
 .dg-join__text{ display:flex; flex-direction:column; justify-content:center;
   padding:clamp(48px,8vw,110px) var(--dg-gutter); }
 .dg-join__textinner{ width:100%; max-width:480px; }
-.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.7; }
+.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.6; letter-spacing:-.02em; }
 .dg-join__title{ margin:1.4rem 0 1.9rem; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:600; line-height:1.32; letter-spacing:-.01em; font-size:clamp(1.45rem,3.6vw,2.2rem); }
+  font-weight:500; line-height:1.18; letter-spacing:-.03em; font-size:clamp(1.6rem,3.4vw,2.2rem); }
 .dg-join__cta{ display:flex; flex-direction:column; gap:.7rem; }
+.dg-join__cta .dg-btn{ font-size:clamp(.9rem,1vw,.95rem); font-weight:600; line-height:1; letter-spacing:.04em; }
 .dg-join__media{ line-height:0; }
 .dg-join__img{ display:block; width:100%; height:auto; }
 @media (min-width:768px){
   .dg-join__inner{ grid-template-columns:1fr 1fr; align-items:stretch; }
   .dg-join__media{ position:relative; }
   .dg-join__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-}
-
-/* ════════ SECTION 5 · FORMULA ════════ */
-.dg-formula{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); }
-.dg-formula, .dg-formula *{ box-sizing:border-box; }
-.dg-formula__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
-.dg-formula__head{ margin-bottom:clamp(24px,4vw,32px); text-align:left; }
-.dg-formula__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(1.8rem,4.5vw,2.8rem); letter-spacing:-.03em; color:var(--dg-ink); }
-.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.9rem,1.3vw,1rem); }
-.dg-formula__track{ display:flex; flex-direction:column; gap:32px; }
-.dg-formula__card{ display:flex; flex-direction:column; }
-.dg-formula__media{ width:100%; aspect-ratio:4/3; border-radius:clamp(16px,3vw,28px);
-  overflow:hidden; margin-bottom:16px; }
-.dg-formula__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
-.dg-formula__card:hover .dg-formula__img{ transform:scale(1.03); }
-.dg-formula__text{ background:#f2f4f5; padding:clamp(20px,3vw,28px); flex-grow:1;
-  display:flex; flex-direction:column; border-top:3px solid #e7e9e7; }
-.dg-formula__name{ margin:0 0 14px; font-size:clamp(.95rem,1.2vw,1.05rem);
-  font-weight:700; color:var(--dg-ink); letter-spacing:-.01em; }
-.dg-formula__list{ margin:0; padding:0; list-style:none; }
-.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.82rem,1.1vw,.92rem);
-  line-height:1.6; color:var(--dg-ink); margin-bottom:6px; word-break:keep-all; }
-.dg-formula__item::before{ content:"•"; position:absolute; left:0; top:0; color:var(--dg-ink); }
-.dg-formula__note{ margin:24px 0 0; font-size:clamp(.82rem,1.1vw,.92rem); line-height:1.6;
-  color:var(--dg-ink-soft); word-break:keep-all; }
-@media (min-width:768px){
-  .dg-formula__track{ flex-direction:row; overflow-x:auto; scroll-snap-type:x mandatory;
-    padding-bottom:20px; gap:24px; -webkit-overflow-scrolling:touch; }
-  .dg-formula__track::-webkit-scrollbar{ height:6px; }
-  .dg-formula__track::-webkit-scrollbar-track{ background:#f1f1f1; border-radius:4px; }
-  .dg-formula__track::-webkit-scrollbar-thumb{ background:var(--dg-line); border-radius:4px; }
-  .dg-formula__track::-webkit-scrollbar-thumb:hover{ background:var(--dg-ink-soft); }
-  .dg-formula__card{ flex:0 0 calc(31.5%); scroll-snap-align:start; }
-}
-
-/* ════════ SECTION 6 · REVIEW ════════ */
-.dg-review{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); background:#ffffff; }
-.dg-review, .dg-review *{ box-sizing:border-box; }
-.dg-review__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
-.dg-review__head{ margin-bottom:clamp(32px,5vw,50px); text-align:left; }
-.dg-review__title{ margin:0 0 12px; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(2rem,5vw,3rem); letter-spacing:-.03em; color:var(--dg-ink); }
-.dg-review__desc{ margin:0; font-size:clamp(.95rem,1.3vw,1.1rem); line-height:1.5; color:var(--dg-ink); }
-.dg-review__grid{ display:grid; grid-template-columns:1fr; gap:clamp(16px,2vw,24px); }
-@media (min-width:768px){ .dg-review__grid{ grid-template-columns:repeat(3, 1fr); } }
-.dg-review__card{ background:#ffffff; border:1px solid var(--dg-ink); border-radius:clamp(20px,3vw,28px);
-  padding:clamp(28px,3.5vw,36px); display:flex; flex-direction:column; justify-content:space-between;
-  transition:opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
-/* JS 동작 시에만 숨겼다가 스크롤로 등장 (JS 실패/비활성 시 그냥 보임) */
-html.dg-js .dg-review__card{ opacity:0; transform:translateY(40px); }
-html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
-.dg-review__card:nth-child(2){ transition-delay:0.15s; }
-.dg-review__card:nth-child(3){ transition-delay:0.3s; }
-.dg-review__text{ margin:0 0 36px; color:var(--dg-ink); font-size:clamp(1rem,1.15vw,1.1rem);
-  line-height:1.7; word-break:keep-all; }
-.dg-review__footer{ display:flex; justify-content:space-between; align-items:center;
-  padding-top:20px; border-top:1px solid var(--dg-line); }
-.dg-review__author{ margin:0; color:var(--dg-ink); font-size:clamp(.85rem,1vw,.95rem); font-weight:700; }
-.dg-review__stars{ color:var(--dg-ink); font-size:clamp(.9rem,1vw,.95rem); letter-spacing:1px; }
-
-/* ════════ SECTION 7 · ORIGINS ════════ */
-.dg-origins{ font-family:var(--dg-font-body); padding-block:clamp(40px,6vw,80px); background:#ffffff; }
-.dg-origins, .dg-origins *{ box-sizing:border-box; }
-.dg-origins__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
-.dg-origins__media{ width:100%; margin-bottom:clamp(20px,3vw,30px); line-height:0; }
-.dg-origins__img{ display:block; width:100%; height:auto; }
-.dg-origins__title{ margin:0 0 clamp(16px,2vw,24px); font-family:var(--dg-font-display);
-  font-weight:600; font-size:clamp(1.1rem, 1.4vw, 1.25rem); color:var(--dg-ink); line-height:1.4; }
-.dg-origins__copy{ margin:0 0 clamp(40px,6vw,60px); color:var(--dg-ink); font-family:var(--dg-font-body);
-  font-weight:400; font-size:clamp(1.4rem,2.6vw,2.1rem); line-height:1.45; letter-spacing:-.03em; word-break:keep-all; }
-.dg-origins__rule{ border:0; border-top:1px solid var(--dg-line); margin:0; }
-@media (max-width:767px){ .dg-pc-br{ display:none; } .dg-origins__copy{ font-size:1.25rem; } }
-
-/* ════════ SECTION 8 · TOP ARTICLES ════════ */
-.dg-articles{ font-family:var(--dg-font-body); padding-block:clamp(56px,8vw,120px); background:#ffffff; }
-.dg-articles, .dg-articles *{ box-sizing:border-box; }
-.dg-articles__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
-  display:grid; grid-template-columns:1fr; gap:clamp(32px,5vw,40px); align-items:start; }
-.dg-articles__head{ margin:0; }
-.dg-articles__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(2.4rem,6vw,3.2rem); letter-spacing:-.04em; color:var(--dg-ink); }
-.dg-articles__grid{ display:grid; grid-template-columns:1fr; gap:clamp(40px,6vw,56px); }
-.dg-article{ display:flex; flex-direction:column; }
-.dg-article__media{ width:100%; aspect-ratio:1/1; overflow:hidden; margin-bottom:16px; background:#fff; }
-.dg-article__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
-.dg-article:hover .dg-article__img{ transform:scale(1.03); }
-.dg-article__text{ display:flex; flex-direction:column; border-top:1px solid var(--dg-line); padding-top:16px; }
-.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1.05rem,1.4vw,1.15rem);
-  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.4; }
-.dg-article__desc{ margin:0; font-size:clamp(.85rem,1.1vw,.95rem); line-height:1.65; color:var(--dg-ink); word-break:keep-all; }
-@media (min-width:768px){
-  .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
-  .dg-articles__grid{ grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); }
-}
-
-/* ════════ SECTION 9 · FAQ ════════ */
-.fd-faq-section { padding: 100px 20px; background-color: #ffffff; }
-.fd-container { max-width: var(--dg-maxw); margin: 0 auto; }        /* [추가] 다른 섹션과 폭 정렬 */
-.fd-faq-unified-card { display: flex; background-color: #f0efef; border-radius: 40px; overflow: hidden; align-items: stretch; width: 100%; box-sizing: border-box; }
-.fd-faq-content-area { flex: 6; padding: 70px 60px; display: flex; flex-direction: column; justify-content: center; }
-.fd-faq-title { font-family: var(--dg-font-body); font-size: 48px; font-weight: 700; color: #000000; margin: 0 0 35px; letter-spacing: -0.04em; }
-.fd-faq-item { border-bottom: 1px solid rgba(0,0,0,.1); }            /* [수정] 흰색→어두운 색 (회색 배경에서 보이게) */
-.fd-faq-item:last-child { border-bottom: none; }
-.fd-faq-question { font-family: var(--dg-font-body); width:100%; background:none; border:0; -webkit-appearance:none; appearance:none; text-align:left;
-  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 18px; font-weight: 600; color: #000000; cursor: pointer; user-select: none; }
-.fd-faq-icon { font-size: 24px; font-weight: 300; color: #000000; margin-left: 20px; transition: transform 0.3s ease; display: inline-block; }
-.fd-faq-item.active .fd-faq-icon { transform: rotate(45deg); }
-.fd-faq-answer { max-height: 0; overflow: hidden; font-size: 18px; line-height: 1.6; color: #000000; word-break: keep-all;
-  font-family: var(--dg-font-body); font-weight: 400; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; }
-.fd-faq-item.active .fd-faq-answer { max-height: 500px; padding: 0 0 20px; }
-.fd-faq-item.active .fd-faq-question { padding-bottom: 12px; }
-.fd-faq-image-area { flex: 4; position: relative; background-color: #ffffff; overflow: hidden; }
-.fd-faq-image-area img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-@media (max-width: 768px) {
-  .fd-faq-section { padding: 60px 20px; }
-  .fd-faq-unified-card { flex-direction: column; border-radius: 30px; }
-  .fd-faq-content-area { order: 2; padding: 50px 30px; }
-  .fd-faq-title { font-size: 34px; margin-bottom: 25px; }
-  .fd-faq-question { font-size: 16px; padding: 16px 0; }
-  .fd-faq-answer { font-size: 16px; }
-  .fd-faq-image-area { order: 1; flex: none; height: 350px; width: 100%; }
-  .fd-faq-image-area img { position: relative; height: 100%; }
-}
-</style></div>
-<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-096cgwq-1"><style>
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
-:root{
-  --dg-ink:#161413;
-  --dg-ink-soft:#4b4e4c;
-  --dg-line:#dcdedc;
-  --dg-btn:#141413;
-  --dg-font-display:"Pretendard Variable",Pretendard,-apple-system,"Helvetica Neue",sans-serif;
-  --dg-font-body:"Pretendard Variable",Pretendard,-apple-system,sans-serif;
-  --dg-maxw:1200px;
-  --dg-gutter:clamp(20px,5vw,64px);
-}
-
-/* SEO/접근성: 화면엔 안 보이지만 스크린리더·검색엔진이 읽는 텍스트 */
-.dg-sr-only{ position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-
-/* ── 카페24 상단 GNB 스크롤 시 투명화 제어 (의도된 동작 — 그대로 유지) ── */
-#header, header, .header, .xans-layout-header {
-  transition: background-color 0.3s ease, background 0.3s ease !important;
-}
-.dg-header-scrolled,
-#header.is-sticky, .header.is-sticky, .xans-layout-header.is-sticky,
-#header.fixed, .header.fixed, .xans-layout-header.fixed {
-  background-color: transparent !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  border-bottom: none !important;
-}
-
-/* ── 공통 버튼 ── */
-.dg-btn{ display:inline-flex; align-items:center; justify-content:center;
-  padding:1.05em 2.8em; border:0; border-radius:999px; cursor:pointer;
-  font-family:var(--dg-font-body); font-weight:600; font-size:.95rem;
-  letter-spacing:.04em; line-height:1;
-  background:var(--dg-btn); color:#fff; text-decoration:none;
-  transition:transform .3s ease, opacity .3s ease, background .3s ease, color .3s ease; }
-.dg-btn:hover{ transform:translateY(-2px); opacity:.92; }
-.dg-btn--light{ background:#fff; color:var(--dg-ink); box-shadow:0 10px 34px rgba(0,0,0,.16); text-transform:uppercase; }
-.dg-btn--light:hover{ background:var(--dg-ink); color:#fff; opacity:1; }
-.dg-btn--block{ display:flex; width:100%; }
-.dg-btn--outline{ background:#fff; color:var(--dg-ink); border:1.5px solid var(--dg-ink); }
-.dg-btn--outline:hover{ background:var(--dg-ink); color:#fff; opacity:1; }
-
-/* ════════ SECTION 1 · HERO ════════ */
-.dg-hero{ position:relative; width:100%; font-family:var(--dg-font-body); }
-.dg-hero, .dg-hero *{ box-sizing:border-box; }
-.dg-hero__media{ position:relative; width:100%; line-height:0; overflow:hidden; }
-.dg-hero__img{ display:block; width:100%; height:auto; }
-.dg-hero__overlay{ position:absolute; left:50%; bottom:12%; transform:translateX(-50%);
-  width:100%; padding-inline:var(--dg-gutter); line-height:1.5;
-  display:flex; flex-direction:column; align-items:center; text-align:center;
-  gap:clamp(18px,2.6vw,32px); }
-.dg-hero__copy{ margin:0; color:#fff; font-family:var(--dg-font-display); font-weight:500;
-  font-size:clamp(.95rem,1.8vw,1.35rem); line-height:1.5; text-shadow:0 1px 16px rgba(0,0,0,.28); word-break:keep-all; }
-.dg-hero__copy, .dg-hero__cta{ opacity:0; transform:translateY(16px); animation:dgHeroUp .9s ease forwards; }
-.dg-hero__copy{ animation-delay:.15s; }
-.dg-hero__cta{  animation-delay:.38s; }
-@keyframes dgHeroUp{ to{ opacity:1; transform:none; } }
-@media (min-width:768px){
-  .dg-hero__media { height: clamp(480px, 42vw, 680px); }
-  .dg-hero__img { height: 100%; object-fit: cover; object-position: center; }
-  .dg-hero__overlay { bottom: 12%; }
 }
 @media (max-width:767px){
-  .dg-hero__media { height: 100vh; height: 100dvh; }
-  .dg-hero__img { height: 100%; object-fit: cover; object-position: center; }
-  .dg-hero__overlay { bottom: 15%; gap:22px; padding-inline:24px; width:100%; }
-  .dg-hero__copy { font-size:1.05rem; line-height:1.55; max-width:280px; margin:0 auto; }
-  .dg-hero__cta { width:100%; max-width:280px; padding:1.15em 0; font-size:1rem; }
-}
-
-/* ════════ SECTION 2 · THE RITUAL OF MIND ════════ */
-.dg-ritual{ font-family:var(--dg-font-body); padding-top:clamp(56px,9vw,120px); }
-.dg-ritual, .dg-ritual *{ box-sizing:border-box; }
-.dg-ritual__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
-.dg-ritual__head{ display:grid; grid-template-columns:1fr; gap:1.4rem; align-items:start; }
-.dg-ritual__eyebrow{ margin:0; font-weight:700; font-size:.72rem; letter-spacing:.16em;
-  text-transform:uppercase; color:var(--dg-ink); }
-.dg-ritual__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:400; line-height:1.04; letter-spacing:-.02em; font-size:clamp(2.6rem,9vw,5.5rem); text-align:left; }
-.dg-ritual__lead{ margin:1.3rem 0 0; color:var(--dg-ink-soft); text-align:left;
-  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:52ch; }
-.dg-ritual__rule{ border:0; border-top:1px solid var(--dg-line); margin:clamp(26px,4vw,46px) 0 0; }
-.dg-ritual__media{ width:100%; aspect-ratio:40/9; overflow:hidden;
-  margin-top:clamp(26px,4vw,50px); line-height:0; }
-.dg-ritual__img{ display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
-@media (min-width:768px){ .dg-ritual__head{ grid-template-columns:1fr 1.5fr; gap:2rem; } }
-
-/* ════════ SECTION 3 · WE BELIEVE ════════ */
-.dg-belief{ font-family:var(--dg-font-body); padding-block:clamp(52px,8vw,110px); }
-.dg-belief, .dg-belief *{ box-sizing:border-box; }
-.dg-belief__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
-  display:grid; grid-template-columns:1fr; gap:clamp(30px,5vw,56px); align-items:start; }
-.dg-belief__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:500; line-height:1.12; letter-spacing:-.02em; font-size:clamp(1.7rem,4.6vw,3rem); }
-.dg-belief__body{ margin:1.6rem 0 0 12%; color:var(--dg-ink-soft);
-  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:46ch; }
-.dg-belief__media{ line-height:0; }
-.dg-belief__img{ display:block; width:100%; height:auto; }
-@media (min-width:768px){
-  .dg-belief__inner{ grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,56px); }
-  .dg-belief__body{ margin-left:30%; }
-}
-
-/* ════════ SECTION 4 · JOIN ════════ */
-.dg-join{ width:100%; font-family:var(--dg-font-body); }
-.dg-join, .dg-join *{ box-sizing:border-box; }
-.dg-join__inner{ display:grid; grid-template-columns:1fr; }
-.dg-join__text{ display:flex; flex-direction:column; justify-content:center;
-  padding:clamp(48px,8vw,110px) var(--dg-gutter); }
-.dg-join__textinner{ width:100%; max-width:480px; }
-.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.7; }
-.dg-join__title{ margin:1.4rem 0 1.9rem; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:600; line-height:1.32; letter-spacing:-.01em; font-size:clamp(1.45rem,3.6vw,2.2rem); }
-.dg-join__cta{ display:flex; flex-direction:column; gap:.7rem; }
-.dg-join__media{ line-height:0; }
-.dg-join__img{ display:block; width:100%; height:auto; }
-@media (min-width:768px){
-  .dg-join__inner{ grid-template-columns:1fr 1fr; align-items:stretch; }
-  .dg-join__media{ position:relative; }
-  .dg-join__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .dg-ritual__title{ font-size:clamp(2.4rem,12vw,3.2rem); line-height:1.05; }
+  .dg-ritual__lead{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
+  .dg-belief__title{ font-size:clamp(1.75rem,8vw,2.25rem); line-height:1.15; }
+  .dg-belief__body{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
+  .dg-join__intro{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
+  .dg-join__title{ font-size:clamp(1.35rem,5.8vw,1.75rem); line-height:1.22; }
 }
 
 /* ════════ SECTION 5 · FORMULA ════════ */
@@ -378,8 +140,8 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
 .dg-formula__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter); }
 .dg-formula__head{ margin-bottom:clamp(24px,4vw,32px); text-align:left; }
 .dg-formula__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(1.8rem,4.5vw,2.8rem); letter-spacing:-.03em; color:var(--dg-ink); }
-.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.9rem,1.3vw,1rem); }
+  font-size:clamp(2rem,5vw,3rem); line-height:1.05; letter-spacing:-.03em; color:var(--dg-ink); }
+.dg-formula__desc{ margin:8px 0 0; color:var(--dg-ink); font-size:clamp(.95rem,1.3vw,1.1rem); line-height:1.5; }
 .dg-formula__track{ display:flex; flex-direction:column; gap:32px; }
 .dg-formula__card{ display:flex; flex-direction:column; }
 .dg-formula__media{ width:100%; aspect-ratio:4/3; border-radius:clamp(16px,3vw,28px);
@@ -388,13 +150,13 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
 .dg-formula__card:hover .dg-formula__img{ transform:scale(1.03); }
 .dg-formula__text{ background:#f2f4f5; padding:clamp(20px,3vw,28px); flex-grow:1;
   display:flex; flex-direction:column; border-top:3px solid #e7e9e7; }
-.dg-formula__name{ margin:0 0 14px; font-size:clamp(.95rem,1.2vw,1.05rem);
-  font-weight:700; color:var(--dg-ink); letter-spacing:-.01em; }
+.dg-formula__name{ margin:0 0 14px; font-size:clamp(1rem,1.15vw,1.1rem);
+  font-weight:700; line-height:1.35; color:var(--dg-ink); letter-spacing:-.01em; }
 .dg-formula__list{ margin:0; padding:0; list-style:none; }
-.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.82rem,1.1vw,.92rem);
+.dg-formula__item{ position:relative; padding-left:14px; font-size:clamp(.9rem,1.05vw,1rem);
   line-height:1.6; color:var(--dg-ink); margin-bottom:6px; word-break:keep-all; }
 .dg-formula__item::before{ content:"•"; position:absolute; left:0; top:0; color:var(--dg-ink); }
-.dg-formula__note{ margin:24px 0 0; font-size:clamp(.82rem,1.1vw,.92rem); line-height:1.6;
+.dg-formula__note{ margin:24px 0 0; font-size:clamp(.9rem,1.05vw,1rem); line-height:1.6;
   color:var(--dg-ink-soft); word-break:keep-all; }
 @media (min-width:768px){
   .dg-formula__track{ flex-direction:row; overflow-x:auto; scroll-snap-type:x mandatory;
@@ -451,16 +213,62 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
   display:grid; grid-template-columns:1fr; gap:clamp(32px,5vw,40px); align-items:start; }
 .dg-articles__head{ margin:0; }
 .dg-articles__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(2.4rem,6vw,3.2rem); letter-spacing:-.04em; color:var(--dg-ink); }
+  font-size:clamp(2rem,5vw,3rem); line-height:1.05; letter-spacing:-.03em; color:var(--dg-ink); }
 .dg-articles__grid{ display:grid; grid-template-columns:1fr; gap:clamp(40px,6vw,56px); }
 .dg-article{ display:flex; flex-direction:column; }
 .dg-article__media{ width:100%; aspect-ratio:1/1; overflow:hidden; margin-bottom:16px; background:#fff; }
 .dg-article__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
 .dg-article:hover .dg-article__img{ transform:scale(1.03); }
 .dg-article__text{ display:flex; flex-direction:column; border-top:1px solid var(--dg-line); padding-top:16px; }
-.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1.05rem,1.4vw,1.15rem);
-  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.4; }
-.dg-article__desc{ margin:0; font-size:clamp(.85rem,1.1vw,.95rem); line-height:1.65; color:var(--dg-ink); word-break:keep-all; }
+.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1rem,1.15vw,1.1rem);
+  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.35; }
+.dg-article__desc{ margin:0; font-size:clamp(.95rem,1.3vw,1.05rem); line-height:1.55; color:var(--dg-ink); word-break:keep-all; }
+html.dg-js .dg-ritual__title,
+html.dg-js .dg-belief__title,
+html.dg-js .dg-join__title,
+html.dg-js .dg-formula__title,
+html.dg-js .dg-review__title,
+html.dg-js .dg-origins__title,
+html.dg-js .dg-articles__title{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+html.dg-js .dg-ritual__title.is-visible,
+html.dg-js .dg-belief__title.is-visible,
+html.dg-js .dg-join__title.is-visible,
+html.dg-js .dg-formula__title.is-visible,
+html.dg-js .dg-review__title.is-visible,
+html.dg-js .dg-origins__title.is-visible,
+html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
+@media (min-width:768px){
+  html.dg-js .dg-formula__track .dg-formula__text{ opacity:0; transform:translateX(-56px); transition:opacity .8s ease, transform .8s ease; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__text{ opacity:1; transform:translateX(0); }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(1) .dg-formula__text{ transition-delay:0s; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(2) .dg-formula__text{ transition-delay:.16s; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(3) .dg-formula__text{ transition-delay:.32s; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(4) .dg-formula__text{ transition-delay:.48s; }
+}
+@media (max-width:767px){
+  html.dg-js .dg-formula__text{ opacity:0; transform:translateX(-32px); transition:opacity .7s ease, transform .7s ease; }
+  html.dg-js .dg-formula__text.is-visible{ opacity:1; transform:translateX(0); }
+}
+@media (max-width:767px){
+  html.dg-js .dg-ritual__title,
+  html.dg-js .dg-belief__title,
+  html.dg-js .dg-join__title,
+  html.dg-js .dg-formula__title,
+  html.dg-js .dg-review__title,
+  html.dg-js .dg-origins__title,
+  html.dg-js .dg-articles__title{ transform:translateY(16px); transition-duration:.55s; }
+}
+@media (prefers-reduced-motion: reduce){
+  html.dg-js .dg-ritual__title,
+  html.dg-js .dg-belief__title,
+  html.dg-js .dg-join__title,
+  html.dg-js .dg-formula__title,
+  html.dg-js .dg-review__title,
+  html.dg-js .dg-origins__title,
+  html.dg-js .dg-articles__title,
+  html.dg-js .dg-formula__track .dg-formula__text,
+  html.dg-js .dg-formula__text{ opacity:1!important; transform:none!important; transition:none!important; }
+}
 @media (min-width:768px){
   .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
   .dg-articles__grid{ grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); }
@@ -471,14 +279,15 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
 .fd-container { max-width: var(--dg-maxw); margin: 0 auto; }        /* [추가] 다른 섹션과 폭 정렬 */
 .fd-faq-unified-card { display: flex; background-color: #f0efef; border-radius: 40px; overflow: hidden; align-items: stretch; width: 100%; box-sizing: border-box; }
 .fd-faq-content-area { flex: 6; padding: 70px 60px; display: flex; flex-direction: column; justify-content: center; }
-.fd-faq-title { font-family: var(--dg-font-body); font-size: 48px; font-weight: 700; color: #000000; margin: 0 0 35px; letter-spacing: -0.04em; }
+.fd-faq-title { font-family: var(--dg-font-body); font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; line-height: 1.05; color: #000000; margin: 0 0 35px; letter-spacing: -0.03em; }
+.fd-faq-subtitle { font-size: clamp(.95rem, 1.3vw, 1.1rem); line-height: 1.5; }
 .fd-faq-item { border-bottom: 1px solid rgba(0,0,0,.1); }            /* [수정] 흰색→어두운 색 (회색 배경에서 보이게) */
 .fd-faq-item:last-child { border-bottom: none; }
 .fd-faq-question { font-family: var(--dg-font-body); width:100%; background:none; border:0; -webkit-appearance:none; appearance:none; text-align:left;
-  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 18px; font-weight: 600; color: #000000; cursor: pointer; user-select: none; }
+  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: clamp(1rem, 1.15vw, 1.1rem); font-weight: 700; line-height: 1.4; color: #000000; cursor: pointer; user-select: none; }
 .fd-faq-icon { font-size: 24px; font-weight: 300; color: #000000; margin-left: 20px; transition: transform 0.3s ease; display: inline-block; }
 .fd-faq-item.active .fd-faq-icon { transform: rotate(45deg); }
-.fd-faq-answer { max-height: 0; overflow: hidden; font-size: 18px; line-height: 1.6; color: #000000; word-break: keep-all;
+.fd-faq-answer { max-height: 0; overflow: hidden; font-size: clamp(.95rem, 1.3vw, 1.05rem); line-height: 1.6; color: #000000; word-break: keep-all;
   font-family: var(--dg-font-body); font-weight: 400; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; }
 .fd-faq-item.active .fd-faq-answer { max-height: 500px; padding: 0 0 20px; }
 .fd-faq-item.active .fd-faq-question { padding-bottom: 12px; }
@@ -488,18 +297,19 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
   .fd-faq-section { padding: 60px 20px; }
   .fd-faq-unified-card { flex-direction: column; border-radius: 30px; }
   .fd-faq-content-area { order: 2; padding: 50px 30px; }
-  .fd-faq-title { font-size: 34px; margin-bottom: 25px; }
-  .fd-faq-question { font-size: 16px; padding: 16px 0; }
-  .fd-faq-answer { font-size: 16px; }
+  .fd-faq-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 25px; }
+  .fd-faq-question { font-size: clamp(1rem, 1.15vw, 1.1rem); padding: 16px 0; }
+  .fd-faq-answer { font-size: clamp(.95rem, 1.3vw, 1.05rem); }
   .fd-faq-image-area { order: 1; flex: none; height: 350px; width: 100%; }
   .fd-faq-image-area img { position: relative; height: 100%; }
 }
 </style></div>
+
 <section class="dg-hero" id="shop" data-ez="contents-1ussfzn-1">
   <!-- [SEO] 페이지 대표 h1 (화면엔 숨김). layout 로고가 이미 h1이면 이 줄 삭제 -->
   <h1 class="dg-sr-only">42degree — 매일의 Stress Care, Calm &amp; Clarity™</h1>
   <div class="dg-hero__media">
-    <img class="dg-hero__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42banner.jpg" alt="42degree Citrus Blend &amp; CC Shot" loading="eager" fetchpriority="high">
+    <img class="dg-hero__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42banner_opt.jpg" alt="42degree Citrus Blend &amp; CC Shot" loading="eager" fetchpriority="high" decoding="async">
     <div class="dg-hero__overlay">
       <p class="dg-hero__copy">무거운 긴장은 덜어내고, 맑은 몰입만 남기도록, 매일의 Stress Care.</p>
       <a class="dg-btn dg-btn--light dg-hero__cta" href="/product/%EC%94%A8%EC%94%A8%EC%83%B7/11/category/23/display/1/">SHOP THE SHOT</a>
@@ -518,7 +328,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
     <hr class="dg-ritual__rule">
   </div>
   <div class="dg-ritual__media">
-    <img class="dg-ritual__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_1.png" alt loading="lazy">
+    <img class="dg-ritual__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_1_opt.jpg" alt loading="lazy" decoding="async">
   </div>
 </section>
 <section class="dg-belief" data-ez="module-15st45c-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
@@ -528,7 +338,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
       <p class="dg-belief__body">바쁘게 돌아가는 현대 사회에서 — 뇌의 긴장을 풀고 마음을 맑게 유지하는 것은 더 이상 특별한 치료가 아닌 매일의 습관이어야 합니다. — 42degree는 인지심리학적 통찰과 섬세하게 설계된 원료를 바탕으로, 당신이 언제 어디서나 가장 간편하게 내면의 평온을 되찾을 수 있도록 돕습니다.</p>
     </div>
     <div class="dg-belief__media">
-      <img class="dg-belief__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png" alt="42degree CC Shot 스틱" loading="lazy">
+      <img class="dg-belief__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick_opt.png" alt="42degree CC Shot 스틱" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -545,7 +355,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
       </div>
     </div>
     <div class="dg-join__media">
-      <img class="dg-join__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_2.png" alt loading="lazy">
+      <img class="dg-join__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_2_opt.jpg" alt loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -557,7 +367,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
     </div>
     <div class="dg-formula__track">
       <article class="dg-formula__card">
-        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_3.png" alt="L-Theanine 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_3_opt.jpg" alt="L-Theanine 원료 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-formula__text">
           <h3 class="dg-formula__name">L-Theanine (긴장 완화)</h3>
           <ul class="dg-formula__list">
@@ -569,7 +379,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
         </div>
       </article>
       <article class="dg-formula__card">
-        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_4.png" alt="Inositol 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_4_opt.jpg" alt="Inositol 원료 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-formula__text">
           <h3 class="dg-formula__name">Inositol (신경 신호 전달)</h3>
           <ul class="dg-formula__list">
@@ -581,7 +391,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
         </div>
       </article>
       <article class="dg-formula__card">
-        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_5.png" alt="Vitamin B Complex 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_5_opt.jpg" alt="Vitamin B Complex 원료 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-formula__text">
           <h3 class="dg-formula__name">Vitamin B Complex (맑은 몰입)</h3>
           <ul class="dg-formula__list">
@@ -593,7 +403,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
         </div>
       </article>
       <article class="dg-formula__card">
-        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_6.png" alt="Electrolytes &amp; Magnesium 원료 이미지" loading="lazy"></div>
+        <div class="dg-formula__media"><img class="dg-formula__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_6_opt.jpg" alt="Electrolytes &amp; Magnesium 원료 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-formula__text">
           <h3 class="dg-formula__name">Electrolytes &amp; Magnesium.</h3>
           <ul class="dg-formula__list">
@@ -632,7 +442,7 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
 <section class="dg-origins" data-ez="module-025umdk-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
   <div class="dg-origins__inner">
     <div class="dg-origins__media">
-      <img class="dg-origins__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_7.png" alt="42degree The Origins Edition" loading="lazy">
+      <img class="dg-origins__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42main_7_opt.jpg" alt="42degree The Origins Edition" loading="lazy" decoding="async">
     </div>
     <h2 class="dg-origins__title">42degree<br>The Origins Edition</h2>
     <p class="dg-origins__copy">뇌 과학 트렌드부터 마인드풀 라이프스타일 팁까지,<br class="dg-pc-br">번아웃의 고리를 끊고 높은 성취와 깊은 휴식 사이의 완벽한 밸런스를<br class="dg-pc-br">찾는 것에 주목합니다</p>
@@ -646,14 +456,14 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
     </div>
     <div class="dg-articles__grid">
       <article class="dg-article">
-        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/juicy.jpg" alt="What is Nootropics? 누트로픽 아티클 이미지" loading="lazy"></div>
+        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/juicy.jpg" alt="What is Nootropics? 누트로픽 아티클 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-article__text">
           <h3 class="dg-article__name">What is Nootropics? :<br>일의 효율을 바꾸는 뇌 과학.</h3>
           <p class="dg-article__desc">단순히 잠을 깨우는 각성제를 넘어, 뇌의 인지 기능과 집중력을 건강하게 끌어올리는 누트로픽(Nootropics). 끊임없이 쏟아지는 업무 속에서 무거운 불안감은 덜어내고 맑은 몰입을 유지하는 법, 그리고 이것이 현대인의 커리어에 왜 필수적인 무기가 되는지 그 과학적 근거를 짚어봅니다.</p>
         </div>
       </article>
       <article class="dg-article">
-        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box.jpg" alt="The Mindful Ritual 아티클 이미지" loading="lazy"></div>
+        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box_opt.jpg" alt="The Mindful Ritual 아티클 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-article__text">
           <h3 class="dg-article__name">The Mindful Ritual :<br>우리가 calm focus에 주목하는 이유.</h3>
           <p class="dg-article__desc">과부하된 일상에서 스스로 무너지지 않고 중심을 지키는 것은 어떻게 가능할까. 42degree의 창립자가 심리학적 통찰을 바탕으로 직접 마주했던 번아웃의 순간들, 그리고 지친 현대 여성들의 일상에 '마음의 온도'를 맞추는 투명한 브레인 리추얼을 제안하기까지의 진솔한 기록을 전합니다.</p>
@@ -669,12 +479,13 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
         <h2 class="fd-faq-title">FAQs</h2>
         <div class="fd-faq-accordion-wrap">
           <div class="fd-faq-item">
-            <button class="fd-faq-question" type="button" aria-expanded="false"><span>C.C. Shot은 하루에 몇 번 마시는 것이 좋나요?</span><span class="fd-faq-icon">+</span></button>
-            <div class="fd-faq-answer">정해진 섭취 횟수는 없으나, 나만의 리추얼을 만들기 위해 하루 한 스틱을 권장합니다. 아침 일찍 혹은 오후의 휴식 시간에 자연스럽게 즐겨보세요.</div>
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>하루에 몇 포까지 마셔도 되나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">42degree가 설계한 최적의 밸런스를 위해 하루 1~2포 섭취를 가장 권장 드립니다.<br>
+*L-테아닌 1일 최대 섭취량 200mg 기준</div>
           </div>
           <div class="fd-faq-item">
-            <button class="fd-faq-question" type="button" aria-expanded="false"><span>임산부나 수유부도 섭취할 수 있나요?</span><span class="fd-faq-icon">+</span></button>
-            <div class="fd-faq-answer">본 제품은 건강기능식품이 아닌 일반 가공식품이나, 성분의 특성상 개인차가 있을 수 있습니다. 자세한 사항은 전문의와 상담을 권장합니다.</div>
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>임산부나 수유부가 마셔도 되나요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">씨씨샷의 모든 원료는 안전한 식품원료입니다. 하지만 임신·수유기에는 몸이 민감할 수 있으므로, 원료 성분을 확인하신 후 전문의와 상의하여 섭취하시길 권장합니다.</div>
           </div>
           <div class="fd-faq-item">
             <button class="fd-faq-question" type="button" aria-expanded="false"><span>언제 섭취하는 것이 가장 효과적인가요?</span><span class="fd-faq-icon">+</span></button>
@@ -689,13 +500,13 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
             <div class="fd-faq-answer">직사광선을 피하고 서늘한 곳에 보관해주세요. 스틱을 개봉한 후에는 즉시 섭취하시는 것을 권장합니다.</div>
           </div>
           <div class="fd-faq-item">
-            <button class="fd-faq-question" type="button" aria-expanded="false"><span>배송은 얼마나 걸리나요?</span><span class="fd-faq-icon">+</span></button>
-            <div class="fd-faq-answer">영업일 기준 평균 2~3일 정도 소요됩니다. 고객님께 안전하게 전달하기 위해 최선을 다하고 있습니다.</div>
+            <button class="fd-faq-question" type="button" aria-expanded="false"><span>침전물이나 알갱이가 보이는데 괜찮은 건가요?</span><span class="fd-faq-icon">+</span></button>
+            <div class="fd-faq-answer">네, 안심하셔도 됩니다. 이는 천연 과일에서 유래한 천연 펄프(Pulp) 성분으로, 원료를 가공 없이 담아 발생하는 자연스러운 현상입니다. 가볍게 흔들어 드세요.</div>
           </div>
         </div>
       </div>
       <div class="fd-faq-image-area">
-        <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/cut.jpg" alt="42degree FAQ 이미지" loading="lazy">
+        <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/cut_opt.jpg" alt="42degree FAQ 이미지" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -711,13 +522,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 2. 리뷰 카드 스크롤 등장 (Section 6)
-  const reviewObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); reviewObserver.unobserve(entry.target); }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.dg-review__card').forEach(card => reviewObserver.observe(card));
+  // 2. 섹션 타이틀, Formula 카드 트랙/문안 및 리뷰 카드 스크롤 등장
+  const revealTargets = document.querySelectorAll('.dg-review__card, .dg-ritual__title, .dg-belief__title, .dg-join__title, .dg-formula__title, .dg-formula__track, .dg-formula__text, .dg-review__title, .dg-origins__title, .dg-articles__title');
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealTargets.forEach(target => revealObserver.observe(target));
+  } else {
+    revealTargets.forEach(target => target.classList.add('is-visible'));
+  }
 
   // 3. FAQ 아코디언 (+ aria-expanded 상태 토글)
   const faqSec = document.getElementById('fdFaqSec');
