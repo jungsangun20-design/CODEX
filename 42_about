@@ -101,6 +101,11 @@
             letter-spacing: -0.01em;
         }
 
+        .brand-story-section--hero .brand-story-sub-text::before {
+            content: none;
+            display: none;
+        }
+
         .brand-story-media-wrap {
             display: flex;
             justify-content: center;
