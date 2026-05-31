@@ -237,11 +237,12 @@ html.dg-js .dg-formula__title.is-visible,
 html.dg-js .dg-review__title.is-visible,
 html.dg-js .dg-origins__title.is-visible,
 html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
-html.dg-js .dg-formula__card{ opacity:0; transform:translateX(-18px); transition:opacity .55s ease, transform .55s ease; }
-html.dg-js .dg-formula__card.is-visible{ opacity:1; transform:translateX(0); }
-.dg-formula__card:nth-child(2){ transition-delay:.12s; }
-.dg-formula__card:nth-child(3){ transition-delay:.24s; }
-.dg-formula__card:nth-child(4){ transition-delay:.36s; }
+html.dg-js .dg-formula__card{ opacity:0; transform:translateX(-32px); transition:opacity .7s ease, transform .7s ease; }
+html.dg-js .dg-formula.is-visible .dg-formula__card{ opacity:1; transform:translateX(0); }
+html.dg-js .dg-formula.is-visible .dg-formula__card:nth-child(1){ transition-delay:0s; }
+html.dg-js .dg-formula.is-visible .dg-formula__card:nth-child(2){ transition-delay:.14s; }
+html.dg-js .dg-formula.is-visible .dg-formula__card:nth-child(3){ transition-delay:.28s; }
+html.dg-js .dg-formula.is-visible .dg-formula__card:nth-child(4){ transition-delay:.42s; }
 @media (max-width:767px){
   html.dg-js .dg-ritual__title,
   html.dg-js .dg-belief__title,
@@ -514,8 +515,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 2. 섹션 타이틀, Formula 카드 및 리뷰 카드 스크롤 등장
-  const revealTargets = document.querySelectorAll('.dg-review__card, .dg-ritual__title, .dg-belief__title, .dg-join__title, .dg-formula__title, .dg-formula__card, .dg-review__title, .dg-origins__title, .dg-articles__title');
+  // 2. 섹션 타이틀, Formula 섹션 및 리뷰 카드 스크롤 등장
+  const revealTargets = document.querySelectorAll('.dg-review__card, .dg-ritual__title, .dg-belief__title, .dg-join__title, .dg-formula, .dg-formula__title, .dg-review__title, .dg-origins__title, .dg-articles__title');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
