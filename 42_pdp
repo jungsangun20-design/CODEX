@@ -746,7 +746,7 @@
 	.dg-review {
 		--ink: #161413; box-sizing: border-box; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink);
 		/* 전달주신 배경 이미지를 섹션 전체 백그라운드로 설정 */
-		max-width: 1200px; margin: 0 auto; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp14.png'); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: clamp(24px, 4vw, 40px); padding-bottom: clamp(80px, 12vw, 160px);
+		max-width: 1200px; margin: 0 auto; background-image: url('https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp14_opt.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: clamp(24px, 4vw, 40px); padding-bottom: clamp(80px, 12vw, 160px);
 	}
 	
 	.dg-review__inner {
@@ -1188,7 +1188,7 @@
 			<p class="dg-switch__body">카페인 0%, 맑게 깨어나는 첫 번째 브레인 웰니스 리추얼 'C.C. Shot' — 42degree meet the rainbow within.</p>
 		</div>
 		<div class="dg-switch__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg" alt="42degree C.C. Shot" width="1200" height="900" decoding="async" fetchpriority="high" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw" class="dg-switch__img">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right_opt.jpg" alt="42degree C.C. Shot" width="1200" height="900" decoding="async" fetchpriority="high" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/main_right_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw" class="dg-switch__img">
 		</div>
 	</div>
 </section>
@@ -1200,7 +1200,7 @@
 <section class="dg-alt">
 	<div class="dg-alt__grid">
 		<div class="dg-alt__boxes">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp16.jpg" alt="42degree Citrus Blend" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp16.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp16_opt.jpg" alt="42degree Citrus Blend" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp16_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 
 		<ul class="dg-alt__features">
@@ -1238,7 +1238,7 @@
 				<br>제공하는 선명한 대안</h2>
 		</div>
 		<div class="dg-alt__orange">
-			<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;image-rendering:auto!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="신선한 시트러스" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;image-rendering:auto!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1_opt.jpg" alt="신선한 시트러스" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 		<div aria-hidden="true" class="dg-alt__orange-copy">
 
@@ -1256,7 +1256,7 @@
 <section class="dg-rec">
 	<div class="dg-rec__inner">
 		<div class="dg-rec__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp17.jpg" alt="42degree C.C. Shot & 시트러스" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp17.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp17_opt.jpg" alt="42degree C.C. Shot & 시트러스" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp17_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 		<div class="dg-rec__text">
 
@@ -1301,16 +1301,16 @@
 
 		<div class="dg-enjoy__grid">
 			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg" alt="원액 그대로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18_opt.jpg" alt="원액 그대로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp18_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png" alt="탄산수에 섞어서 에이드처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3_opt.jpg" alt="탄산수에 섞어서 에이드처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp3_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 			<div class="dg-enjoy__item">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png" alt="얼려먹는 간식처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4_opt.jpg" alt="얼려먹는 간식처럼" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp4_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 			<div class="dg-enjoy__item dg-enjoy__item--salad">
-				<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;transform:scale(1.18)!important;transform-origin:center!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png" alt="샐러드 드레싱으로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+				<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;transform:scale(1.18)!important;transform-origin:center!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2_opt.jpg" alt="샐러드 드레싱으로" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp2_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 			</div>
 		</div>
 	</div>
@@ -1338,7 +1338,7 @@
 		</div>
 
 		<div class="dg-intro__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp5.png" alt="42degree C.C Shot 제품" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp5.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp5_opt.jpg" alt="42degree C.C Shot 제품" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp5_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 	</div>
 </section>
@@ -1354,7 +1354,7 @@
 		<div class="dg-formula__grid">
 			<div class="dg-formula__col">
 				<div class="dg-formula__card dg-formula__card--overlay">
-					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp9.png" alt="L-테아닌 100MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp9.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp9_opt.jpg" alt="L-테아닌 100MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp9_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 					<div class="dg-formula__text">
 
 						<h3 class="dg-formula__name">L-테아닌 100MG</h3>
@@ -1369,7 +1369,7 @@
 
 				<div class="dg-formula__card dg-formula__card--stacked">
 					<div class="dg-formula__media">
-						<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp6.png" alt="비타민 B 복합체 50MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp6.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+						<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp6_opt.jpg" alt="비타민 B 복합체 50MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp6_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 					</div>
 					<div class="dg-formula__text">
 
@@ -1386,7 +1386,7 @@
 			<div class="dg-formula__col">
 				<div class="dg-formula__card dg-formula__card--stacked">
 					<div class="dg-formula__media">
-						<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp8.png" alt="전해질 & 마그네슘 50MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp8.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+						<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp8_opt.jpg" alt="전해질 & 마그네슘 50MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp8_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 					</div>
 					<div class="dg-formula__text">
 
@@ -1400,7 +1400,7 @@
 				</div>
 
 				<div class="dg-formula__card dg-formula__card--overlay">
-					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp7.png" alt="이노시톨 200MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp7.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp7_opt.jpg" alt="이노시톨 200MG" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp7_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 					<div class="dg-formula__text">
 
 						<h3 class="dg-formula__name">이노시톨 200MG</h3>
@@ -1426,7 +1426,7 @@
 
 			<!-- 1. 좌상단: 옐로우 시트러스 이미지 -->
 			<div class="dg-power__cell dg-power__cell--img">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png" alt="시트러스 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12_opt.jpg" alt="시트러스 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 			</div>
 
 			<!-- 2. 우상단: 텍스트 -->
@@ -1448,12 +1448,12 @@
 
 			<!-- 3. 좌하단: 로고 -->
 			<div class="dg-power__cell dg-power__cell--logo">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2.png" alt="42degree 로고" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2_opt.png" alt="42degree 로고" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/logo2_opt.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 			</div>
 
 			<!-- 4. 우하단: 그린 라임 이미지 -->
 			<div class="dg-power__cell dg-power__cell--img">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png" alt="그린 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11_opt.jpg" alt="그린 텍스쳐" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 			</div>
 
 		</div>
@@ -1486,7 +1486,7 @@
 		</div>
 
 		<div class="dg-beyond__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/hero_right.jpg" alt="Beyond Caffeine - 42degree" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/hero_right.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/hero_right_opt.jpg" alt="Beyond Caffeine - 42degree" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/hero_right_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 	</div>
 </section>
@@ -1517,7 +1517,7 @@
 			<!-- 1 -->
 			<div class="dg-focus__card">
 				<div class="dg-focus__media">
-					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png" alt="100% Caffeine-Free" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10_opt.jpg" alt="100% Caffeine-Free" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp10_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 				<div class="dg-focus__text">
 
@@ -1529,7 +1529,7 @@
 			<!-- 2 -->
 			<div class="dg-focus__card">
 				<div class="dg-focus__media">
-					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png" alt="Premium Sourcing" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick_opt.jpg" alt="Premium Sourcing" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 				<div class="dg-focus__text">
 
@@ -1575,7 +1575,7 @@
 	<div class="dg-sourcing__inner">
 
 		<div class="dg-sourcing__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp19.png" alt="Premium Sourcing - 시트러스 원료" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp19.png 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp19_opt.jpg" alt="Premium Sourcing - 시트러스 원료" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp19_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 
 		<div class="dg-sourcing__text">
@@ -1627,7 +1627,7 @@
 			<!-- 1 -->
 			<div class="dg-inside__card">
 				<div class="dg-inside__media">
-					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png" alt="mandarin JEJU, KOREA" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1_opt.jpg" alt="mandarin JEJU, KOREA" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp1_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 
 				<h3 class="dg-inside__name">mandarin JEJU,
@@ -1639,7 +1639,7 @@
 			<!-- 2 -->
 			<div class="dg-inside__card">
 				<div class="dg-inside__media">
-					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png" alt="lime - ISRAEL" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11_opt.jpg" alt="lime - ISRAEL" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp11_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 
 				<h3 class="dg-inside__name">lime - ISRAEL</h3>
@@ -1650,7 +1650,7 @@
 			<!-- 3 -->
 			<div class="dg-inside__card">
 				<div class="dg-inside__media">
-					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png" alt="ITALY- bergamot" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12_opt.jpg" alt="ITALY- bergamot" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp12_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 
 				<h3 class="dg-inside__name">ITALY- bergamot</h3>
@@ -1661,7 +1661,7 @@
 			<!-- 4 -->
 			<div class="dg-inside__card">
 				<div class="dg-inside__media">
-					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp13.png" alt="lemon- ISRAEL" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp13.png 1200w" sizes="(min-width: 768px) 25vw, 50vw">
+					<img style="display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:cover!important;" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp13_opt.jpg" alt="lemon- ISRAEL" loading="lazy" width="1200" height="1200" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp13_opt.jpg 1200w" sizes="(min-width: 768px) 25vw, 50vw">
 				</div>
 
 				<h3 class="dg-inside__name">lemon- ISRAEL</h3>
@@ -1754,7 +1754,7 @@
 		</div>
 
 		<div class="dg-details__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png" alt="42degree C.C. Shot 영양정보" loading="lazy" width="640" height="940" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details.png 640w" sizes="(min-width: 768px) 320px, 80vw" class="dg-details__img">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details_opt.png" alt="42degree C.C. Shot 영양정보" loading="lazy" width="640" height="940" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/details_opt.png 640w" sizes="(min-width: 768px) 320px, 80vw" class="dg-details__img">
 		</div>
 	</div>
 </section>
@@ -1781,10 +1781,10 @@
 
 		<div aria-label="42degree 라이프스타일 이미지" class="dg-outro__visuals">
 			<figure class="dg-outro__figure">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp20.png" alt="42degree C.C. Shot과 오렌지 음료" loading="lazy" width="640" height="640" decoding="async">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp20_opt.jpg" alt="42degree C.C. Shot과 오렌지 음료" loading="lazy" width="640" height="640" decoding="async">
 			</figure>
 			<figure class="dg-outro__figure">
-				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp21.png" alt="책상 위 C.C. Shot과 드로잉 도구" loading="lazy" width="640" height="640" decoding="async">
+				<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/pdp21_opt.jpg" alt="책상 위 C.C. Shot과 드로잉 도구" loading="lazy" width="640" height="640" decoding="async">
 			</figure>
 		</div>
 	</div>
@@ -1889,7 +1889,7 @@
 	<div class="dg-story__inner">
 
 		<div class="dg-story__media">
-			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study.jpg" alt="Our story - 42degree" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+			<img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box_opt.jpg" alt="Our story - 42degree" loading="lazy" width="1200" height="900" decoding="async" srcset="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box_opt.jpg 1200w" sizes="(min-width: 768px) 50vw, 100vw">
 		</div>
 
 		<div class="dg-story__content">
