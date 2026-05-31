@@ -81,9 +81,9 @@
 .dg-ritual__eyebrow{ margin:0; font-weight:700; font-size:.72rem; letter-spacing:.16em;
   text-transform:uppercase; color:var(--dg-ink); }
 .dg-ritual__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:400; line-height:1.04; letter-spacing:-.02em; font-size:clamp(2.6rem,9vw,5.5rem); text-align:left; }
+  font-weight:400; line-height:1.02; letter-spacing:-.04em; font-size:clamp(2.8rem,7vw,5.5rem); text-align:left; }
 .dg-ritual__lead{ margin:1.3rem 0 0; color:var(--dg-ink-soft); text-align:left;
-  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:52ch; }
+  font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.65; letter-spacing:-.02em; max-width:52ch; }
 .dg-ritual__rule{ border:0; border-top:1px solid var(--dg-line); margin:clamp(26px,4vw,46px) 0 0; }
 .dg-ritual__media{ width:100%; aspect-ratio:40/9; overflow:hidden;
   margin-top:clamp(26px,4vw,50px); line-height:0; }
@@ -96,9 +96,9 @@
 .dg-belief__inner{ max-width:var(--dg-maxw); margin:0 auto; padding-inline:var(--dg-gutter);
   display:grid; grid-template-columns:1fr; gap:clamp(30px,5vw,56px); align-items:start; }
 .dg-belief__title{ margin:0; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:500; line-height:1.12; letter-spacing:-.02em; font-size:clamp(1.7rem,4.6vw,3rem); }
+  font-weight:400; line-height:1.12; letter-spacing:-.035em; font-size:clamp(1.9rem,4.4vw,3rem); }
 .dg-belief__body{ margin:1.6rem 0 0 12%; color:var(--dg-ink-soft);
-  font-size:clamp(.85rem,1.4vw,1rem); line-height:1.75; max-width:46ch; }
+  font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.65; letter-spacing:-.02em; max-width:46ch; }
 .dg-belief__media{ line-height:0; }
 .dg-belief__img{ display:block; width:100%; height:auto; }
 @media (min-width:768px){
@@ -113,16 +113,25 @@
 .dg-join__text{ display:flex; flex-direction:column; justify-content:center;
   padding:clamp(48px,8vw,110px) var(--dg-gutter); }
 .dg-join__textinner{ width:100%; max-width:480px; }
-.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.7; }
+.dg-join__intro{ margin:0; color:var(--dg-ink-soft); font-size:clamp(.95rem,1.3vw,1.1rem); font-weight:400; line-height:1.6; letter-spacing:-.02em; }
 .dg-join__title{ margin:1.4rem 0 1.9rem; color:var(--dg-ink); font-family:var(--dg-font-display);
-  font-weight:600; line-height:1.32; letter-spacing:-.01em; font-size:clamp(1.45rem,3.6vw,2.2rem); }
+  font-weight:500; line-height:1.18; letter-spacing:-.03em; font-size:clamp(1.75rem,4vw,2.5rem); }
 .dg-join__cta{ display:flex; flex-direction:column; gap:.7rem; }
+.dg-join__cta .dg-btn{ font-size:clamp(.9rem,1vw,.95rem); font-weight:600; line-height:1; letter-spacing:.04em; }
 .dg-join__media{ line-height:0; }
 .dg-join__img{ display:block; width:100%; height:auto; }
 @media (min-width:768px){
   .dg-join__inner{ grid-template-columns:1fr 1fr; align-items:stretch; }
   .dg-join__media{ position:relative; }
   .dg-join__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+}
+@media (max-width:767px){
+  .dg-ritual__title{ font-size:clamp(2.4rem,12vw,3.2rem); line-height:1.05; }
+  .dg-ritual__lead{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
+  .dg-belief__title{ font-size:clamp(1.75rem,8vw,2.25rem); line-height:1.15; }
+  .dg-belief__body{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
+  .dg-join__intro{ font-size:clamp(.9rem,3.6vw,1rem); line-height:1.65; }
+  .dg-join__title{ font-size:clamp(1.55rem,7vw,2rem); line-height:1.2; }
 }
 
 /* ════════ SECTION 5 · FORMULA ════════ */
