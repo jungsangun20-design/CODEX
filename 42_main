@@ -246,8 +246,8 @@ html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
   html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(4) .dg-formula__text{ transition-delay:.48s; }
 }
 @media (max-width:767px){
-  html.dg-js .dg-formula__text{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
-  html.dg-js .dg-formula__text.is-visible{ opacity:1; transform:translateY(0); }
+  html.dg-js .dg-formula__text{ opacity:0; transform:translateX(-32px); transition:opacity .7s ease, transform .7s ease; }
+  html.dg-js .dg-formula__text.is-visible{ opacity:1; transform:translateX(0); }
 }
 @media (max-width:767px){
   html.dg-js .dg-ritual__title,
