@@ -309,7 +309,7 @@ html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
   <!-- [SEO] 페이지 대표 h1 (화면엔 숨김). layout 로고가 이미 h1이면 이 줄 삭제 -->
   <h1 class="dg-sr-only">42degree — 매일의 Stress Care, Calm &amp; Clarity™</h1>
   <div class="dg-hero__media">
-    <img class="dg-hero__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42banner.jpg" alt="42degree Citrus Blend &amp; CC Shot" loading="eager" fetchpriority="high" decoding="async">
+    <img class="dg-hero__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42banner_opt.jpg" alt="42degree Citrus Blend &amp; CC Shot" loading="eager" fetchpriority="high" decoding="async">
     <div class="dg-hero__overlay">
       <p class="dg-hero__copy">무거운 긴장은 덜어내고, 맑은 몰입만 남기도록, 매일의 Stress Care.</p>
       <a class="dg-btn dg-btn--light dg-hero__cta" href="/product/%EC%94%A8%EC%94%A8%EC%83%B7/11/category/23/display/1/">SHOP THE SHOT</a>
@@ -338,7 +338,7 @@ html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
       <p class="dg-belief__body">바쁘게 돌아가는 현대 사회에서 — 뇌의 긴장을 풀고 마음을 맑게 유지하는 것은 더 이상 특별한 치료가 아닌 매일의 습관이어야 합니다. — 42degree는 인지심리학적 통찰과 섬세하게 설계된 원료를 바탕으로, 당신이 언제 어디서나 가장 간편하게 내면의 평온을 되찾을 수 있도록 돕습니다.</p>
     </div>
     <div class="dg-belief__media">
-      <img class="dg-belief__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick.png" alt="42degree CC Shot 스틱" loading="lazy" decoding="async">
+      <img class="dg-belief__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/42stick_opt.png" alt="42degree CC Shot 스틱" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -463,7 +463,7 @@ html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
         </div>
       </article>
       <article class="dg-article">
-        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box.jpg" alt="The Mindful Ritual 아티클 이미지" loading="lazy" decoding="async"></div>
+        <div class="dg-article__media"><img class="dg-article__img" src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/study%20box_opt.jpg" alt="The Mindful Ritual 아티클 이미지" loading="lazy" decoding="async"></div>
         <div class="dg-article__text">
           <h3 class="dg-article__name">The Mindful Ritual :<br>우리가 calm focus에 주목하는 이유.</h3>
           <p class="dg-article__desc">과부하된 일상에서 스스로 무너지지 않고 중심을 지키는 것은 어떻게 가능할까. 42degree의 창립자가 심리학적 통찰을 바탕으로 직접 마주했던 번아웃의 순간들, 그리고 지친 현대 여성들의 일상에 '마음의 온도'를 맞추는 투명한 브레인 리추얼을 제안하기까지의 진솔한 기록을 전합니다.</p>
@@ -506,7 +506,7 @@ html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
         </div>
       </div>
       <div class="fd-faq-image-area">
-        <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/cut.jpg" alt="42degree FAQ 이미지" loading="lazy" decoding="async">
+        <img src="https://ecimg.cafe24img.com/pg2486b20169605074/fttdegree/web/upload/ezst/image/cut_opt.jpg" alt="42degree FAQ 이미지" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
