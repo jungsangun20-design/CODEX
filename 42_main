@@ -237,12 +237,18 @@ html.dg-js .dg-formula__title.is-visible,
 html.dg-js .dg-review__title.is-visible,
 html.dg-js .dg-origins__title.is-visible,
 html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
-html.dg-js .dg-formula__track .dg-formula__text{ opacity:0; transform:translateX(-56px); transition:opacity .8s ease, transform .8s ease; }
-html.dg-js .dg-formula__track.is-visible .dg-formula__text{ opacity:1; transform:translateX(0); }
-html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(1) .dg-formula__text{ transition-delay:0s; }
-html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(2) .dg-formula__text{ transition-delay:.16s; }
-html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(3) .dg-formula__text{ transition-delay:.32s; }
-html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(4) .dg-formula__text{ transition-delay:.48s; }
+@media (min-width:768px){
+  html.dg-js .dg-formula__track .dg-formula__text{ opacity:0; transform:translateX(-56px); transition:opacity .8s ease, transform .8s ease; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__text{ opacity:1; transform:translateX(0); }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(1) .dg-formula__text{ transition-delay:0s; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(2) .dg-formula__text{ transition-delay:.16s; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(3) .dg-formula__text{ transition-delay:.32s; }
+  html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(4) .dg-formula__text{ transition-delay:.48s; }
+}
+@media (max-width:767px){
+  html.dg-js .dg-formula__text{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  html.dg-js .dg-formula__text.is-visible{ opacity:1; transform:translateY(0); }
+}
 @media (max-width:767px){
   html.dg-js .dg-ritual__title,
   html.dg-js .dg-belief__title,
@@ -260,7 +266,8 @@ html.dg-js .dg-formula__track.is-visible .dg-formula__card:nth-child(4) .dg-form
   html.dg-js .dg-review__title,
   html.dg-js .dg-origins__title,
   html.dg-js .dg-articles__title,
-  html.dg-js .dg-formula__track .dg-formula__text{ opacity:1!important; transform:none!important; transition:none!important; }
+  html.dg-js .dg-formula__track .dg-formula__text,
+  html.dg-js .dg-formula__text{ opacity:1!important; transform:none!important; transition:none!important; }
 }
 @media (min-width:768px){
   .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
@@ -515,8 +522,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 2. 섹션 타이틀, Formula 카드 트랙 및 리뷰 카드 스크롤 등장
-  const revealTargets = document.querySelectorAll('.dg-review__card, .dg-ritual__title, .dg-belief__title, .dg-join__title, .dg-formula__title, .dg-formula__track, .dg-review__title, .dg-origins__title, .dg-articles__title');
+  // 2. 섹션 타이틀, Formula 카드 트랙/문안 및 리뷰 카드 스크롤 등장
+  const revealTargets = document.querySelectorAll('.dg-review__card, .dg-ritual__title, .dg-belief__title, .dg-join__title, .dg-formula__title, .dg-formula__track, .dg-formula__text, .dg-review__title, .dg-origins__title, .dg-articles__title');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
