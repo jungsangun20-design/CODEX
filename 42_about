@@ -37,7 +37,7 @@
 
         html.brand-story-js .brand-story-about .brand-story-section {
             opacity: 0;
-            transform: translateY(-24px);
+            transform: translateY(24px);
             transition: opacity .7s ease, transform .7s ease;
         }
 
@@ -259,7 +259,7 @@
             }
 
             html.brand-story-js .brand-story-about .brand-story-section {
-                transform: translateY(-16px);
+                transform: translateY(16px);
                 transition-duration: .55s;
             }
         }
