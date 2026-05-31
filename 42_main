@@ -223,6 +223,32 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
 .dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1rem,1.15vw,1.1rem);
   font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.35; }
 .dg-article__desc{ margin:0; font-size:clamp(.95rem,1.3vw,1.05rem); line-height:1.55; color:var(--dg-ink); word-break:keep-all; }
+html.dg-js .dg-formula__title,
+html.dg-js .dg-articles__title{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+html.dg-js .dg-formula__title.is-visible,
+html.dg-js .dg-articles__title.is-visible{ opacity:1; transform:translateY(0); }
+html.dg-js .dg-formula__card,
+html.dg-js .dg-article{ opacity:0; transform:translateY(28px); transition:opacity .65s ease, transform .65s ease; }
+html.dg-js .dg-formula__card.is-visible,
+html.dg-js .dg-article.is-visible{ opacity:1; transform:translateY(0); }
+.dg-formula__card:nth-child(2),
+.dg-article:nth-child(2){ transition-delay:.12s; }
+.dg-formula__card:nth-child(3),
+.dg-article:nth-child(3){ transition-delay:.24s; }
+.dg-formula__card:nth-child(4),
+.dg-article:nth-child(4){ transition-delay:.36s; }
+@media (max-width:767px){
+  html.dg-js .dg-formula__title,
+  html.dg-js .dg-articles__title{ transform:translateY(16px); transition-duration:.55s; }
+  html.dg-js .dg-formula__card,
+  html.dg-js .dg-article{ transform:translateY(18px); transition-duration:.55s; }
+}
+@media (prefers-reduced-motion: reduce){
+  html.dg-js .dg-formula__title,
+  html.dg-js .dg-articles__title,
+  html.dg-js .dg-formula__card,
+  html.dg-js .dg-article{ opacity:1!important; transform:none!important; transition:none!important; }
+}
 @media (min-width:768px){
   .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
   .dg-articles__grid{ grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); }
@@ -476,13 +502,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 2. 리뷰 카드 스크롤 등장 (Section 6)
-  const reviewObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); reviewObserver.unobserve(entry.target); }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.dg-review__card').forEach(card => reviewObserver.observe(card));
+  // 2. 섹션 요소 스크롤 등장 (Review / Formula / Articles)
+  const revealTargets = document.querySelectorAll('.dg-review__card, .dg-formula__title, .dg-formula__card, .dg-articles__title, .dg-article');
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealTargets.forEach(target => revealObserver.observe(target));
+  } else {
+    revealTargets.forEach(target => target.classList.add('is-visible'));
+  }
 
   // 3. FAQ 아코디언 (+ aria-expanded 상태 토글)
   const faqSec = document.getElementById('fdFaqSec');
