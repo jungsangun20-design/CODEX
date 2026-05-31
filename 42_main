@@ -204,16 +204,16 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
   display:grid; grid-template-columns:1fr; gap:clamp(32px,5vw,40px); align-items:start; }
 .dg-articles__head{ margin:0; }
 .dg-articles__title{ margin:0; font-family:var(--dg-font-display); font-weight:400;
-  font-size:clamp(2.4rem,6vw,3.2rem); letter-spacing:-.04em; color:var(--dg-ink); }
+  font-size:clamp(2rem,5vw,3rem); line-height:1.05; letter-spacing:-.03em; color:var(--dg-ink); }
 .dg-articles__grid{ display:grid; grid-template-columns:1fr; gap:clamp(40px,6vw,56px); }
 .dg-article{ display:flex; flex-direction:column; }
 .dg-article__media{ width:100%; aspect-ratio:1/1; overflow:hidden; margin-bottom:16px; background:#fff; }
 .dg-article__img{ display:block; width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
 .dg-article:hover .dg-article__img{ transform:scale(1.03); }
 .dg-article__text{ display:flex; flex-direction:column; border-top:1px solid var(--dg-line); padding-top:16px; }
-.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1.05rem,1.4vw,1.15rem);
-  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.4; }
-.dg-article__desc{ margin:0; font-size:clamp(.85rem,1.1vw,.95rem); line-height:1.65; color:var(--dg-ink); word-break:keep-all; }
+.dg-article__name{ margin:0 0 12px; font-family:var(--dg-font-display); font-size:clamp(1rem,1.15vw,1.1rem);
+  font-weight:700; color:var(--dg-ink); letter-spacing:-.02em; line-height:1.35; }
+.dg-article__desc{ margin:0; font-size:clamp(.95rem,1.3vw,1.05rem); line-height:1.55; color:var(--dg-ink); word-break:keep-all; }
 @media (min-width:768px){
   .dg-articles__inner{ grid-template-columns:1fr 2.1fr; gap:clamp(40px,6vw,64px); }
   .dg-articles__grid{ grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); }
@@ -224,14 +224,15 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
 .fd-container { max-width: var(--dg-maxw); margin: 0 auto; }        /* [추가] 다른 섹션과 폭 정렬 */
 .fd-faq-unified-card { display: flex; background-color: #f0efef; border-radius: 40px; overflow: hidden; align-items: stretch; width: 100%; box-sizing: border-box; }
 .fd-faq-content-area { flex: 6; padding: 70px 60px; display: flex; flex-direction: column; justify-content: center; }
-.fd-faq-title { font-family: var(--dg-font-body); font-size: 48px; font-weight: 700; color: #000000; margin: 0 0 35px; letter-spacing: -0.04em; }
+.fd-faq-title { font-family: var(--dg-font-body); font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; line-height: 1.05; color: #000000; margin: 0 0 35px; letter-spacing: -0.03em; }
+.fd-faq-subtitle { font-size: clamp(.95rem, 1.3vw, 1.1rem); line-height: 1.5; }
 .fd-faq-item { border-bottom: 1px solid rgba(0,0,0,.1); }            /* [수정] 흰색→어두운 색 (회색 배경에서 보이게) */
 .fd-faq-item:last-child { border-bottom: none; }
 .fd-faq-question { font-family: var(--dg-font-body); width:100%; background:none; border:0; -webkit-appearance:none; appearance:none; text-align:left;
-  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 18px; font-weight: 600; color: #000000; cursor: pointer; user-select: none; }
+  display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: clamp(1rem, 1.15vw, 1.1rem); font-weight: 700; line-height: 1.4; color: #000000; cursor: pointer; user-select: none; }
 .fd-faq-icon { font-size: 24px; font-weight: 300; color: #000000; margin-left: 20px; transition: transform 0.3s ease; display: inline-block; }
 .fd-faq-item.active .fd-faq-icon { transform: rotate(45deg); }
-.fd-faq-answer { max-height: 0; overflow: hidden; font-size: 18px; line-height: 1.6; color: #000000; word-break: keep-all;
+.fd-faq-answer { max-height: 0; overflow: hidden; font-size: clamp(.95rem, 1.3vw, 1.05rem); line-height: 1.6; color: #000000; word-break: keep-all;
   font-family: var(--dg-font-body); font-weight: 400; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; }
 .fd-faq-item.active .fd-faq-answer { max-height: 500px; padding: 0 0 20px; }
 .fd-faq-item.active .fd-faq-question { padding-bottom: 12px; }
@@ -241,9 +242,9 @@ html.dg-js .dg-review__card.is-visible{ opacity:1; transform:none; }
   .fd-faq-section { padding: 60px 20px; }
   .fd-faq-unified-card { flex-direction: column; border-radius: 30px; }
   .fd-faq-content-area { order: 2; padding: 50px 30px; }
-  .fd-faq-title { font-size: 34px; margin-bottom: 25px; }
-  .fd-faq-question { font-size: 16px; padding: 16px 0; }
-  .fd-faq-answer { font-size: 16px; }
+  .fd-faq-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 25px; }
+  .fd-faq-question { font-size: clamp(1rem, 1.15vw, 1.1rem); padding: 16px 0; }
+  .fd-faq-answer { font-size: clamp(.95rem, 1.3vw, 1.05rem); }
   .fd-faq-image-area { order: 1; flex: none; height: 350px; width: 100%; }
   .fd-faq-image-area img { position: relative; height: 100%; }
 }
