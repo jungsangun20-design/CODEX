@@ -1011,7 +1011,7 @@
 	}
 
 	.dg-product-notice {
-		width: 100%; background: #fff; color: #111; padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 48px);
+		width: 100%; background: #fff; color: #111; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 48px);
 	}
 
 	.dg-product-notice__inner {
@@ -1019,7 +1019,7 @@
 	}
 
 	.dg-product-notice__table {
-		width: 100%; border-collapse: collapse; table-layout: fixed; font-size: clamp(13px, 1.15vw, 15px); line-height: 1.65; color: #111; border-top: 1px solid #d9d9d9;
+		width: 100%; border-collapse: collapse; table-layout: fixed; font-family: inherit; font-size: clamp(13px, 1.15vw, 15px); line-height: 1.65; color: #111; border-top: 1px solid #d9d9d9;
 	}
 
 	.dg-product-notice__table th,
@@ -1028,7 +1028,7 @@
 	}
 
 	.dg-product-notice__table th {
-		width: 28%; font-weight: 600; background: #fafafa;
+		width: 28%; font-weight: 600; background: #fff;
 	}
 
 	.dg-product-notice__table td {
