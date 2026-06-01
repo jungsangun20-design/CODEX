@@ -1009,7 +1009,51 @@
 			object-fit: cover !important; object-position: center top !important;
 		}
 	}
-	
+
+	.dg-product-notice {
+		width: 100%; background: #fff; color: #111; padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 48px);
+	}
+
+	.dg-product-notice__inner {
+		width: min(100%, 1180px); margin: 0 auto;
+	}
+
+	.dg-product-notice__table {
+		width: 100%; border-collapse: collapse; table-layout: fixed; font-size: clamp(13px, 1.15vw, 15px); line-height: 1.65; color: #111; border-top: 1px solid #d9d9d9;
+	}
+
+	.dg-product-notice__table th,
+	.dg-product-notice__table td {
+		border-bottom: 1px solid #e5e5e5; padding: 14px 16px; vertical-align: top; text-align: left; word-break: keep-all; overflow-wrap: anywhere;
+	}
+
+	.dg-product-notice__table th {
+		width: 28%; font-weight: 600; background: #fafafa;
+	}
+
+	.dg-product-notice__table td {
+		width: 72%; font-weight: 400;
+	}
+
+	@media (max-width: 767px) {
+		.dg-product-notice {
+			padding: 40px 14px;
+		}
+		.dg-product-notice__table {
+			font-size: 12.5px; line-height: 1.6;
+		}
+		.dg-product-notice__table th,
+		.dg-product-notice__table td {
+			padding: 12px 10px;
+		}
+		.dg-product-notice__table th {
+			width: 36%;
+		}
+		.dg-product-notice__table td {
+			width: 64%;
+		}
+	}
+
 	.dg-story {
 		--ink: #161413; --soft: #333; background-color: #fff; font-family: "Pretendard Variable", Pretendard, -apple-system, "Helvetica Neue", sans-serif; color: var(--ink); padding-block: clamp(50px, 8vw, 100px);
 	}
@@ -1878,6 +1922,68 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     42degree PDP · 상품정보고시 섹션
+     ▸ 상세설명 영역에 붙여넣기
+     ▸ 2열 표 구조 (좌측 항목명 / 우측 내용)
+     ============================================================ -->
+<section class="dg-product-notice">
+	<div class="dg-product-notice__inner">
+		<table class="dg-product-notice__table">
+			<tbody>
+				<tr>
+					<th scope="row">품명 및 모델명</th>
+					<td>씨씨샷(C.C shot)</td>
+				</tr>
+				<tr>
+					<th scope="row">식품의 유형</th>
+					<td>혼합음료</td>
+				</tr>
+				<tr>
+					<th scope="row">생산자 및 소재지</th>
+					<td>제조원: 자연농장, 유통전문판매원: 42degree / 서울특별시 중구 동호로 14길 19, 4층 411호</td>
+				</tr>
+				<tr>
+					<th scope="row">제조연월일, 소비기한 또는 품질유지기한</th>
+					<td>제품 옆면 표기일, 소비기한: 18개월</td>
+				</tr>
+				<tr>
+					<th scope="row">포장단위별 내용물의 용량(중량), 수량</th>
+					<td>280g (20g x 14포), 1박스 기준</td>
+				</tr>
+				<tr>
+					<th scope="row">원재료명 (｢농수산물의 원산지 표시 등에 관한 법률｣에 따른 원산지 표시 포함) 및 함량</th>
+					<td>정제수, 감귤농축액(고형분 60brix 이상, 제주산), 레몬농축액(고형분 65brix이상, 이스라엘산), 액상알룰로스, 베르가못주스농축액(고형분 40brix이상, 이탈리아산), 라임농축액(고형분 65brix 이상, 이스라엘산), 향료(라임향), 현미미강마그네슘발효분말, 이노시톨, 무수구연산, L-테아닌, 구연산삼나트륨, 비타민B군믹스(니코틴산아미드39%, 판토텐산칼슘25%, 비타민B2, 비타민B6염산염, 비타민B1염산염), 염화칼륨, 젖산칼슘, 비타민C, 향료(베르가못향), 효소처리스테비아(감미료), 비타민B12</td>
+				</tr>
+				<tr>
+					<th scope="row">영양성분</th>
+					<td>영양성분: 1회 분량(20g)당 15kcal 나트륨: 17mg (1%) 탄수화물: 4g (1%) 당류: 3g (3%) 지방: 0g (0%) 트랜스지방: 0g 포화지방: 0g (0%) 콜레스테롤: 0mg (0%) 단백질: 0g (0%) 식이섬유: 0g (0%) 알룰로오스 1g 칼슘 9mg (1%) 칼륨 51mg (1%) 철분 0mg(0%) (% 영양성분 기준치: 1일 영양성분 기준치에 대한 비율)</td>
+				</tr>
+				<tr>
+					<th scope="row">유전자변형식품에 해당하는 경우의 표시</th>
+					<td>해당 사항 없음</td>
+				</tr>
+				<tr>
+					<th scope="row">영유아식 또는 체중조절식품 등에 해당하는 경우 표시광고사전심의필 유무 및 부작용 발생 가능성</th>
+					<td>해당 사항 없음</td>
+				</tr>
+				<tr>
+					<th scope="row">소비자 안전을 위한 주의사항</th>
+					<td>섭취량 및 섭취방법을 준수하십시오. 유통기한이 경과된 제품은 섭취하지 마십시오. 제품 개봉 시 포장재에 의해 상처를 입을 수 있으니 주의하시고, 뚜껑 개봉 시 무리한 힘을 주지 마십시오. 특정 성분에 알레르기가 있는 분은 원재료명을 확인 후 섭취하십시오.</td>
+				</tr>
+				<tr>
+					<th scope="row">수입식품의 경우 &quot;수입식품안전관리특별법에 따른 수입신고를 필함&quot;의 문구</th>
+					<td>해당 사항 없음 (국내 제조 제품)</td>
+				</tr>
+				<tr>
+					<th scope="row">소비자상담 관련 전화번호</th>
+					<td>42Degree 고객센터 / [070-8027-4806]</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </section>
 <!-- ============================================================
